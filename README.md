@@ -1,6 +1,6 @@
 # MOTHERv3 HTML Summary Page Repository
 
-![Picture]([https://example.com/image.jpg](https://pbs.twimg.com/profile_banners/1592683698083831809/1735077928/1500x500)
+![Picture](https://pbs.twimg.com/profile_banners/1592683698083831809/1735077928/1500x500)
 
 Welcome to the **MOTHERv3 HTML Summary Page Repository**! This README provides essential information about how this repository will be used to host a summary HTML page dedicated to MOTHERv3.
 
