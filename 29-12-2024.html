@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé Interactif YouTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        #video-container {
+            margin-bottom: 20px;
+        }
+        .timestamp {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .timestamp:hover {
+            color: #0056b3;
+        }
+        #summary {
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Résumé Vidéo YouTube avec Timestamps</h1>
+
+    <div id="video-container">
+        <!-- Lecteur YouTube intégré -->
+        <iframe id="youtube-player" width="560" height="315"
+                src="https://www.youtube.com/embed/CNhmXmv4cOc?enablejsapi=1"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <h2>Résumé de la vidéo</h2>
+        <p>
+            - <span class="timestamp" data-time="295">"Je pense que j'ai une migraine car mon œil droit me fait un peu mal."</span><br>
+            - <span class="timestamp" data-time="327">"J'ai été engueulé par ma famille parce que je n'avais pas de papier toilette chez moi."</span><br>
+            - <span class="timestamp" data-time="421">Elle a acheté 300 rouleaux...</span><br>
+            - <span class="timestamp" data-time="765">"Je vais faire plus de vidéos YouTube sur des sujets aléatoires que je trouve intéressants."</span><br>
+            - <span class="timestamp" data-time="1600">"Elle sait où nous vivons !"</span><br>
+        </p>
+        <p>
+            - <span class="timestamp" data-time="4085">"Je pense qu'il est temps pour Jack... de tout casser!"</span><br>
+            - <span class="timestamp" data-time="4669">Fin de Monsoon</span><br>
+            - <span class="timestamp" data-time="9962">"Chat, regardez mes melons. :melon:"</span><br>
+            - <span class="timestamp" data-time="12560">"FEAR THE WRATH OF THE U.S.A!"</span><br>
+        </p>
+    </div>
+
+    <script>
+        // Récupérer le lecteur YouTube et les éléments des timestamps
+        const player = document.getElementById('youtube-player');
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        // Ajouter un écouteur d'événements pour chaque timestamp
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', () => {
+                const time = timestamp.getAttribute('data-time');
+                player.contentWindow.postMessage(JSON.stringify({
+                    event: "command",
+                    func: "seekTo",
+                    args: [time, true]
+                }), "*");
+            });
+        });
+    </script>
+</body>
+</html>
