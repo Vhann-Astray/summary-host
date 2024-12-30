@@ -1,0 +1,97 @@
+/* Style général */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #0d1117; /* Fond bleu foncé principal */
+    color: #e5e9f0; /* Texte clair */
+    display: flex;
+    height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    overflow: hidden; /* Supprime l'ascenseur principal */
+}
+
+/* Conteneur de la vidéo */
+#video-container {
+    flex: 1; /* Prend tout l'espace restant disponible */
+    background-color: #112240; /* Bleu foncé pour le conteneur vidéo */
+    border-radius: 8px;
+    display: flex; /* Active Flexbox pour aligner le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Effet d'ombre pour plus de style */
+    overflow: hidden; /* Évite les débordements */
+}
+
+iframe {
+    width: 90%; /* Largeur ajustée pour laisser de l'espace autour */
+    height: 90%; /* Hauteur ajustée pour un centrage parfait */
+    border: none; /* Enlève les bordures de l'iframe */
+}
+
+/* Résumé (summary) */
+#summary {
+    flex: 0 0 350px; /* Panneau de 350px de large (fixe) */
+    background-color: #1e2a47; /* Fond bleu légèrement plus clair pour les panneaux */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Ombre pour un effet en relief */
+    overflow-y: auto; /* Permet uniquement le défilement vertical */
+    max-height: calc(100vh - 40px); /* Limite la hauteur du panneau */
+}
+
+/* Titres */
+h2, h3 {
+    color: #ffffff; /* Texte principal en blanc */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #a0aec0; /* Sous-titres en bleu gris clair */
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-bottom: 1px solid #2c3d55; /* Ligne fine sous les sous-titres */
+    padding-bottom: 5px;
+}
+
+/* Liens interactifs */
+.timestamp {
+    cursor: pointer;
+    color: #3b82f6; /* Bleu accent */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.timestamp:hover {
+    color: #60a5fa; /* Bleu clair au survol */
+    text-decoration: underline;
+}
+
+.timestamp:focus {
+    outline: none;
+}
+
+/* Scrollbar customisée */
+#summary::-webkit-scrollbar {
+    width: 8px;
+}
+
+#summary::-webkit-scrollbar-track {
+    background: #1e2a47; /* Fond du scrollbar */
+    border-radius: 4px;
+}
+
+#summary::-webkit-scrollbar-thumb {
+    background-color: #3b82f6; /* Couleur du pouce de défilement */
+    border-radius: 4px;
+}
+
+#summary::-webkit-scrollbar-thumb:hover {
+    background-color: #60a5fa; /* Accent bleu au survol */
+}
+
+/* Ajustements pour le texte */
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
