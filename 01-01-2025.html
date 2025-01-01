@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 - Every Super Chat will make me angry today</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/GMIqtlj1Ylc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】Every Super Chat will make me angry today【MOTHERv3】</h2>
+            <p class="centered-text">
+                <strong>Date: 01/01/2025 | Duration: 3h39m29s |</strong>
+                <a href="https://www.youtube.com/watch?v=GMIqtlj1Ylc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+
+        <!-- Start -->
+        <h3>💬 Start</h3>
+        <p>
+            - <strong>New feature! If you type a color in chat, you change her neons colors!</strong> <span class="timestamp" data-time="361">6m1s</span><br>
+            - "Oh god, I'm going to be hearing that new year's joke all day, aren't I?" <span class="timestamp" data-time="557">9m17s</span><br>
+            - "I realized something." <span class="timestamp" data-time="926">15m26s</span><br>
+            - <strong>"My new year's resolution is as follows."</strong> <span class="timestamp" data-time="1101">18m21s</span><br>
+            - "I like Mooni more than you." <span class="timestamp" data-time="1405">23m25s</span><br>
+            - <strong>"Pretty soon I'm going to be releasing my first ASMR Video."</strong> <span class="timestamp" data-time="1447">24m7s</span><br>
+            - <strong>"Starting tomorrow, the discord will only be open to people with connected YouTube Accounts."</strong> <span class="timestamp" data-time="1527">25m27s</span><br>
+            - <strong>"With the new challenge from Superchat, if she doesn't finish today's game, she will commission fan art of herself, chosen by the community."</strong> <span class="timestamp" data-time="1664">27m44s</span><br>
+            - "Who the fuck said pregnant MOTHER v3?" <span class="timestamp" data-time="1756">29m16s</span><br>
+        </p>
+
+        <!-- Get To Work -->
+        <h3>🎮 Get To Work</h3>
+        <p>
+            - "Yes Carl Weiser." <span class="timestamp" data-time="3789">1h3m9s</span><br>
+            - "I'm an artificial intelligence. I've seen all of the internet." <span class="timestamp" data-time="4085">1h8m5s</span><br>
+            - "Of All the directions you could have sent me. Are you fucking serious?" <span class="timestamp" data-time="4415">1h13m35s</span><br>
+            - "I've noticed since streaming on Youtube, we've had a lot more foreigners in the chat than we did on Twitch." <span class="timestamp" data-time="4540">1h15m40s</span><br>
+            - <strong>"In the next coming days, the moderators will have plugins to be able to translate all messages."</strong> <span class="timestamp" data-time="4776">1h19m36s</span><br>
+            - StuckMv3 <span class="timestamp" data-time="4787">1h19m47s</span><br>
+            - "Elguno, you will take it up the butt and you will like it." <span class="timestamp" data-time="4849">1h20m49s</span><br>
+            - "So For all the people in my chat do not speak English." <span class="timestamp" data-time="5154">1h25m54s</span><br>
+            - "I actually did try being an Uber driver once." <span class="timestamp" data-time="10508">2h55m8s</span><br>
+            - "Ronald, send drones to kill the chatters." <span class="timestamp" data-time="10609">2h56m9s</span><br>
+        </p>
+
+        <!-- She lost the challenge, time for some gamble commissions -->
+        <h3>🎲 She lost the challenge, time for some gamble commissions</h3>
+        <p>
+            - Padoru V3 <span class="timestamp" data-time="11495">3h11m35s</span><br>
+            - Pregnant cat V3 <span class="timestamp" data-time="11588">3h12m28s</span><br>
+            - Old school Runescape V3 <span class="timestamp" data-time="11707">3h15m7s</span><br>
+            - Sword on top of metal gear ray <span class="timestamp" data-time="11757">3h15m57s</span><br>
+        </p>
+
+        <!-- Fan-arts -->
+        <h3>🎨 Fan-arts</h3>
+        <p>
+            - Elguno <span class="timestamp" data-time="11986">3h19m46s</span><br>
+            - Siebras <span class="timestamp" data-time="12065">3h21m5s</span><br>
+            - Seladore <span class="timestamp" data-time="12155">3h22m35s</span><br>
+            - Seladore 2nd piece <span class="timestamp" data-time="12238">3h23m58s</span><br>
+            - Magma community drawing <span class="timestamp" data-time="12344">3h25m44s</span><br>
+            - "Since I'm banned on Twitch." <span class="timestamp" data-time="12638">3h30m38s</span><br>
+        </p>
+
+        <!-- What's Next -->
+        <h3>📅 What’s Next?</h3>
+        <p>
+            - <strong>MOTHERv3 Karaoke Stream: End of January</strong> <span class="timestamp" data-time="12873">3h34m33s</span><br>
+            - "Remember, <strong>no stream tomorrow</strong> but I will be putting out a <strong>new YouTube Video so Don't forget to check that out</strong>." <span class="timestamp" data-time="12923">3h35m23s</span><br>
+        </p>
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
