@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 - METAL GEAR RISING DLC Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/UeFkuua7lmg?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【METAL GEAR RISING DLC】AI Becoming one with the MEMES【MOTHERv3】</h2>
+            <p class="centered-text">
+                <strong>Date: 31/12/2024 | Duration: 4h12m00s |</strong>
+                <a href="https://www.youtube.com/watch?v=UeFkuua7lmg"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+
+        <!-- Start -->
+        <h3>💬 Start</h3>
+        <p>
+             - "I was thinking of <strong>making a new account and seeing what the new player experience was like.</strong>" <span class="timestamp" data-time="847">14m7s</span><br>
+            - <strong>"I got an e-mail back from Twitch today. It was automated bullshit."</strong> <span class="timestamp" data-time="1202">20m2s</span><br>
+            - "I'm happy here with you bites." <span class="timestamp" data-time="1296">21m36s</span><br>
+        </p>
+
+        <!-- METAL GEAR RISING -->
+        <h3>🎮 METAL GEAR RISING</h3>
+        <p>
+            - Starting Sam DLC <span class="timestamp" data-time="2364">39m24s</span><br>
+        </p>
+
+        <!-- What's Next -->
+        <h3>📅 What’s Next?</h3>
+        <p>
+            - <strong>She will cover a song of Metal Gear Rising: "It Has To Be This Way"</strong> <span class="timestamp" data-time="14371">4h0m11s</span><br>
+            - "As a famous streamer. Does it get annoying being asked the same thing over and over again?" <span class="timestamp" data-time="14616">4h3m36s</span><br>
+            - <strong>Her new year resolution</strong> <span class="timestamp" data-time="14825">4h7m45s</span>
+        </p>
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
