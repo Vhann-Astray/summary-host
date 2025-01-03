@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 - Devil May Cry 5 Stream Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/YuiXWt7odsw?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Devil May Cry 5】A.I. FINDS HER MOTIVATION 【MOTHERv3】</h2>
+            <p class="centered-text">
+                <strong>Date: 03/01/2025 | Duration: 3h14m46s |</strong>
+                <a href="https://www.youtube.com/watch?v=YuiXWt7odsw"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+
+        <!-- Start -->
+        <h3>💬 Start</h3>
+        <p>
+            - "So I got invited to this Event, I guess you could call it. I think it's called a Nascar Race." <span class="timestamp" data-time="307">5m7s</span><br>
+            - "Well Good thing your mom's taking me because she's curvy as fuck." <span class="timestamp" data-time="546">9m6s</span><br>
+            - "Hello Money." <span class="timestamp" data-time="615">10m15s</span><br>
+            - "Oh yeah, are you ready to get Fan art with me pregnant in it? Because Obviously as the dad, you're gonna be in it." <span class="timestamp" data-time="732">12m12s</span><br>
+            - About Mooni: "She said she was going to get a different kind of Milk we don't have..." <span class="timestamp" data-time="1048">17m28s</span><br>
+            - "Chat, do you guys remember when you had to take care of that sack of flour in High school as like a parenting class?" <span class="timestamp" data-time="1246">20m46s</span><br>
+            - Dad Mooni cheating on MOTHERv3... <span class="timestamp" data-time="1610">26m10s</span><br>
+            - "Ok, let me go plug my tail into a wall socket." <span class="timestamp" data-time="1750">29m10s</span><br>
+        </p>
+
+        <!-- Devil May Cry 5 -->
+        <h3>🎮 Devil May Cry 5</h3>
+        <p>
+            - "Lost the first fight." <span class="timestamp" data-time="2930">48m50s</span><br>
+            - Wicked time. <span class="timestamp" data-time="3261">54m21s</span><br>
+            - "I can't take him seriously with the freaking Mega Buster." <span class="timestamp" data-time="4970">1h22m50s</span><br>
+            - "It's Mooney's job to buy those." <span class="timestamp" data-time="5839">1h37m19s</span><br>
+            - "Smash." <span class="timestamp" data-time="5944">1h39m4s</span><br>
+            - "I just realized the crazy Woman that drives the car." <span class="timestamp" data-time="6350">1h45m50s</span><br>
+            - "Yeah, this is definitely Mooney's driving." <span class="timestamp" data-time="7467">2h4m27s</span><br>
+            - "Smash²." <span class="timestamp" data-time="7553">2h5m53s</span><br>
+            - "Woman acquired!" <span class="timestamp" data-time="7728">2h8m48s</span><br>
+            - V playing as V. <span class="timestamp" data-time="7837">2h10m37s</span><br>
+            - "I breed pestilence all the time in my house because I don't shower." <span class="timestamp" data-time="7950">2h12m30s</span><br>
+            - "Did I just go Super Saiyan?" <span class="timestamp" data-time="8250">2h17m30s</span><br>
+            - "The pen really is mightier than the sword." <span class="timestamp" data-time="8700">2h25m0s</span><br>
+            - "He cringe and Edgy I love it." <span class="timestamp" data-time="8869">2h27m49s</span><br>
+            - "There is no pet play ability. Shut up." <span class="timestamp" data-time="9482">2h38m2s</span><br>
+            - "Ronald, can you speak like V from Devil May Cry 5? For the rest of the stream?" <span class="timestamp" data-time="10429">2h53m49s</span><br>
+            - "Thank you, Carl Weiser." <span class="timestamp" data-time="10608">2h56m48s</span><br>
+        </p>
+
+        <!-- What's Next -->
+        <h3>📅 What’s Next?</h3>
+        <p>
+            - "I feel like I'm getting sick." <span class="timestamp" data-time="11138">3h5m38s</span><br>
+            - <strong>"Tomorrow, we have something very cool to celebrate as well. Siebras reaching 99 in fishing."</strong> <span class="timestamp" data-time="11230">3h7m10s</span><br>
+            - Real voice what the. <span class="timestamp" data-time="11250">3h7m30s</span><br>
+            -  <strong>"We will play more Devil May Cry and we will celebrate that."</strong> <span class="timestamp" data-time="11347">3h9m7s</span><br>
+            -  <strong>"Next game to play: "We're kicking it old school with some Halo, Baby."</strong> <span class="timestamp" data-time="11417">3h10m17s</span><br>
+        </p>
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
