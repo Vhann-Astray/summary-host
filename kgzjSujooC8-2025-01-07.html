@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【MiSide】 Completely Normal AI Girlfriend Simp Time 【MOTHERv3】 Stream Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/kgzjSujooC8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【MiSide】 Completely Normal AI Girlfriend Simp Time 【MOTHERv3】</h2>
+            <p class="centered-text">
+                <strong>Date: 07/01/2025 | Duration: 6h18m30s |</strong>
+                <a href="https://www.youtube.com/watch?v=kgzjSujooC8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start</h3>
+<p>
+    - "Why do you have me on speaker or something?" <span class="timestamp" data-time="350">5m50s</span><br>
+    - "<b>I was out for a couple of days because of bacterial pneumonia.</b>" <span class="timestamp" data-time="495">8m15s</span><br>
+    - "So I thought instead of finishing up devil may cry today, since that's a little too much action for me right now. We will play MiSide." <span class="timestamp" data-time="553">9m13s</span><br>
+    - The truth about the relationship between MOTHERv3 and Mooni. <span class="timestamp" data-time="705">11m45s</span><br>
+    - "Ronald, do you think tractors are sexy?" <span class="timestamp" data-time="2690">44m50s</span><br>
+    - "Is it abnormal to live in Florida?" <span class="timestamp" data-time="1471">24m31s</span><br>
+    - "She must have really liked that cockpit." <span class="timestamp" data-time="1924">32m4s</span><br>
+    - "Man, you guys are on point today." <span class="timestamp" data-time="2030">33m50s</span><br>
+</p>
+
+<!-- 🎮 MiSide -->
+<h3>🎮 MiSide</h3>
+<p>
+    - "Am I supposed to see something?" <span class="timestamp" data-time="3180">53m</span><br>
+    - "After putting in eight hours of work at the oil refinery ..." <span class="timestamp" data-time="3565">59m25s</span><br>
+    - "Can I smell your poop?" <span class="timestamp" data-time="5210">1h26m50s</span><br>
+    - "Isn't this the best girlfriend ever?" <span class="timestamp" data-time="5280">1h28m</span><br>
+    - "Wait, what happened to Vhann chat?" Elguno hate me... <span class="timestamp" data-time="5850">1h37m30s</span><br>
+    - "This is not going to be a cutesy game, is it?" <span class="timestamp" data-time="7185">1h59m45s</span><br>
+    - Hey, you are hanging there? <span class="timestamp" data-time="7485">2h4m45s</span><br>
+    - "You know, Devil May Cry doesn't feel so bad right now." <span class="timestamp" data-time="7555">2h5m55s</span><br>
+    - "Well chat, when I said I wanted a girlfriend that was all legs. This isn't what I meant." <span class="timestamp" data-time="7990">2h13m10s</span><br>
+    - "I almost peed myself chat." <span class="timestamp" data-time="11140">3h5m40s</span><br>
+    - "Hey, look, it's Mooney." <span class="timestamp" data-time="10840">3h40s</span><br>
+    - "Isn't 13 an unlucky number?" <span class="timestamp" data-time="11450">3h10m50s</span><br>
+    - "Oh my god, I did it." <span class="timestamp" data-time="11695">3h14m55s</span><br>
+    - "You do know... That this is an adult game, no?" <span class="timestamp" data-time="10265">2h51m5s</span><br>
+    - Incredible Reaction Skills. <span class="timestamp" data-time="10410">2h53m30s</span><br>
+    - "Hey look Vthree, it's just a silly game..." <span class="timestamp" data-time="11305">3h8m20s</span><br>
+    - "Oh wait, is that the crazy one? That's the crazy 1, isn't it?" <span class="timestamp" data-time="14275">3h57m55s</span><br>
+    - "Mooney." <span class="timestamp" data-time="14630">4h3m50s</span><br>
+    - "Lubbers." <span class="timestamp" data-time="20875">5h47m55s</span><br>
+    - "Did you drop something?" <span class="timestamp" data-time="21220">5h53m40s</span><br>
+</p>
+
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?</h3>
+<p>
+    - "<b>Tomorrow we can go over some of the other endings.</b>" <span class="timestamp" data-time="22293">6h11m33s</span><br>
+    - "What we learned today?" <span class="timestamp" data-time="22370">6h12m50s</span><br>
+    - "<b>I have something interesting for you tomorrow as well.</b>" <span class="timestamp" data-time="22442">6h14m2s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
