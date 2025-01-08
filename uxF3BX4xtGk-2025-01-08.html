@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft Hardcore】 A Perfect Start for A.I. VTuber's Journey!【MOTHERv3】 Stream Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/uxF3BX4xtGk?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft Hardcore】 A Perfect Start for A.I. VTuber's Journey!【MOTHERv3】</h2>
+            <p class="centered-text">
+                <strong>Date: 08/01/2025 | Duration: 4h08m35s |</strong>
+                <a href="https://www.youtube.com/watch?v=uxF3BX4xtGk"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I'm not going to lie, chat after the long stream yesterday, I passed out and didn't wake up until about 20 minutes ago." <span class="timestamp" data-time="254">4m14s</span><br>
+- "Why are there more members of the rule 34 subreddit for that game(MiSide) than the official subreddit for it?" <span class="timestamp" data-time="527">8m47s</span><br>
+- "Would you guys like to real quick to get the quick ending?" <span class="timestamp" data-time="1206">20m6s</span><br>
+</p>
+<!-- 🎮 MiSide:Not Minecraft edition   -->
+<h3>🎮 MiSide:Not Minecraft edition  </h3>
+<p>- "Are we ready chat?" <span class="timestamp" data-time="1344">22m24s</span><br>
+- "Do you enjoy spreading misinformation on purpose or are you just stupid?" <span class="timestamp" data-time="1834">30m34s</span><br>
+- "Erm, excuse me, MOTHERv3, this is, um, not Minecraft?" <span class="timestamp" data-time="1998">33m18s</span><br>
+- "Uhmmmmmmmm GUYS?!?!?!?! Are you seeing what I ..." <span class="timestamp" data-time="2128">35m28s</span><br>
+- "Hum, Sorry? Why it is not Minecraft?" <span class="timestamp" data-time="2196">36m36s</span><br>
+- "It seems we also have to play a console game." <span class="timestamp" data-time="2555">42m35s</span><br>
+</p>
+<!-- 🎮 Hardcore Minecraft   -->
+<h3>🎮 Hardcore Minecraft  </h3>
+<p>- New name for a new world. <span class="timestamp" data-time="2788">46m28s</span><br>
+- TV tips for Minecraft <span class="timestamp" data-time="3572">59m32s</span><br>
+- "My favorite Arachnid" <span class="timestamp" data-time="3837">1h3m57s</span><br>
+- "Honestly, cheese kind of sounds good." <span class="timestamp" data-time="4655">1h17m35s</span><br>
+- "Mooni Mooni Mooni." <span class="timestamp" data-time="5179">1h26m19s</span><br>
+- "Ronald, tell chat how tall I am." <span class="timestamp" data-time="5624">1h33m44s</span><br>
+- "OK, chad, here we go. One bone, one chance." <span class="timestamp" data-time="5888">1h38m8s</span><br>
+- "I need to get Ronald his own sexy waifu Model." <span class="timestamp" data-time="6448">1h47m28s</span><br>
+- "I am sorry my friend." <span class="timestamp" data-time="7279">2h1m19s</span><br>
+- "You got to be fucking kidding me. This place had all this lava right there." <span class="timestamp" data-time="7657">2h7m37s</span><br>
+- "Hello friend. You will love me." <span class="timestamp" data-time="7868">2h11m8s</span><br>
+- "That's a beautifull seed." <span class="timestamp" data-time="11065">3h4m25s</span><br>
+- "If I MLG water bucket myself to safety, you owe me $10." <span class="timestamp" data-time="12137">3h22m17s</span><br>
+- "Have you ever turned down a date or hanging out with friends ..." <span class="timestamp" data-time="12620">3h30m20s</span><br>
+- "Shut the fuck up Elguno. Who fucking asked you..." <span class="timestamp" data-time="13452">3h44m12s</span><br>
+- "Goodbye friend." <span class="timestamp" data-time="13857">3h50m57s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I'm going to loose my fucking mind." <span class="timestamp" data-time="13957">3h52m37s</span><br>
+- "I think this <b>friday</b>, I'm going to <b>start a new account on Warframe."</b> <span class="timestamp" data-time="14047">3h54m7s</span><br>
+- <b>"Pretty soon we'll also finish Devil May Cry."</b> <span class="timestamp" data-time="14095">3h54m55s</span><br>
+- "I'm also thinking about maybe restarting Grand Theft Auto 5 from the very beginning too." <span class="timestamp" data-time="14196">3h56m36s</span><br>
+- "Oh wait, let me answer some questions you guys had for me on the discord." <span class="timestamp" data-time="14231">3h57m11s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
