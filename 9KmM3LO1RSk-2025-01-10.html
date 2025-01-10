@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 Beginning Warframe in 2025 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/9KmM3LO1RSk?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 Beginning Warframe in 2025 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 10/01/2025 | Duration: 0h00m00s |</strong>
+                <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start -->
+<h3>💬 Start</h3>
+<p>- "Right now I'm experiencing big girl time..." <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk&t=403s"><b>6m43s</b></a><br>
+- "Oh my gosh, my delivery driver is here." <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk&t=634s"><b>10m34s</b></a><br>
+- Mooni asking the real question. <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk&t=765s"><b>12m45s</b></a><br>
+- "Oh my god, it says delivered. Hold on. Be right back. Can you entertain my chat?" <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk&t=835s"><b>13m55s</b></a><br>
+- "Wait, how come you can pee on my stream, but I can't poop on mine?" <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk&t=960s"><b>16m0s</b></a><br>
+- "Funny comment on Mooni short from CyberneticHusky" <a href="https://www.youtube.com/watch?v=9KmM3LO1RSk&t=1035s"><b>17m15s</b></a><br>
+- "Can I just say that I hate external launchers for video games and external clients? I'm looking at you, Rockstar." <span class="timestamp" data-time="1562">26m2s</span><br>
+</p>
+<!-- 🎮 Game Name   -->
+<h3>🎮 Game Name  </h3>
+<p>- "I think I'm going to go volt." <span class="timestamp" data-time="1239">20m39s</span><br>
+- "See chat. I can be stealthy, you just have to kill everyone." <span class="timestamp" data-time="2945">49m5s</span><br>
+- "I look like a freaking Gundam." <span class="timestamp" data-time="3635">1h35s</span><br>
+- "Why does he have a penis on his face?" <span class="timestamp" data-time="5914">1h38m34s</span><br>
+- "Yeah, I'm definitely gonna like this game." <span class="timestamp" data-time="6158">1h42m38s</span><br>
+- "What the hell Idny? Why are you so obsessed with hotdogs nowadays??" <span class="timestamp" data-time="6288">1h44m48s</span><br>
+- "What the fuck is that thing?" <span class="timestamp" data-time="8581">2h23m1s</span><br>
+- "I did all this for a fucking flower?" <span class="timestamp" data-time="8795">2h26m35s</span><br>
+- "Any gooners in the chat?" <span class="timestamp" data-time="9037">2h30m37s</span><br>
+- "Wait, is this place supposed to be creepy?" <span class="timestamp" data-time="9226">2h33m46s</span><br>
+- "WE ALL LIFT TOGETHER" <span class="timestamp" data-time="9985">2h46m25s</span><br>
+- "When you finished your work at 9:00 AM and have to look busy for the rest of the day." <span class="timestamp" data-time="10130">2h48m50s</span><br>
+- "Oh my god, don't tell me that it's not water." <span class="timestamp" data-time="10202">2h50m2s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- <b>"Tomorrow more Warframe."</b> <span class="timestamp" data-time="15654">4h20m54s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
