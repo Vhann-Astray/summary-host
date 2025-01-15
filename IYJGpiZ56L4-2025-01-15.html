@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 Every Super Chat ruins my Jump King Speedrun【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/IYJGpiZ56L4?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 Every Super Chat ruins my Jump King Speedrun【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 15/01/2025 | Duration: 2h47m16s |</strong>
+                <a href="https://www.youtube.com/watch?v=IYJGpiZ56L4"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "My family was yelling at me because I hadn't packed any clothes..." <span class="timestamp" data-time="240">4m</span><br>
+- "Oh yeah, before we started the event today, I did want to <b>answer a few questions you guys left me on the Discord.</b>" <span class="timestamp" data-time="449">7m29s</span><br>
+- "Who is your anime boyfriend and or girlfriend?" <span class="timestamp" data-time="1066">17m46s</span><br>
+- "Oh yes, there are like a lot of Digimon that I would also smash." <span class="timestamp" data-time="1206">20m6s</span><br>
+- "Someone asked if i've ever played undertale yes. You want me to prove it? I could prove it." <span class="timestamp" data-time="1365">22m45s</span><br>
+- "God damn it. Stupid Sans. Why doesn't it support WebGL? I'm confused." <span class="timestamp" data-time="1533">25m33s</span><br>
+</p>
+<!-- 🎮 Jump King   -->
+<h3>🎮 Jump King  </h3>
+<p>- "Do you have any tissues next to you? You see what I mean?" <span class="timestamp" data-time="2573">42m53s</span><br>
+- "Hey guys, did you know that ElGuno is a clopper?" <span class="timestamp" data-time="3060">51m</span><br>
+- "Okay, I'm going to do this." <span class="timestamp" data-time="3174">52m54s</span><br>
+- Answer from Twitch : <b>"They said it was fraud and that it was chargebacks."</b> <span class="timestamp" data-time="4805">1h20m5s</span><br>
+- "What if I tried to play a game of raft with my moderator sometime? " <span class="timestamp" data-time="5581">1h33m1s</span><br>
+- "Mooni is actually taking off a week because <b>she's coming to see her beautiful beautiful girlfriend.</b>" <span class="timestamp" data-time="6247">1h44m7s</span><br>
+- "I'm going to shove a Costco hot dog so far up your ass ..." <span class="timestamp" data-time="7322">2h2m2s</span><br>
+- "Ronald now make fun of their moms." <span class="timestamp" data-time="8199">2h16m39s</span><br>
+- "Let's fucking go. Let's fucking go, baby." <span class="timestamp" data-time="8730">2h25m30s</span><br>
+- "Yes, this is what me and Mooni look like whenever we are going to go on our honeymoon." <span class="timestamp" data-time="8871">2h27m51s</span><br>
+- "A gentleman never looks up the princess's skirt." <span class="timestamp" data-time="8807">2h26m47s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Once again i'm not sure if <b>we will have a stream on friday</b> it depends on what time i get back." <span class="timestamp" data-time="9636">2h40m36s</span><br>
+- "I'll also take some pictures and I will buy some souvenirs as well." <span class="timestamp" data-time="9659">2h40m59s</span><br>
+- "And I will try to make a friend. Emphasis on try." <span class="timestamp" data-time="9667">2h41m7s</span><br>
+- "Also I'm going to bring my laptop. So that way i can say hi to you guys on discord ..." <span class="timestamp" data-time="9684">2h41m24s</span><br>
+- "We do have an <b>event happening today at 7:30.</b> I think we're going to <b>watch anime.</b>" <span class="timestamp" data-time="9716">2h41m56s</span><br>
+- "Also, Chad, I'm probably going to be <b>editing some videos</b> while I'm on the boat..." <span class="timestamp" data-time="9784">2h43m4s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
