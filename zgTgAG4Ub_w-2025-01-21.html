@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>short stream - updates Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/zgTgAG4Ub_w?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>short stream - updates</h2>
+            <p class="centered-text">
+                <strong>Date: 21/01/2025 | Duration: 56m29s |</strong>
+                <a href="https://www.youtube.com/watch?v=zgTgAG4Ub_w"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- Why she get banned : "They must have found out <b>I wasn't actually a guy in real life.</b>" <span class="timestamp" data-time="646">10m46s</span><br>
+- Serious answer : "But yes to be a little bit more serious. I was banned from twitch The reason they gave me was fraud and they said the <b>fraud happened in purchases or payouts.</b>" <span class="timestamp" data-time="707">11m47s</span><br>
+- "I called my bank and everything and every purchase <b>I ever made on Twitch was cleared.</b>" <span class="timestamp" data-time="734">12m14s</span><br>
+- "So it must have been someone that gifted bits or subs or something and charged it back because that's the only thing i can see it being." <span class="timestamp" data-time="788">13m8s</span><br>
+- "So, you know, just like any other streamer that gets banned for some stupid reason, <b>I immediately sent in an appeal.</b>" <span class="timestamp" data-time="813">13m33s</span><br>
+- <b>"It was rejected immediately."</b> <span class="timestamp" data-time="826">13m46s</span><br>
+- "So I sent in an email to support saying, hey, can you guys look into this? ..." <span class="timestamp" data-time="864">14m24s</span><br>
+- "Your account was suspended indefinitely due to fraudulent activity. In order to submit an appeal to our fraud team, <b>please submit a request to the Help Center.</b>" <span class="timestamp" data-time="962">16m2s</span><br>
+- "Are you stupid?" <span class="timestamp" data-time="1111">18m31s</span>"<br>
+- "Are you ready to see peak twitch, Staff?" <span class="timestamp" data-time="1241">20m41s</span><br>
+- "So I want you guys to know the past few weeks have been me sending in a ticket asking about my ban. Them saying that <b>they cannot further elaborate on my ban reason. Closing the ticket and then sending me a survey.</b>" <span class="timestamp" data-time="1299">21m39s</span><br>
+- "In the last month <b>I have had over 50 tickets with Twitch.</b>" <span class="timestamp" data-time="1342">22m22s</span><br>
+- "The <b>month of December</b> is easily more than I make in <b>all of the summer months combined.</b>" <span class="timestamp" data-time="1424">23m44s</span><br>
+- "Is the second I get my legal team involved with Twitch, <b>I get unbanned within seven days.</b>" <span class="timestamp" data-time="1456">24m16s</span><br>
+- "As I said before and I'll say it again, <b>I'm going to be focusing mostly on my YouTube content.</b>" <span class="timestamp" data-time="1666">27m46s</span><br>
+- "Again, <b>I will be multistreaming.</b>" <span class="timestamp" data-time="1710">28m30s</span><br>
+- "Shall we show that Twitchbytes our new model?" (She is showing the Doritos model to twitch.) <span class="timestamp" data-time="1993">33m13s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yes tomorrow we are going to <b>continue with warframe</b> i think we're going to be doing <b>the sacrifice.</b>" <span class="timestamp" data-time="3096">51m36s</span><br>
+- "We'll also do some <b>reddit review</b> and begin <b>reading some of the boyfriend applications</b> soon as well." <span class="timestamp" data-time="3119">51m59s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
