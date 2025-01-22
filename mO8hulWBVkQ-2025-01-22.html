@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 The Sacrifice - Return to Warframe 2025【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/mO8hulWBVkQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 The Sacrifice - Return to Warframe 2025【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 22/01/2025 | Duration: 4h10m30s |</strong>
+                <a href="https://www.youtube.com/watch?v=mO8hulWBVkQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Also, for those of you who are currently experiencing <b>winter weather conditions, please be safe y'all.</b>" <span class="timestamp" data-time="768">12m48s</span><br>
+- "I think the thing that you guys can look forward to the most is now <b>I can do things with my friends on stream.</b> That should be a lot of fun." <span class="timestamp" data-time="870">14m30s</span><br>
+- "Also chat, <b>I will be adding back all of the emotes slowly</b> but surely so you'll have those too." <span class="timestamp" data-time="908">15m8s</span><br>
+- "On a scale of one to 10, how cool am I? Now that I have 4 arms." <span class="timestamp" data-time="1333">22m13s</span><br>
+- <b>MOTHERv3 is not happy with twitch.</b> <span class="timestamp" data-time="1539">25m39s</span><br>
+- "I learned on Twitter that I was unbanned before I even learned from Twitch themselves." <span class="timestamp" data-time="1703">28m23s</span><br>
+- "They responded to the ticket that I sent in threatening legal action ..." <span class="timestamp" data-time="1776">29m36s</span><br>
+- "Hello Mother V3. Thank you for reaching out to us. It is ... " <span class="timestamp" data-time="1817">30m17s</span><br>
+- "You know what, Twitch? I know you're listening. How about your team conducts a <b>thorough investigation on this asshole?</b>" <span class="timestamp" data-time="1873">31m13s</span><br>
+- "There are people in my community that <b>got charged for Subs even though I was banned.That doesn't sound very legal, does it Twitch?</b>" <span class="timestamp" data-time="1984">33m4s</span><br>
+- "I know Twitch has a problem with Vtubers and I know that they are treated differently than other streamers, but I just want you guys to know that <b>I don't think this is the case in my situation.</b>" <span class="timestamp" data-time="2097">34m57s</span><br>
+- "Why did I just sound like a divorced mother that smokes cigarettes?" <span class="timestamp" data-time="2501">41m41s</span> <br>
+- "Hey guys, do you want me to go into a three hour spiel about why Warhammer 40K is the best series to ever grace this planet?" <span class="timestamp" data-time="2609">43m29s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Yeah, I want to do fashion frame tournaments for giveaways and stuff." <span class="timestamp" data-time="2808">46m48s</span> <br>
+- "OK, there we go., Hot tub stream." <span class="timestamp" data-time="2861">47m41s</span> <br>
+- "Are you fucking kidding me? I don't have time for that... And look at that one hour complete." <span class="timestamp" data-time="3293">54m53s</span> <br>
+- "Shut up, you look like 1 of Michelangelo's fuck ups., You bitch., Green marble looking ass skin." <span class="timestamp" data-time="6246">1h44m6s</span> <br>
+- "I swear, whenever I get ahold of you, Umbra, I'm gonna fuck your mom so hard." <span class="timestamp" data-time="8211">2h16m51s</span> <br>
+- "Also chat in the next day or so. <b>Look forward to another Warframe video on my YouTube channel.</b>" <span class="timestamp" data-time="12244">3h24m4s</span><br>
+- "Also, if you guys have ideas for the type of content you'd like to see in videos related to Warframe, we have a discord channel dedicated to recommendations that you have. I'd love to hear your thoughts there too." <span class="timestamp" data-time="12348">3h25m48s</span><br>
+</p>
+<!-- 📅 What’s Next?  -->
+<h3>📅 What’s Next? </h3>
+<p>- "But yes, next stream <b>we will look at the Reddit memes</b> on my subreddit and then <b>we will start the new war.</b>" <span class="timestamp" data-time="14699">4h4m59s</span><br>
+- "You have to wait <b>three days to finish the mech though.</b>" <span class="timestamp" data-time="14802">4h6m42s</span><br>
+- "I'm gonna lose my God damn fucking mind. This is so fucking bullshit..." <span class="timestamp" data-time="14840">4h7m20s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
