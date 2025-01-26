@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 The New War ENDING - 2025【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/TErnAeYkmO4?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 The New War ENDING - 2025【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 26/01/2025 | Duration: 4h17m34s |</strong>
+                <a href="https://www.youtube.com/watch?v=TErnAeYkmO4"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "What is up with my voice today? I think I really just must have overcharged my batteries." <span class="timestamp" data-time="452">7m32s</span><br>
+- <b>New Stream UI elements</b> : "So chat, you guys know how you always call me a Tamagotchi, right?" <span class="timestamp" data-time="572">9m32s</span><br>
+- "I think 100 bits refills it, but look check this out. See what happens when it goes below half." <span class="timestamp" data-time="619">10m19s</span><br>
+- "Chat look what happens when it goes below half." <span class="timestamp" data-time="737">12m17s</span><br>
+- <b>New Stream UI elements(Not fully operational) </b> : "I made one more thing to show you guys. It will copy any subscriber emojis that you guys use on Twitch." <span class="timestamp" data-time="1060">17m40s</span><br>
+- "Also, <b>if you have recommendations for other elements</b> I can create to make it look more like a Tamagotchi, <b>put it in the Bite recommendations text channel in my discord.</b>" <span class="timestamp" data-time="1321">22m1s</span><br>
+- "Pretty soon we are going to be <b>playing Keep Talking and nobody Explodes, but with A twist.</b>" <span class="timestamp" data-time="1520">25m20s</span><br>
+- "But I'm going to make a <b>waiting room with you bites in the discord</b>, and the moderators are going to <b>let you in one at a time to help me defuse the bomb.</b>" <span class="timestamp" data-time="1614">26m54s</span><br>
+- "Yes, I also don't want to show my face because I'm a 69 year old balding dude." <span class="timestamp" data-time="2485">41m25s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Also for some reason chat hear me out on this. Smash." <span class="timestamp" data-time="4370">1h12m50s</span> <br>
+- "Chad, I have something to tell you. Father V3." <span class="timestamp" data-time="4835">1h20m35s</span> <br>
+- "I'm way thicker than that. You're banned." <span class="timestamp" data-time="5684">1h34m44s</span> <br>
+- "I don't think it's supposed to be like this." <span class="timestamp" data-time="7105">1h58m25s</span> <br>
+- "Just so I don't spoil new bites. So Yep, let's go with the Lotus." <span class="timestamp" data-time="7600">2h6m40s</span> <br>
+- "Smash. Mommy." <span class="timestamp" data-time="7940">2h12m20s</span> <br>
+- "When am I gonna start playing? Bitch, are you stupid?" <span class="timestamp" data-time="8090">2h14m50s</span> <br>
+- "When is the pet play stream? I am not into pet play. Meow, meow, meow, meow, meow." <span class="timestamp" data-time="8285">2h18m5s</span> <br>
+- "Oh yo-yo yo-yo yo-yo yo-yo yo-yo" <span class="timestamp" data-time="10730">2h58m50s</span> <br>
+- "I know a lot of people, especially when they go through surgeries and stuff like that..." <span class="timestamp" data-time="12302">3h25m2s</span> <br>
+- "Wait, the stream is only 720P for you is it? It should be 1080P. What the fuck?" <span class="timestamp" data-time="13567">3h46m7s</span> <br>
+- "I just use transference on a fucking dragon.Holy shit this is the best game ever." <span class="timestamp" data-time="13975">3h52m55s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "We'll probably do some farming and then do Angels of Zariman." <span class="timestamp" data-time="15003">4h10m3s</span><br>
+- "We could always do some prime farming with chat, I know you guys like that." <span class="timestamp" data-time="15016">4h10m16s</span><br>
+- "Also chat, I am setting up a day with Mooney so we could do a Warframe fashion frame contest where her and I both judge your warframes." <span class="timestamp" data-time="15040">4h10m40s</span><br>
+- "Also chats I will start announcing in the discord whenever I am prime farming off stream." <span class="timestamp" data-time="15096">4h11m36s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
