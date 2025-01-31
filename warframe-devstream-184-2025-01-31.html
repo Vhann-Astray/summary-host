@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 Devstream 184 React  Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/0VMuTS7w_Eo?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 Devstream 184 React </h2>
+            <p class="centered-text">
+                <strong>Date: 31/01/2025 | Duration: 1h51m36s |</strong>
+                <a href="#"><strong>Youtube Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Gameplay Updates -->
+<h3>🎮 Gameplay Updates</h3>
+<p>- New Nightwave <span class="timestamp" data-time="2429">40m29s</span>  <br>
+- Belly of the Beast Rerun <span class="timestamp" data-time="2580">43m</span>  <br>
+- New Prime Warframe <span class="timestamp" data-time="2688">44m48s</span>  <br>
+- Echos of 1999 <span class="timestamp" data-time="3081">51m21s</span>  <br>
+- Infested Lich (Coda Weapons) <span class="timestamp" data-time="3547">59m7s</span>  <br>
+- Anti-virus Mod (Lich Hunting) <span class="timestamp" data-time="3830">1h3m50s</span>  <br>
+- Upcoming Weapons <span class="timestamp" data-time="4951">1h22m31s</span>  <br>
+- New Warframe <span class="timestamp" data-time="6405">1h46m45s</span><br>
+</p>
+<!-- 🎮 Cosmetic Updates -->
+<h3>🛍️ Cosmetic Updates</h3>
+<p>- Rhino Heirloom <span class="timestamp" data-time="2130">35m30s</span>  <br>
+- New Operator/Drifter Hair <span class="timestamp" data-time="3215">53m35s</span>  <br>
+- New Drifter/Operator Outfit <span class="timestamp" data-time="3395">56m35s</span>  <br>
+- Cosmetic Reward (Lich) <span class="timestamp" data-time="4446">1h14m6s</span>  <br>
+- Gyre Deluxe <span class="timestamp" data-time="5046">1h24m6s</span>  <br>
+- New Dojo Stuff <span class="timestamp" data-time="5220">1h27m</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
