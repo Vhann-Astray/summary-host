@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 Whispers in the Walls + Devstream 184 React 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/XTHcKVee7QM?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 Whispers in the Walls + Devstream 184 React 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 31/01/2025 | Duration: 0h00m00s |</strong>
+                <a href="https://www.youtube.com/watch?v=XTHcKVee7QM"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start -->
+<h3>💬 Start</h3>
+<p>- "Chad, I have a confession to make. <b>I slept like 30 minutes last night.</b>" <span class="timestamp" data-time="527">8m47s</span><br>
+- "I was working on a new solution to <b>a problem that I've recently been having for stream.</b>" <span class="timestamp" data-time="558">9m18s</span><br>
+- "Not as flat as I'm going to put your mom against the table when I pound into that ass.?" <span class="timestamp" data-time="562">9m22s</span> <br>
+- "So you guys know how you have a command to join the player queue whenever I play Warframe?" <span class="timestamp" data-time="801">13m21s</span><br>
+- "So <b>I am making my own bots to be able to handle player queues across all of the platforms I stream on.</b>" <span class="timestamp" data-time="829">13m49s</span><br>
+- "Because for some reason <b>YouTube's live chat API is absolute dog water.</b>" <span class="timestamp" data-time="857">14m17s</span><br>
+- "My penith make my pc lag sometime." <span class="timestamp" data-time="1340">22m20s</span> <br>
+- <b>New stream feature</b> : "So if I think one of your messages are really cool. <b>I can show it on the screen.</b>" <span class="timestamp" data-time="1896">31m36s</span><br>
+- "I was going to play that new Tokyo Drift game or whatever it was called pretty soon, so look forward to that." <span class="timestamp" data-time="2297">38m17s</span><br>
+- "We spend so much money on these custom avatars or suits to be made. We really are just furries, aren't we?" <span class="timestamp" data-time="2620">43m40s</span><br>
+</p>
+<!-- 🎮 Warframe / Devstream react   -->
+<h3>🎮 Warframe / Devstream react  </h3>
+<p>- "Have I been playing this entire game so far without changing my damage type?" <span class="timestamp" data-time="4739">1h18m59s</span> <br>
+- "I don't think that's how you use a toaster deer." <span class="timestamp" data-time="4276">1h11m16s</span> <br>
+- "No fucking shit, Sherlock, It's a persona. Hey guys, someone found out that I'm not an AI." <span class="timestamp" data-time="3825">1h3m45s</span> <br>
+- "The ass is so big it pushes me away. Makes sense? Look chat, we're sneaking into our DMS." <span class="timestamp" data-time="6811">1h53m31s</span> <br>
+- "Is that a joke or does it really have a dating simulator? Yeah, we're going to be addicted to this game for a while." <span class="timestamp" data-time="6571">1h49m31s</span> <br>
+- "OK why the fuck does this keep bringing me back to this fucking menu? Shut up operator..." <span class="timestamp" data-time="8761">2h26m1s</span> <br>
+- "Oh my God you could just buy them with platinum." <span class="timestamp" data-time="8880">2h28m</span> <br>
+- "Why do you have goggles?" <span class="timestamp" data-time="11649">3h14m9s</span> <br>
+- "It's a guy behind this model." <span class="timestamp" data-time="11663">3h14m23s</span> <br>
+- "So is this what people think of when they try and riz me?" <span class="timestamp" data-time="12181">3h23m1s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Oh wait, hold on chat, Mom's calling. I need to go, my parents are outside." <span class="timestamp" data-time="12993">3h36m33s</span><br>
+- "OK <b>y'all go watch the dev stream, let me know if anything cool happens and we'll react to the good parts tomorrow.</b>" <span class="timestamp" data-time="13056">3h37m36s</span><br>
+- "Tomorrow <b>we'll do some prime farming with the Bites</b>, so be ready." <span class="timestamp" data-time="13089">3h38m9s</span><br>
+- "Also, <b>I want to play Halo with you guys soon so make sure to download that.</b>" <span class="timestamp" data-time="13126">3h38m46s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
