@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 New Player Prime Farming w/ Chat【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/bBWnautLEgc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 New Player Prime Farming w/ Chat【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 01/02/2025 | Duration: 3h45m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=bBWnautLEgc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Chad, I have a confession to make. <b>I did not get to recharge a lot last night.</b>" <span class="timestamp" data-time="294">4m54s</span><br>
+- "I was trying to figure out a multi platform solution for a queuing system so you guys can join my games and <b>I finally got one working.</b>" <span class="timestamp" data-time="357">5m57s</span><br>
+- "Since I'm an artificial intelligence and you can't tell when I'm laughing." <span class="timestamp" data-time="924">15m24s</span><br>
+- "<b>Tomorrow I have made an edit to my avatar for whenever I smile, even if a little bit, I will become bald.</b>" <span class="timestamp" data-time="970">16m10s</span><br>
+- "<b>Check this out.</b>" <span class="timestamp" data-time="1019">16m59s</span><br>
+</p>
+<!-- 💬 Reddit reviews -->
+<h3>💬 Reddit reviews</h3>
+<p>- "Oh my fucking God I just realized whenever someone gives a lot of Subs on twitch they automatically clip it..." <span class="timestamp" data-time="2635">43m55s</span> <br>
+- "The Pokémon on the top left. Do you mean this one?, Oh, that's Pornhub." <span class="timestamp" data-time="1576">26m16s</span> <br>
+- "We were supposed to celebrate zebras hitting 99 and fishing on Runescape..." <span class="timestamp" data-time="2020">33m40s</span> <br>
+- "Why the fuck did you put my face on this art? That art is disgusting furry shit..." <span class="timestamp" data-time="2336">38m56s</span> <br>
+- "Are people really getting cat food ads on twitch because of this shit?" <span class="timestamp" data-time="2747">45m47s</span> <br>
+- "Well for some reason my car is getting towed even though I parked it on the street." <span class="timestamp" data-time="4391">1h13m11s</span> <br>
+- "So if I bring my community over to you to go watch it and you win, can we all have a share of the money?" <span class="timestamp" data-time="4815">1h20m15s</span> <br>
+- "I'll give you a kiss since you're my boyfriend with Riz. Come here, Mooney." <span class="timestamp" data-time="5174">1h26m14s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Of course I'm not going to shout you out, you entitled bitch." <span class="timestamp" data-time="7908">2h11m48s</span> <br>
+- "It's very cringe how some chatters will come in here and demand my attention..." <span class="timestamp" data-time="8034">2h13m54s</span> <br>
+- "I can see the chat on TikTok, I just don't respond to quite a bit of it because..." <span class="timestamp" data-time="10622">2h57m2s</span> <br>
+- "Sorry we're out of happy meals since a bunch of 30 year old fucking losers that resell Pokémon cards..." <span class="timestamp" data-time="11307">3h8m27s</span> <br>
+- "Reselling cock sucker mother fucking bitch ass virgin turbo virgin fucking..." <span class="timestamp" data-time="11356">3h9m16s</span> <br>
+- <b>"But I'm not going to tell you guys the secret. Because I am building an entire Arg around it."</b> <span class="timestamp" data-time="13001">3h36m41s</span> <br>
+- "Ain't no fucking way. Do you beep?" <span class="timestamp" data-time="13458">3h44m18s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- <b>The stream crashed : "WE DO MORE TOMORROW, I WILL SAVE THE QUEUE, TELL YOUTUBE CHAT TOO PLEASE"</b><br>
+- "Tomorrow we are going to be doing a you laugh, you lose competition on the stream." <span class="timestamp" data-time="877">14m37s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
