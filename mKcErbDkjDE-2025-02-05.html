@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 Plat Farming For Baro Ki'Teer 2025【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/mKcErbDkjDE?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 Plat Farming For Baro Ki'Teer 2025【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 05/02/2025 | Duration: 4h35m11s |</strong>
+                <a href="https://www.youtube.com/watch?v=mKcErbDkjDE"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Remember chat this <b>Friday we are having a Warframe Fashion Frame contest on the stream.</b>" <span class="timestamp" data-time="478">7m58s</span><br>
+- "I have another huge confession to make. So I was looking at some of the cutscenes from the new update to Destiny..." <span class="timestamp" data-time="652">10m52s</span><br>
+- "Somebody please convince me not to buy it. Please. I'm trying to get over my addiction to that shitty ass game." <span class="timestamp" data-time="685">11m25s</span><br>
+- "It's like a bad relationship that you just keep going back to." <span class="timestamp" data-time="825">13m45s</span><br>
+</p>
+<!-- 🎥 React -->
+<h3>🎥 React</h3>
+<p>- Looking at Destiny trailer <span class="timestamp" data-time="1178">19m38s</span><br>
+- All trailers Warframe prime <span class="timestamp" data-time="1592">26m32s</span><br>
+- "Wait a second, isn't this one of the first Gooner primes they made?" <span class="timestamp" data-time="1935">32m15s</span> <br>
+- "Mooney use quick attack. It was super effective." <span class="timestamp" data-time="2137">35m37s</span><br>
+</p>
+<!-- 🎮 Animal Well   -->
+<h3>🎮 Animal Well  </h3>
+<p>- "Vhann, thank you for the gifted sub 2V3 is into pet play. Stupid duck." <span class="timestamp" data-time="4130">1h8m50s</span> <br>
+- "I didn't get scared. You got scared." <span class="timestamp" data-time="5319">1h28m39s</span> <br>
+- "I could save this. It's OK, Chad, I can save this. Oh my God, I actually did it." <span class="timestamp" data-time="6074">1h41m14s</span> <br>
+- "Lol you are bad at this. Shut the fuck up dumb ass." <span class="timestamp" data-time="7617">2h6m57s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Oh, you want it bigger?" <span class="timestamp" data-time="8906">2h28m26s</span> <br>
+- "Oh my God, I was about to time you out." <span class="timestamp" data-time="9598">2h39m58s</span> <br>
+- "OK, who broke my game?" <span class="timestamp" data-time="9865">2h44m25s</span> <br>
+- "The moaning is mostly charny. You get to listen to us bitch and gripe and moan." <span class="timestamp" data-time="9685">2h41m25s</span> <br>
+- "Yeah, somebody tried to buy a boat with my credit card last time I showed the number." <span class="timestamp" data-time="10225">2h50m25s</span> <br>
+- "Oh my gosh, Kayla Cat, I was about to ban you." <span class="timestamp" data-time="11740">3h15m40s</span> <br>
+- "Chat, you're so smart. You're like the smartest people I know." <span class="timestamp" data-time="13595">3h46m35s</span> <br>
+- "And don't worry, <b>I'll update you guys on Grandpa V3.</b>" <span class="timestamp" data-time="15714">4h21m54s</span><br>
+- "You guys actually know who cyan is? You've already met him before..." <span class="timestamp" data-time="16117">4h28m37s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Remember that <b>Friday we are going to have our Fashion Frame contest.</b>" <span class="timestamp" data-time="16212">4h30m12s</span><br>
+- "The winner will win <b>$100 in Platinum.</b>" <span class="timestamp" data-time="16231">4h30m31s</span><br>
+- "We'll also have some <b>consolation prizes for 2nd, 3rd and 4th place.</b>" <span class="timestamp" data-time="16242">4h30m42s</span><br>
+- "You stupid ass bitch, I have a nose..." <span class="timestamp" data-time="16312">4h31m52s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
