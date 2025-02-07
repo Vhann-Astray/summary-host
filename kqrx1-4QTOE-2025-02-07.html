@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 $100 PLAT FAHIONFRAME CONTEST - NEW UPDATE 2025 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/kqrx1-4QTOE?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 $100 PLAT FAHIONFRAME CONTEST - NEW UPDATE 2025 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 07/02/2025 | Duration: 2h43m50s |</strong>
+                <a href="https://www.youtube.com/watch?v=kqrx1-4QTOE"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- The Return of the Funko Pop! (for a little) "Also, hello bites, welcome in. Welcome in. I missed you all." <span class="timestamp" data-time="445">7m25s</span><br>
+- The Return of the CyberDemonV3 Model "Hello Chat. Did you guys miss this model?" <span class="timestamp" data-time="772">12m52s</span><br>
+- "Because they're stuck in your mom. Boom, got them. Lumbers though." <span class="timestamp" data-time="934">15m34s</span> <br>
+- "Yes. So I went outside. But don't worry, it's not because I wanted to. It's because I ran out of things to drink." <span class="timestamp" data-time="1093">18m13s</span><br>
+- "So I was like, I really, really want some canned tuna. So I bought some as well as some soda and I left the store." <span class="timestamp" data-time="1521">25m21s</span><br>
+- "Do you guys want to know when it expired? Here's the crazy thing. It wasn't expired. It was cat food." <span class="timestamp" data-time="1857">30m57s</span><br>
+- "You guys are going to give me all these Subs and then you're going to refund them so you can get me banned for fraud again." <span class="timestamp" data-time="2585">43m5s</span><br>
+- "So I got <b>banned on TikTok for seven days</b> because they said I was playing an inappropriate and violent video game. <b>It was Warframe.</b>" <span class="timestamp" data-time="2883">48m3s</span><br>
+- "So I don't know if you guys knew this, but there is a discord server specifically meant for partnered streamers." <span class="timestamp" data-time="3049">50m49s</span><br>
+- "Oh yeah, since some people say that they've never noticed it. Look, I have whiskers." <span class="timestamp" data-time="3725">1h2m5s</span> <br>
+- "Before we start, can we get a <b>round of applause for everyone that sent in their fashion frames?</b>" <span class="timestamp" data-time="3969">1h6m9s</span><br>
+- "Look, chat, there she is. Life-size Mooney." <span class="timestamp" data-time="4395">1h13m15s</span> <br>
+- "You guys want me to shake the baby?" <span class="timestamp" data-time="4435">1h13m55s</span> <br>
+- <b>"We've already had a baby. His name's Victor."</b> <span class="timestamp" data-time="4612">1h16m52s</span> <br>
+- "Do you guys want to hear a story about Mooney and how she pissed me off yesterday?" <span class="timestamp" data-time="4762">1h19m22s</span><br>
+</p>
+<!-- 💬 Warframe Fashion Contest -->
+<h3>💬 Warframe Fashion Contest</h3>
+<p>- Starting of the contest <span class="timestamp" data-time="5767">1h36m7s</span><br>
+- <b>I'll include all the timestamps for everyone, along with all the pings for your moments, in the next discord post!</b><br>
+- "Actually, you know what? Is Charney here? Charlie, would it be too much trouble to <b>round up everyone that participated to get them a cool role on Discord?</b>" <span class="timestamp" data-time="8760">2h26m</span> <br>
+- "It's a man boob. a mooob." <span class="timestamp" data-time="9120">2h32m</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Also, a lot of people were saying that <b>they want to see me play some Warframe 1999. We could start that tomorrow.</b>" <span class="timestamp" data-time="9222">2h33m42s</span><br>
+- "If you guys really liked today's tournament, I have <b>another one coming up very, very soon</b>. Do you want to know the theme?" <span class="timestamp" data-time="9267">2h34m27s</span><br>
+- "I don't know if you've seen the channel, but you are <b>able to create your own bite.</b>" <span class="timestamp" data-time="9339">2h35m39s</span><br>
+- "We're going to have a <b>tournament soon. To see which one of them is the coolest.</b>" <span class="timestamp" data-time="9404">2h36m44s</span><br>
+- "Sorry it was so short today. I'll let you guys know the <b>updates about Grandpa V3 though.</b>" <span class="timestamp" data-time="9585">2h39m45s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
