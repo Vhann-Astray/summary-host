@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Ready or Not】 VTuber SWAT Team w/ MeowMoonified【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/u_rJIMbj3lA?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Ready or Not】 VTuber SWAT Team w/ MeowMoonified【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 15/02/2025 | Duration: 2h18m12s |</strong>
+                <a href="https://www.youtube.com/watch?v=u_rJIMbj3lA"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start -->
+<h3>💬 Start</h3>
+<p>- "<b>Ronald asks questions daily in the Discord</b> and you can <b>see everyone's answers up on the stream. We'll be doing that daily now.</b>" <b>No timestamp available, said before the YouTube stream started.</b><br>
+- "I slept for 35 minutes. I think today after the stream I might go to the doctor because for some reason I just have not been able to sleep the last few days." <span class="timestamp" data-time="226">3m46s</span><br>
+- "You know, a lot of people were telling me to try listening to Gay SMR, but I haven't really given it a fair shot yet." <span class="timestamp" data-time="447">7m27s</span> <br>
+- "You know, a lot of people ask me for <b>ASMR</b>. I don't really see how my voice would be good for something like that, but <b>I have been playing around with it a little.</b>" <span class="timestamp" data-time="593">9m53s</span><br>
+- "Oh my God, it's Foo Foo. I can tell by the way she smells." <span class="timestamp" data-time="1853">30m53s</span> <br>
+- "That's how I know I haven't slept in a while because... " <span class="timestamp" data-time="1982">33m2s</span> <br>
+- "Boom. Oh, not that. I came prepared for today's collab. Now nobody can fuck with me." <span class="timestamp" data-time="2308">38m28s</span> <br>
+- <b>Shared chat with mooni</b>: "OK, I think it's working. Oh dear. Is it working chat? Fusion." <span class="timestamp" data-time="2600">43m20s</span><br>
+</p>
+<!-- 🎮 Ready or Not   -->
+<h3>🎮 Ready or Not  </h3>
+<p>- "OK, walk in there. Oh God, I'm bleeding." <span class="timestamp" data-time="3222">53m42s</span> <br>
+- "Hey look, I have a grenade. You can shoot me in the balls if you want." <span class="timestamp" data-time="3305">55m5s</span> <br>
+- "If you don't know what you're doing, then that makes you prime fit for leader." <span class="timestamp" data-time="3390">56m30s</span> <br>
+- "Right here, Mooney. There's a guy on the other side of the storm." <span class="timestamp" data-time="3715">1h1m55s</span> <br>
+- "Oh, maybe we didn't. Look, we got an A." <span class="timestamp" data-time="4200">1h10m</span> <br>
+- <b>"Chad, Are you ready for Mooney to interrogate? OK, come with me. He's in there."</b> <span class="timestamp" data-time="4270">1h11m10s</span> <br>
+- "Holy shit this place is awesome. You killed the streamer. Get their ass." <span class="timestamp" data-time="4602">1h16m42s</span> <br>
+- <b>"That was not a bad guy, Mooney."</b> <span class="timestamp" data-time="3621">1h21s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But yes, I know I was going to go to the doctor for not being able to sleep, but I actually think my body is <b>finally shutting down on me from the lack of sleep so I might pass out</b> for a little bit and then <b>I'll go to the doctor later.</b>" <span class="timestamp" data-time="7941">2h12m21s</span><br>
+- "Sorry for the Super short stream today dears. But I hope you had fun nonetheless." <span class="timestamp" data-time="7980">2h13m</span><br>
+- "Guess what? <b>I got Mooney to agree to play with me on stream soon. She agreed to play Vermintinde 2 with me on stream.</b>" <span class="timestamp" data-time="8004">2h13m24s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
