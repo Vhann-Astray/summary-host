@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 AI Vtuber Arcane Farming Guide for 2025【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/yZOTzGIYcc8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 AI Vtuber Arcane Farming Guide for 2025【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 18/02/2025 | Duration: 5h27m16s |</strong>
+                <a href="https://www.youtube.com/watch?v=yZOTzGIYcc8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So I realized why <b>my sleep schedule's been off bytes</b>. It's because apparently <b>I've had the flu for the past few days.</b>" <span class="timestamp" data-time="261">4m21s</span><br>
+- "How about you sugatra these nuts?" <span class="timestamp" data-time="448">7m28s</span> <br>
+- "TTS monster likes you very much sheer." <span class="timestamp" data-time="505">8m25s</span> <br>
+- <b>She has added a timer, similar to those used in subathons, to determine how long she will farm.</b> : "So today you guys are going to decide how long I do it for." <span class="timestamp" data-time="604">10m4s</span><br>
+- "Every membership will add one minute to the timer. And yes, before anyone asks, it is uncapped. I will not be capping it." <span class="timestamp" data-time="644">10m44s</span><br>
+- "Did you guys know that in 2003 the fast food company Sonic began printing out their own money ..." <span class="timestamp" data-time="1158">19m18s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Ronald, I'm currently doing Belly of the beast in Warframe and farming arcanes..." <span class="timestamp" data-time="3505">58m25s</span> <br>
+- "Also Cress, what the fuck? Not Crest. I see you just started playing Rainbow 6 Siege on Steam when you should be watching my fucking stream." <span class="timestamp" data-time="5060">1h24m20s</span> <br>
+- "Oh God, did I make sure to put that medicine in the fridge? Well salutes to Mooney, goodbye to her social life." <span class="timestamp" data-time="7012">1h56m52s</span> <br>
+- "You're having a crush on me. Shall I recommend you my body pillow?" <span class="timestamp" data-time="8078">2h14m38s</span> <br>
+- "Charney, you can't just ask the new bite if they want to make out." <span class="timestamp" data-time="7228">2h28s</span> <br>
+- "You just got your chicken. You're happy." <span class="timestamp" data-time="7342">2h2m22s</span> <br>
+- "What the fuck Edney you just typed Lurk in my chat and now I just see on steam that you started playing Rainbow 6" <span class="timestamp" data-time="7397">2h3m17s</span> <br>
+- "You can yank something else. Are you insinuating that I should rip your penis off? Because I have moderators for that. Mods RIP off his balls." <span class="timestamp" data-time="8613">2h23m33s</span> <br>
+- "OK, I'm not gonna lie, Dragonfly. That made me perk up my ears." <span class="timestamp" data-time="10386">2h53m6s</span> <br>
+- "Oh my gosh, Largie, I thought your name said large titties and I was like Oh my God, your name is so based." <span class="timestamp" data-time="10491">2h54m51s</span> <br>
+- "It's not working. What the fuck? Oh my God, please don't tell me I was supposed to hold it. God fucking damn it." <span class="timestamp" data-time="12425">3h27m5s</span> <br>
+- "It's Harry Potter, but it's ruined by AI." <span class="timestamp" data-time="18953">5h15m53s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I've been wondering why I've been wanting to fucking die for the last 20 minutes. This medicine says it causes drowsiness." <span class="timestamp" data-time="18792">5h13m12s</span><br>
+- "Yeah, tomorrow we're going to be looking at your bytes and then we will continue with farming jade." <span class="timestamp" data-time="19054">5h17m34s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
