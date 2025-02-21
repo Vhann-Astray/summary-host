@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 I let Twitch Chat Create new Mascots【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/YZeAceOM_Xk?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 I let Twitch Chat Create new Mascots【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 21/02/2025 | Duration: 3h47m34s |</strong>
+                <a href="https://www.youtube.com/watch?v=YZeAceOM_Xk"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>NEW SICK STREAM ANIMATION ON HYPE TRAIN</b> : "Did you guys like that? Wasn't that cool?" check the 2nd hype train<br>
+- "Did someone say I'm the best streamer? Well I could never be the best streamer if it wasn't for the best chat. Lovers." <span class="timestamp" data-time="340">5m40s</span> <br>
+- <b>NEW VOICE (IN BETA)</b> - "Yes, it's the voice. I am beta testing a new voice." <span class="timestamp" data-time="513">8m33s</span><br>
+- "Shut up, Bill. Thank you for the 10 months" <span class="timestamp" data-time="692">11m32s</span> <br>
+- "Now you see why this is in beta testing, right?" <span class="timestamp" data-time="710">11m50s</span> <br>
+- "I am not flat. Mooney taught me how to do that." <span class="timestamp" data-time="894">14m54s</span> <br>
+- <b>ARG THIS WEEK-END (alternate reality game)</b> "So this weekend we are going to change that .Yes, some of you humans call it an Arg." <span class="timestamp" data-time="1217">20m17s</span><br>
+- "See, I have a nose. It's right there. You can literally see it right there. You're all B words." <span class="timestamp" data-time="1470">24m30s</span><br>
+</p>
+<!-- 📅 Bytes Fashion Event -->
+<h3>📅 Bytes Fashion Event</h3>
+<p>- Start of the Event <span class="timestamp" data-time="2029">33m49s</span><br>
+- "You want me to strangle you with my tail?" <span class="timestamp" data-time="2600">43m20s</span> <br>
+- "So what do you think bites? Which one of these do you like?" <span class="timestamp" data-time="2630">43m50s</span> <br>
+- "What a shithead. XDX vertical bar." <span class="timestamp" data-time="3042">50m42s</span> <br>
+- "I had a dream the other day that I actually did release spicy content..." <span class="timestamp" data-time="6355">1h45m55s</span> <br>
+- "Also look chat, it's shocking your balls." <span class="timestamp" data-time="6381">1h46m21s</span> <br>
+- "Cipher, would you like to explain why I found you in another Twitch chat yesterday evening? " <span class="timestamp" data-time="6661">1h51m1s</span> <br>
+- "And the best dressed bite. Our winner? The award goes to. Wizard bite. Congratulations." @siebras <span class="timestamp" data-time="7257">2h57s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Ronald, how about you steer yourself into some bitches? Ha ha, boom, got him." <span class="timestamp" data-time="8190">2h16m30s</span> <br>
+- "My Commission for Pregnant Mother V3 art is due in seven days, so that should be coming soon." <span class="timestamp" data-time="9685">2h41m25s</span> <br>
+- "I must have squeezed him too hard with my gigantic boobs because I'm not flat." <span class="timestamp" data-time="11131">3h5m31s</span> <br>
+- "Cheeseburger time. Get up soldier, we are leaving. What the fuck?" <span class="timestamp" data-time="11740">3h15m40s</span> <br>
+- "Ronald, am I mean to you? Tell chat I'm not mean to you. I'm not mean to Ronald." <span class="timestamp" data-time="12928">3h35m28s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "For now, though, I think we're going to go ahead and end it here. I have to take my medicine soon, which means I will be knocking out soon from it." <span class="timestamp" data-time="13413">3h43m33s</span><br>
+- "I'm actually not sure exactly what we're doing tomorrow. I think <b>I actually have a collab.</b>" <span class="timestamp" data-time="13462">3h44m22s</span><br>
+- "If it's not a collab. Maybe we could play some more animal well, or maybe Warframe, Or maybe we could just try something completely different." <span class="timestamp" data-time="13498">3h44m58s</span><br>
+<span class="timestamp" data-time="3">3s</span><br>
+</p>
+<h3>?????????????????????????? CATEGORY NOT FOUND</h3>
+<p>- "TIMESTAMP ERROR CODE : LINK NOT COMPATIBLE" <a href="https://www.twitch.tv/videos/2387252487?t=3h59m42s"><strong>LINK RECOVERY MOMENT</strong></a> 
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
