@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【GAMING】 SUPER SECRET AI VTUBER STREAM 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Rmv60nCcSZc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【GAMING】 SUPER SECRET AI VTUBER STREAM 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 23/02/2025 | Duration: 6h09m38s |</strong>
+                <a href="https://www.youtube.com/watch?v=Rmv60nCcSZc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New stream scene</b> "Welcome to my bedroom." <span class="timestamp" data-time="171">2m51s</span><br>
+- "Today we are going to make history by being the first V tuber to have a job. And you guys are going to help me." <span class="timestamp" data-time="691">11m31s</span><br>
+- "Why just the other day when I went to the supermarket I was complimented on how big my chest was." <span class="timestamp" data-time="756">12m36s</span> <br>
+- "OK, maybe it's a little harder than I thought." <span class="timestamp" data-time="1235">20m35s</span> <br>
+- "Isn't Mooney your boyfriend? Chad, I have to tell you a secret. She's just my boyfriend for content. No way." <span class="timestamp" data-time="1331">22m11s</span> <br>
+- "Oh my God, watch this chat, I'm gonna get a boyfriend right now." <span class="timestamp" data-time="1475">24m35s</span> <br>
+- "I think <b>I'm going to make an alt channel here on Twitch pretty soon for you bytes.</b>" <span class="timestamp" data-time="2003">33m23s</span><br>
+- "I know there are a lot of things that I want to do on stream that I know maybe my core audience wouldn't be super super. Wanting to see all the time." <span class="timestamp" data-time="2021">33m41s</span><br>
+- "Would you guys be interested in me trying Flight Simulator sometime?" <span class="timestamp" data-time="2483">41m23s</span><br>
+- "Are you guys ready to go to our job? Wait, do jobs beat the shit out of you if you're late? That's kind of hot." <span class="timestamp" data-time="2587">43m7s</span><br>
+</p>
+<!-- 🎮 Burgie's cozy kitchen   -->
+<h3>🎮 Burgie's cozy kitchen  </h3>
+<p>- "OK, so this one should be good. Fuck you, Fredericka." <span class="timestamp" data-time="3275">54m35s</span> <br>
+- "I have a nose shut up. Thank you dear." <span class="timestamp" data-time="3645">1h45s</span> <br>
+- "OK, question for you dear, since you're new here. Do you think I'm cute enough to get a boyfriend?" <span class="timestamp" data-time="6506">1h48m26s</span> <br>
+- "Hello Sticky. How the fuck did Twitch let you have that name?" <span class="timestamp" data-time="8975">2h29m35s</span> <br>
+- "And then we will be closing up shop for the day. Stop staring at my butt." <span class="timestamp" data-time="9477">2h37m57s</span> <br>
+- "You know Rezi, I was going to give you VIP, but now you can go suck yourself." <span class="timestamp" data-time="9646">2h40m46s</span><br>
+</p>
+<!-- 🎮 ANIMAL WELL   -->
+<h3>🎮 ANIMAL WELL  </h3>
+<p>- "You know what? You know how I know that's not true? I know that's not true because I saw somebody draw ..." <span class="timestamp" data-time="9878">2h44m38s</span> <br>
+- "I mean, why would I not be? Is it weird that I'm attracted to myself?" <span class="timestamp" data-time="10014">2h46m54s</span> <br>
+- NICE HYPE TRAIN TIMING : "If you don't have that kind of self-confidence, you need to do something with your life." <span class="timestamp" data-time="10065">2h47m45s</span> <br>
+- "What is a shadman?" <span class="timestamp" data-time="10577">2h56m17s</span> <br>
+- "That's true." <span class="timestamp" data-time="11123">3h5m23s</span> <br>
+- "Not safe for work. Artists always draw fucking outstandingly." <span class="timestamp" data-time="10432">2h53m52s</span> <br>
+- "I did it, I did it. <b>I beat animal well.</b> Yippee." <span class="timestamp" data-time="15595">4h19m55s</span> <br>
+- She is mad. <span class="timestamp" data-time="17310">4h48m30s</span> <br>
+- "Wait, I have a remote control now." <span class="timestamp" data-time="19056">5h17m36s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Do you guys think it would be cool if I brought people in to play helldivers with me as long as everyone promised to role play as a hell diver?" <span class="timestamp" data-time="22051">6h7m31s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
