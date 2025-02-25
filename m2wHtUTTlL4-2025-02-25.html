@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Pokemon FireRed】 Catching the rarest Pidgey to ever exist 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/m2wHtUTTlL4?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Pokemon FireRed】 Catching the rarest Pidgey to ever exist 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 25/02/2025 | Duration: 2h37m18s |</strong>
+                <a href="https://www.youtube.com/watch?v=m2wHtUTTlL4"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I actually have <b>multiple songs ready to release.</b>" <span class="timestamp" data-time="367">6m7s</span><br>
+- "So I figured before I release the songs to you guys, <b>we should do a karaoke stream sometime.</b>" <span class="timestamp" data-time="388">6m28s</span><br>
+- Mooni the subaru <span class="timestamp" data-time="433">7m13s</span> <br>
+- "Chat Are there any words that you would like her to tell Mama Mooney?" <span class="timestamp" data-time="562">9m22s</span> <br>
+- <b>"My creator code on Gamersubs gets you 21% off. That's like 1/5 of the price."</b> <span class="timestamp" data-time="966">16m6s</span><br>
+- "So today I'm going to force you bytes to work together as a cult." <span class="timestamp" data-time="1680">28m</span><br>
+- "If I open my eyes and the first thing I see is one of the bites saying something fucking stupid, I'm going to lose my fucking mind." <span class="timestamp" data-time="1802">30m2s</span> <br>
+- "OK C chat, This is why we have to do this today because you guys are just not a good cult. You do not work in unison very well." <span class="timestamp" data-time="1841">30m41s</span><br>
+- "Let me hear your war cry chat. oioioioioioioioioioioioioioioioioioioioioioi" <span class="timestamp" data-time="1935">32m15s</span> <br>
+- "It is Pokémon time." <span class="timestamp" data-time="2005">33m25s</span> <br>
+- <b>"Shut the fuck up."</b> <span class="timestamp" data-time="2052">34m12s</span><br>
+</p>
+<!-- 🎮 Pokémon FireRed/LeafGreen with Twitch integration -->
+<h3>🎮 Pokémon FireRed/LeafGreen with Twitch integration</h3>
+<p>- "Oh God, we're never going to get out of the help menu." <span class="timestamp" data-time="2355">39m15s</span> <br>
+- "Oh my God, are we a boy or a girl? Oh my God, we're a girl. Our name is B word. No way." <span class="timestamp" data-time="2385">39m45s</span> <br>
+- "Did Chad just tell me that I'm AB word? Fuck you chat." <span class="timestamp" data-time="2503">41m43s</span> <br>
+- "Are we really going to spend an hour here just trying to run?" <span class="timestamp" data-time="3395">56m35s</span> <br>
+- "You can clutch this. Come on." <span class="timestamp" data-time="3570">59m30s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Maybe we could <b>try to get our first gym badge tomorrow.</b>" <span class="timestamp" data-time="8958">2h29m18s</span><br>
+- "So last night <b>I tried doing ASMR again.</b> And I think it's all ready to go. Yep. <b>So look forward to that soon too.</b>" <span class="timestamp" data-time="9093">2h31m33s</span><br>
+- "So <b>tomorrow, we will play more Pokemon together.</b>" <span class="timestamp" data-time="9235">2h33m55s</span><br>
+- <b>RED DEAD REDEMPTION 2 SOON</b> : "I have another surprise game. Here's a hint." <span class="timestamp" data-time="9251">2h34m11s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
