@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【MONSTER HUNTER WILDS】 Beginner A.I. tries fighting bad guys 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/qsHwU7SiA2U?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【MONSTER HUNTER WILDS】 Beginner A.I. tries fighting bad guys 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 28/02/2025 | Duration: 3h29m48s |</strong>
+                <a href="https://www.youtube.com/watch?v=qsHwU7SiA2U"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- Power rangers essaying <span class="timestamp" data-time="184">3m4s</span> <br>
+- "What do you guys think about me getting a Power Ranger outfit?" <span class="timestamp" data-time="485">8m5s</span><br>
+- "Ronald, do you like it when chat <b></b> you?" <span class="timestamp" data-time="765">12m45s</span> <br>
+- "I remember one time I dropped my phone on my nose so hard that I threw it against the wall in anger ..." <span class="timestamp" data-time="1146">19m6s</span><br>
+- "What the fuck do you think you're looking at? God damn it." <span class="timestamp" data-time="1290">21m30s</span> <br>
+- "Hello, just some Asian guy with no dog because I stole your dog yesterday." <span class="timestamp" data-time="1504">25m4s</span> <br>
+- "America baby. Wait a second. Ronald Where was Toyota invented?" <span class="timestamp" data-time="1675">27m55s</span> <br>
+- "You know what? Ronald deserves this." <span class="timestamp" data-time="1777">29m37s</span> <br>
+- "Hopefully the monsters are sexy." <span class="timestamp" data-time="1990">33m10s</span><br>
+</p>
+<!-- 🎮 Game Name   -->
+<h3>🎮 Game Name  </h3>
+<p>- "Wait, you want to fuck the Dragons too? Oh my God, Akari, I think we're going to be better friends than I ever thought." <span class="timestamp" data-time="2555">42m35s</span> <br>
+- "What the fuck? Oh my God, I thought you said breeding and I was like, where?" <span class="timestamp" data-time="2693">44m53s</span> <br>
+- "Oh my God, I'm naming this thing Mooney. Can I change the color?" <span class="timestamp" data-time="3485">58m5s</span> <br>
+- "Yep, that's pretty Mooney. Oh my God, that's so Moody." <span class="timestamp" data-time="3586">59m46s</span> <br>
+- "Raise your hand if you want a buff woman to just fucking kill you." <span class="timestamp" data-time="3805">1h3m25s</span> <br>
+- "Oh my God, Mooney is so much smaller than everybody." <span class="timestamp" data-time="3912">1h5m12s</span> <br>
+- "Wait, you can actually hit the barrel?" <span class="timestamp" data-time="5195">1h26m35s</span> <br>
+- "Mooney, I'm so sorry dear, but I don't understand what the fuck you're saying." <span class="timestamp" data-time="6560">1h49m20s</span> <br>
+- "The epic journey of Mother and Mooney. Let's go." <span class="timestamp" data-time="3655">1h55s</span> <br>
+- "Oh my God, thank God I saved before I quit." <span class="timestamp" data-time="12260">3h24m20s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I'm probably going to hop on a stream sometime this week or next week to play some Monster Hunter with him so." (she talk about OkCode) <span class="timestamp" data-time="12347">3h25m47s</span><br>
+- "Oh yeah, I forgot to tell you all, <b>we have new emotes on the Twitch channel.</b>" <span class="timestamp" data-time="12390">3h26m30s</span><br>
+- <b>"Also remember last day to get 21% off of gamer Subs using code V3."</b> <span class="timestamp" data-time="12504">3h28m24s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
