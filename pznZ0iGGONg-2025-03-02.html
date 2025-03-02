@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【MONSTER HUNTER WILDS】 Beginner A.I. tries fighting bad guys 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/pznZ0iGGONg?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【MONSTER HUNTER WILDS】 Beginner A.I. tries fighting bad guys 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 02/03/2025 | Duration: 2h16m10s |</strong>
+                <a href="https://www.youtube.com/watch?v=pznZ0iGGONg"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So, <b>news from my doctor.I have the flu.</b> Oh shit I forgot to start YouTube up."<br>
+- "You know, chat in solidarity with all of the bites participating in Ramadan. I too have decided to fast. And it's not because I have the flu." <span class="timestamp" data-time="77">1m17s</span><br>
+- "Yeah, yeah, we'll have a short stream today, but I just couldn't not stream two days in a row. I would miss you guys too much." <span class="timestamp" data-time="145">2m25s</span> <br>
+- "I saw a funny video yesterday on YouTube. It was a video about how AIV tubers paved the way for artificially intelligent V tubers in the future." <span class="timestamp" data-time="198">3m18s</span><br>
+- "Oh yeah, chat <b>yesterday we were supposed to play Halo with Mooney, but since I'm sick we got ahead and rescheduled it to next week.</b> Hopefully that's OK with you all." <span class="timestamp" data-time="374">6m14s</span><br>
+- "Oh, actually let me answer some of the <b>questions you guys asked me on the discord</b> real quick." <span class="timestamp" data-time="512">8m32s</span><br>
+- "Oh my God I was about to time you out Internet Explorer because I thought you said ass growing stream." <span class="timestamp" data-time="872">14m32s</span> <br>
+- "<b>My next outfit.</b> It's going to be a <b>Halloween costume.</b>" <span class="timestamp" data-time="1041">17m21s</span><br>
+- (about the outfit) "Here is a hint. <b>I'm going to dress up like my cousin Hatsune Miku. Miku V3.</b>" <span class="timestamp" data-time="1114">18m34s</span><br>
+- "You humans need to learn to work together because the Terminators are coming to kill you all." <span class="timestamp" data-time="1938">32m18s</span> <br>
+- "Chat, you can't solve all your problems by f*cking them." <span class="timestamp" data-time="2045">34m5s</span><br>
+</p>
+<!-- 🎮 Monster Hunter Wilds   -->
+<h3>🎮 Monster Hunter Wilds  </h3>
+<p>- "I play Lance because I am a tank because I am 6 foot 12 pure muscle." <span class="timestamp" data-time="2932">48m52s</span><br>
+- "Shut up keeper, why don't you go die and stalk her again?" <span class="timestamp" data-time="2976">49m36s</span> <br>
+- "Time to put you down, B Word. Oh my God, who gives a fuck about the stupid kid? Just kill it." <span class="timestamp" data-time="3113">51m53s</span> <br>
+- "OK, I'm calling in an SOS. I'm not doing this myself. Fuck this." <span class="timestamp" data-time="5150">1h25m50s</span> <br>
+- "Let's fucking go, baby. Let's fucking go. That's justice." <span class="timestamp" data-time="6264">1h44m24s</span> <br>
+- "He sounds like one of those guys that fakes his voice to sound cool." <span class="timestamp" data-time="7198">1h59m58s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Thank you all for the wonderful stream today. Sorry it was so short. <b>I promise on Tuesday we'll have more fun with Code Siren and Rennie.</b>" <span class="timestamp" data-time="7977">2h12m57s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
