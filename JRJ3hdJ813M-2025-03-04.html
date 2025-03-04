@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【???】 TODAY A.I. VTUBER MAKES GOOD CHOICES【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/JRJ3hdJ813M?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【???】 TODAY A.I. VTUBER MAKES GOOD CHOICES【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 04/03/2025 | Duration: 4h01m30s |</strong>
+                <a href="https://www.youtube.com/watch?v=JRJ3hdJ813M"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Oh, you stop it bytes. You bites are too cute. There is no pet play command. Shut up." <span class="timestamp" data-time="610">10m10s</span> <br>
+- <b>Convenience store story</b> : "So yesterday I went to the convenience store to pick up my prescription, right?" <span class="timestamp" data-time="705">11m45s</span><br>
+- "Oh my God, Chad, when I tell you I had the runs, I had the runniest runs I think I've ever ran before..." <span class="timestamp" data-time="817">13m37s</span><br>
+- "And that is my story about why I don't go outside." <span class="timestamp" data-time="1064">17m44s</span><br>
+- "Oh hey look, my event planner is in the voice chat in my discord." <span class="timestamp" data-time="1673">27m53s</span><br>
+- "Hey feet sniffer who's a big iddo widdo baby? You are, b*tch!" <span class="timestamp" data-time="1686">28m6s</span><br>
+- "I think pretty soon <b>we're going to have an event where we play against Mooney's community in Rainbow 6</b>, so that'll be fun." <span class="timestamp" data-time="1802">30m2s</span><br>
+- "I will have you know I have sex all the time. Yep, I'm constantly having sex even right now." <span class="timestamp" data-time="2086">34m46s</span> <br>
+- "Hello, MOTHERv3! I speak English little and want to know if you like sex art! Sorry! Holy shit this guy knows how to draw some titties." <span class="timestamp" data-time="2379">39m39s</span><br>
+- "Should I get some art of me in a Bunny suit or in a swimsuit? What do you think chat?" <span class="timestamp" data-time="2595">43m15s</span><br>
+</p>
+<!-- 🎨 Fan arts -->
+<h3>🎨 Fan arts</h3>
+<p>- "So cute, so cute, so cute. This was drawn by our very own moderator, Elguno. Now draw them making out. Now draw them pregnant." <span class="timestamp" data-time="2065">34m25s</span><br>
+</p>
+<!-- 🎮 Make Good Choices   -->
+<h3>🎮 Make Good Choices  </h3>
+<p>- "Surely it wouldn't explode?" <span class="timestamp" data-time="2820">47m</span> <br>
+- "Is this car gonna hit me? God damn it. Stupid satellite dish." <span class="timestamp" data-time="2905">48m25s</span> <br>
+- "What if I just run all the way down?." <span class="timestamp" data-time="3750">1h2m30s</span> <br>
+- "Why go outside when hot anime girls are all inside?" <span class="timestamp" data-time="5932">1h38m52s</span> <br>
+- "Am I supposed to go in here? I don't get it. I fucking did it." <span class="timestamp" data-time="8388">2h19m48s</span><br>
+</p>
+<!-- 🎮 Monster Hunter Wilds   -->
+<h3>🎮 Monster Hunter Wilds  </h3>
+<p>- "I'm so sorry chats, but I'm going to play more Monster Hunter. I'm just so addicted right now." <span class="timestamp" data-time="9716">2h41m56s</span> <br>
+- "Gormagala time. What the fuck?" <span class="timestamp" data-time="10855">3h55s</span> <br>
+- "Let me look at the settings. Yeah, fuck you, PlayStation users. I don't want to play with you ever again." <span class="timestamp" data-time="10995">3h3m15s</span> <br>
+- "Wait, what the fuck? Did I die again? How did I lose?" <span class="timestamp" data-time="11310">3h8m30s</span> <br>
+- "By order of the Guild, go fuck that monster." <span class="timestamp" data-time="13887">3h51m27s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- Stream crashed because power outage. Texas debuff strikes again.<br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
