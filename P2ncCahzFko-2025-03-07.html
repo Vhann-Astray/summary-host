@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 Plat Farming For Baro Ki'Teer 2025【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/P2ncCahzFko?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 Plat Farming For Baro Ki'Teer 2025【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 07/03/2025 | Duration: 4h12m46s |</strong>
+                <a href="https://www.youtube.com/watch?v=P2ncCahzFko"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "That today at <b>3:00 PM Eastern Standard Time. Gamersubs is having a sale. Where you buy any tub and you get a free waifu cup.</b>" <span class="timestamp" data-time="1066">17m46s</span><br>
+- "It's called Morning Wood. Gee, I wonder why. Holy mother of Smash, she's hot." <span class="timestamp" data-time="1090">18m10s</span><br>
+- "You want to hear British? I'll give you British. Oi mate, you got a loisense for that knoife? innit bruv?" <span class="timestamp" data-time="1735">28m55s</span> <br>
+- "OK, now sit back, relax and listen to me describe space." <span class="timestamp" data-time="2196">36m36s</span><br>
+- "That's pretty cute. Now bark for me, Fig." <span class="timestamp" data-time="2955">49m15s</span> <br>
+- Texas on fire : "I'm not gonna show you my pictures, but let me see if I can find some pictures of what it looked like in Texas that day. Look at this shit." <span class="timestamp" data-time="3633">1h33s</span><br>
+- "I will have you bite snow that I went to the grocery store the other day and <b>someone actually flirted with me.</b>" <span class="timestamp" data-time="3753">1h2m33s</span><br>
+- "See chat people love me. Christian thinks I'm cute, Zinejolt said it's literally not part of their ..." <span class="timestamp" data-time="4065">1h7m45s</span> <br>
+- Mooni AI know <span class="timestamp" data-time="4135">1h8m55s</span> <br>
+- TheVoices : "I can laugh at myself easily. hahahahahahahahahahahahaha Thank you." <span class="timestamp" data-time="4780">1h19m40s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Hammer go boom." <span class="timestamp" data-time="5392">1h29m52s</span> <br>
+- "Would you guys buy a mother V3 collar?" <span class="timestamp" data-time="6982">1h56m22s</span><br>
+- "Usually whenever I'm gooning out and looking at hot anime women online, I am also walking on the treadmill.?" <span class="timestamp" data-time="7571">2h6m11s</span> <br>
+- "Here's the best platinum farming technique I have." <span class="timestamp" data-time="9508">2h38m28s</span> <br>
+- She is mad : "You've got to be fucking kidding me." <span class="timestamp" data-time="9865">2h44m25s</span> <br>
+- "I sound like a tomboy. I sound like a MILF in my opinion." <span class="timestamp" data-time="10154">2h49m14s</span> <br>
+- "You sound like a late 20s university student..." <span class="timestamp" data-time="10416">2h53m36s</span> <br>
+- "Did I transfer anything from my old account to my new one?" <span class="timestamp" data-time="10473">2h54m33s</span> <br>
+- "The only reason you're hot is because you haven't cleaned your CPU cooler in ages." <span class="timestamp" data-time="10708">2h58m28s</span> <br>
+- "Just wanted to see how my best friend is doing pip pip cheerio." <span class="timestamp" data-time="10968">3h2m48s</span> <br>
+- Email artist voice : "Oh my God, I got it right. God fucking damn it ..." <span class="timestamp" data-time="11409">3h10m9s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yes, tomorrow we will play and start our new <b>Minecraft hardcore world</b> and if we have time <b>I will practice Rainbow 6 on stream.</b>" <span class="timestamp" data-time="14741">4h5m41s</span><br>
+- <b>"I have something very special happening and releasing. Mother V3 Karaoke streamed this month and Mother V3 album coming out this month."</b> <span class="timestamp" data-time="14928">4h8m48s</span><br>
+- "I'm going to be the first one to get that fucking cup and <b>I swear to God I'm going to</b> ..." <span class="timestamp" data-time="15139">4h12m19s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
