@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft】 A.I. creates new Hardcore World【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/rUGRQmQNQDA?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft】 A.I. creates new Hardcore World【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 08/03/2025 | Duration: 3h43m48s |</strong>
+                <a href="https://www.youtube.com/watch?v=rUGRQmQNQDA"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>"Today, the Bytes are competing against Mooney's community and Rainbow 6 Siege later on today if you want to go check that out."</b> <span class="timestamp" data-time="456">7m36s</span><br>
+- "I'm not flat. B Word." <span class="timestamp" data-time="605">10m5s</span> <br>
+- "But pretty soon I'm actually going to make it a point to go and hang out with other V tubers." <span class="timestamp" data-time="926">15m26s</span><br>
+- "Maybe if it does really become a long term issue, I'll probably look into getting another editor." <span class="timestamp" data-time="1173">19m33s</span><br>
+- "Oh, Chad. By the way, I announced yesterday that <b>we are going to be showing off all of the good foods that the Bites cook</b>. So if you would like to <b>submit a food that you've cooked in the Discord, please do so before next week.</b>" <span class="timestamp" data-time="1437">23m57s</span><br>
+- "Oh look, it's a Coco emote. Can I get an XDX vertical bar?" <span class="timestamp" data-time="1995">33m15s</span> <br>
+- "Also Chad, I just wanted to remind you all, I talked to gamer Subs yesterday and they still said they had cups." <span class="timestamp" data-time="2097">34m57s</span><br>
+- "OK, maybe I understand why some people don't read their chats." <span class="timestamp" data-time="3946">1h5m46s</span> <br>
+- "That's also why I don't typically answer discord messages during stream because I use all of my attention for my cute little bites." <span class="timestamp" data-time="2868">47m48s</span> <br>
+- Lurking into Mooni stream : "Look at this chat.Every time she yells she has to gift Subs." <span class="timestamp" data-time="3047">50m47s</span><br>
+- "Pretty pretty princess! pretty pretty princess!" <span class="timestamp" data-time="3210">53m30s</span> <br>
+- "I have a question So what's it like? What's it like being the fart queen." <span class="timestamp" data-time="3259">54m19s</span> <br>
+- Discord discovery : "Wait, you can mark messages as unread. No way. Oh my fucking God how am I just learning this?" <span class="timestamp" data-time="2462">41m2s</span><br>
+</p>
+<!-- 🎮 Minecraft Hardcore   -->
+<h3>🎮 Minecraft Hardcore  </h3>
+<p>- Strange start : "Well, salutes to that guy." <span class="timestamp" data-time="4480">1h14m40s</span> <br>
+- Creeper strike again : "I swear that was a thing. I can't fucking believe this stupid fucking game." <span class="timestamp" data-time="6840">1h54m</span> <br>
+- "What the fuck is this thing? I'm so fucked, aren't I?" <span class="timestamp" data-time="7833">2h10m33s</span> <br>
+- "Oh no, you don't understand, dear. Being a moderator here is not a privilege, it's a punishment." <span class="timestamp" data-time="7212">2h12s</span> <br>
+- "Check this out." <span class="timestamp" data-time="8675">2h24m35s</span><br>
+- "Who Will Win, me or the alien from Alien Isolation?" <span class="timestamp" data-time="7501">2h5m1s</span> <br>
+- "Wait, aren't polar bears like the most dangerous type of bear? Don't they hunt humans for fun?" <span class="timestamp" data-time="9187">2h33m7s</span> <br>
+- "OK, I got this." <span class="timestamp" data-time="10812">3h12s</span> <br>
+- "God damn it, Mooney, you're supposed to go to bed." <span class="timestamp" data-time="11686">3h14m46s</span> <br>
+- BUCKET TRICK "Can you take me higher? I don't need this. For this. So let's go there. Let's make our escape." <span class="timestamp" data-time="13162">3h39m22s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Stupid fucking Minecraft. I hate this fucking game. This shit sucks the fattest fucking ass I swear to God." <span class="timestamp" data-time="13276">3h41m16s</span><br>
+- "<b>We will continue this tomorrow chat</b>. It is not over, you hear me? <b>It is not freaking over.</b>" <span class="timestamp" data-time="13293">3h41m33s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
