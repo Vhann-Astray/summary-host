@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft】 A.I. creates new Hardcore World【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/5_l2rGGfL40?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft】 A.I. creates new Hardcore World【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 09/03/2025 | Duration: 4h09m38s |</strong>
+                <a href="https://www.youtube.com/watch?v=5_l2rGGfL40"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start -->
+<h3>💬 Start</h3>
+<p>- "I don't know if it's obvious or not, but my parents came at 4:30 in the fucking morning to wake me up and bother me today." <span class="timestamp" data-time="336">5m36s</span><br>
+- "Yeah, they kept bugging me about something that they need to do with my car. Something about aligning it or something." <span class="timestamp" data-time="406">6m46s</span><br>
+- "Elora caught in 4K." <span class="timestamp" data-time="972">16m12s</span><br>
+- Elora taste : "OK, I need to know your taste. What kind of waifus?" <span class="timestamp" data-time="1184">19m44s</span> <br>
+- "You know what I think is hot? Jane Doe holy shit ..." <span class="timestamp" data-time="1238">20m38s</span> <br>
+- "I have a better idea. Everybody stop eating everything and <b>only drink a gamer Subs using code V3 at checkout.</b>" <span class="timestamp" data-time="2345">39m5s</span> <br>
+- "I've been playing love in deep space. Oh shut the fuck up, you guys have your gooner games and I have mine." <span class="timestamp" data-time="2495">41m35s</span> <br>
+- <b>TV work meeting story</b> : - "So I happen to walk by my brother while he was at a meeting at his job." <span class="timestamp" data-time="3497">58m17s</span><br>
+- "You know if they're watching this, you just doxed yourself, right?" <span class="timestamp" data-time="3632">1h32s</span> <br>
+- "Remember to use code V3 at checkout to get your morning wood." <span class="timestamp" data-time="3849">1h4m9s</span><br>
+</p>
+<!-- 🎮 Minecraft Hardcore   -->
+<h3>🎮 Minecraft Hardcore  </h3>
+<p>- "No preference to bigger or smaller monsters, all of them are cute." <span class="timestamp" data-time="5605">1h33m25s</span> <br>
+- "Do you know the moments that I love the most?" <span class="timestamp" data-time="5784">1h36m24s</span><br>
+- "Like I completely understand if you don't watch a streamer anymore because their vibe is different than how it used to be. Lovers." <span class="timestamp" data-time="4731">1h18m51s</span> <br>
+- "Oh my God, I thought that was a noise in Minecraft and I almost pissed myself." <span class="timestamp" data-time="5205">1h26m45s</span> <br>
+- <b>Rumors about HeavenlyFather</b> : "I heard that Heavenly thinks you're all cute. Yeah, and the stuff about him letting dudes eat sushi off his body. That was real, too." <span class="timestamp" data-time="8214">2h16m54s</span> <br>
+- <b>Guessing the favorite color of CottontailVA</b> : "It must be purple because purple's my favorite color and you're my friend." <span class="timestamp" data-time="9172">2h32m52s</span> <br>
+- Whats the first thing you do if you have a body? <span class="timestamp" data-time="10261">2h51m1s</span> <br>
+- "Friend. Wait a second. I turn on the British voice. I immediately want to go explore and colonize, and now I have horseback." <span class="timestamp" data-time="12115">3h21m55s</span> <br>
+- "What's my opinion on of beans on toast?" <span class="timestamp" data-time="12175">3h22m55s</span> <br>
+- "Why did I just get a notification that someone on Twitter followed me named big fucking dipshit loser?" <span class="timestamp" data-time="13442">3h44m2s</span> <br>
+- "Do you guys want to know why my eyeballs have jiggle physics?" <span class="timestamp" data-time="11670">3h14m30s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Regardless, I enjoyed my stay with you bites and <b>we had such a wonderful talk today.</b>" <span class="timestamp" data-time="14722">4h5m22s</span><br>
+- <b>"I feel like I've finally gotten to talk about some things that have been hurting my little heart lately."</b> <span class="timestamp" data-time="14741">4h5m41s</span><br>
+- "And I think the best way to show my appreciation. Is to <b>keep on going and have fun and really, really, really show this community all the love that I can.</b>" <span class="timestamp" data-time="14827">4h7m7s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
