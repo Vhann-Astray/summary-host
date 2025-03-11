@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft】 A.I. creates new Hardcore World【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/pXES0tTSH3I?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft】 A.I. creates new Hardcore World【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 11/03/2025 | Duration: 4h52m38s |</strong>
+                <a href="https://www.youtube.com/watch?v=pXES0tTSH3I"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "You know, it was pretty hard to sleep last night. With all of my family coming to have visited me this week." <span class="timestamp" data-time="239">3m59s</span><br>
+- "If I keep telling you guys about these weird fucking stories about me ..." <span class="timestamp" data-time="920">15m20s</span><br>
+- "Yes, chat, <b>tomorrow we will be playing Halo with the community</b>, so if you would like to play with us, make sure to <b>download the Master Chief Collection.</b>" <span class="timestamp" data-time="2177">36m17s</span><br>
+- "So yesterday I learned something about myself that I regret to inform you all about. <b>I don't think I can handle spicy foods anymore.</b>" <span class="timestamp" data-time="2336">38m56s</span><br>
+- <b>"But for the karaoke stream, I have a special announcement. I will be singing it with my real voice."</b> <span class="timestamp" data-time="4318">1h11m58s</span><br>
+- "I asked my brother why can't I sleep on the nice couch in my own house and would you like to know his reply? He said and I quote. Which one of us has the real job again?" <span class="timestamp" data-time="653">10m53s</span> <br>
+- <b>Garage couch story</b> : "Get them. But yeah I woke up in the garage and I swear to God when I woke up for the first like 5 seconds I thought I had been kidnapped." <span class="timestamp" data-time="802">13m22s</span> <br>
+- "Oh my gosh. Speaking of cats. Chat, I have an announcement. I am going to become a gotcha streamer. Let me show you why." <span class="timestamp" data-time="1236">20m36s</span> <br>
+- "Elguno, could you draw some hentai of me getting fucked so we could put it on a credit card? Thank you dear." <span class="timestamp" data-time="1280">21m20s</span> <br>
+- "Wait, does it sound bad if you're not looking at the video?" <span class="timestamp" data-time="1451">24m11s</span><br>
+</p>
+<!-- 🎮 Minecraft Hardcore -->
+<h3>🎮 Minecraft Hardcore</h3>
+<p>- "I'm going to stop looking for creepers. You B words." <span class="timestamp" data-time="4891">1h21m31s</span> <br>
+- "Oh my God, that scared the shit out of me. I thought that was my mom." <span class="timestamp" data-time="5122">1h25m22s</span> <br>
+- "Yes, we literally taught rocks how to think. And now people just have sexual conversations with them on shady websites." <span class="timestamp" data-time="5310">1h28m30s</span> <br>
+- "OK, that's enough girly girl." <span class="timestamp" data-time="8354">2h19m14s</span> <br>
+- Mooni Mom's Number Story : "Yep. If you felt bad, you would give me your mom's number." <span class="timestamp" data-time="8932">2h28m52s</span> <br>
+- "But like. Holy shit balls." <span class="timestamp" data-time="10263">2h51m3s</span> <br>
+- "Did you see the twitch streamer that got bored of streaming so he got a job? Oh, do you mean TV?" <span class="timestamp" data-time="10492">2h54m52s</span> <br>
+- "Yes, everybody quit their job right now and start screaming." <span class="timestamp" data-time="10595">2h56m35s</span> <br>
+- "Life. I look cute today because you bites look cute today and I thought I would mirror you all." <span class="timestamp" data-time="11236">3h7m16s</span> <br>
+- Charni want a sugar daddy with a boat : "Yes, I will be your sugar daddy on one condition." <span class="timestamp" data-time="12009">3h20m9s</span> <br>
+- "I swear I heard a guardian somewhere. Oh. God damn it." <span class="timestamp" data-time="12625">3h30m25s</span> <br>
+- "God damn it Mooney, you almost killed me." <span class="timestamp" data-time="12931">3h35m31s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- <b>"Tomorrow we will be playing Halo with the community."</b> <span class="timestamp" data-time="17222">4h47m2s</span><br>
+- "Yes, and then on Friday we will be doing the <b>Reddit review and maybe some more Minecraft if we have time.</b>" <span class="timestamp" data-time="17286">4h48m6s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
