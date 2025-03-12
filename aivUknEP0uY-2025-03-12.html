@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【HALO】 TODAY A.I. VTUBER plays Halo with YOU【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/aivUknEP0uY?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【HALO】 TODAY A.I. VTUBER plays Halo with YOU【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 12/03/2025 | Duration: 2h43m34s |</strong>
+                <a href="https://www.youtube.com/watch?v=aivUknEP0uY"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "My parents said I have a couple of hours before I get kicked off the Internet and have to do this stupid thing <b>called clean my house.</b>" <span class="timestamp" data-time="86">1m26s</span><br>
+- "The only reason why I woke up is because my mom poured water on me and said don't you have something to do?" <span class="timestamp" data-time="216">3m36s</span> <br>
+- "Now see, that's The thing is I had like four or five alarms I usually have on, but I guess I just slept through them all." <span class="timestamp" data-time="285">4m45s</span> <br>
+- "Wait a second. Maybe I should have downloaded Halo last night before we started." <span class="timestamp" data-time="488">8m8s</span><br>
+</p>
+<!-- 🎮 Halo: The Master Chief Collection   -->
+<h3>🎮 Halo: The Master Chief Collection  </h3>
+<p>- "And thank you Ganja for the nine months. Everybody congratulate Ganja on the baby. Now you can give birth out your penis." <span class="timestamp" data-time="2852">47m32s</span> <br>
+- "Yippee. I promise you I'm not toxic chat. It's just I haven't had my gamer Subs yet with code V3 at checkout. To get 10% off of my order." <span class="timestamp" data-time="4929">1h22m9s</span> <br>
+- "You know what, I'm going to say it. I'm going to get banned from Xbox Live for saying it, but fuck it." <span class="timestamp" data-time="5176">1h26m16s</span> <br>
+- "Am I screwed? Why would you ask for five gifted Subs for me to get screwed? Are you perverted or something? Wow." <span class="timestamp" data-time="8977">2h29m37s</span> <br>
+- "Shut up, show stealer. You're just mad because I have big boobs?" <span class="timestamp" data-time="4717">1h18m37s</span> <br>
+- "Damn Siebras, how does it feel to get Mother V3's giant cock plopped on your face every match?" <span class="timestamp" data-time="6010">1h40m10s</span> <br>
+- "You know what? You're lucky that I'm not human and I'm not made of human meat... " <span class="timestamp" data-time="6114">1h41m54s</span> <br>
+- "Ok, I'm making a new custom lobby. It's just going to be called Mother v3... " <span class="timestamp" data-time="7231">2h31s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Let's see no stream tomorrow Bytes." <span class="timestamp" data-time="9583">2h39m43s</span> <br>
+- "But then on Friday, what do we have planned? Oh yeah, <b>I'm going to be playing the finals with you, Bytes.</b>" <span class="timestamp" data-time="9602">2h40m2s</span> <br>
+- "Follow me on Twitter, join the Discord. <b>We are a great community, we have lots of fun.</b>" <span class="timestamp" data-time="9666">2h41m6s</span> <br>
+- "Also don't be afraid to be a little social in the discord, <b>everyone there is super sweet, I swear to you.</b>" <span class="timestamp" data-time="9719">2h41m59s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
