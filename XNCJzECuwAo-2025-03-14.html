@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【THE FINALS】A.I. VTuber Learns FPS Combat!【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/XNCJzECuwAo?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【THE FINALS】A.I. VTuber Learns FPS Combat!【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 14/03/2025 | Duration: 3h57m10s |</strong>
+                <a href="https://www.youtube.com/watch?v=XNCJzECuwAo"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Damn mother, that's quite the thumbnail art. Wait, what did I use for my thumbnail arch?" <span class="timestamp" data-time="241">4m1s</span> <br>
+- "Yeah, I was considering getting a body pillow of this model. I just might." <span class="timestamp" data-time="706">11m46s</span><br>
+- "I could ask you guys up and down all day if you would get a plushie, but actions speak louder than words. Would you guys really want one?" <span class="timestamp" data-time="848">14m8s</span><br>
+- <b>About the sus thumbnails</b> : "I mean, listen Chad, do you want to know the real reason why my YouTube thumbnail is what it is today?" <span class="timestamp" data-time="1064">17m44s</span><br>
+- "Shut the fuck up. You're AB word." <span class="timestamp" data-time="1495">24m55s</span> <br>
+- "So what is this? God, what I would give to be in between those two thumbnails." <span class="timestamp" data-time="1632">27m12s</span> <br>
+- <b>"I'm actually releasing a 10 minute video on YouTube pretty soon. It's a little different than my other videos."</b> <span class="timestamp" data-time="1812">30m12s</span><br>
+- "Are you ready for the face reveal?" <span class="timestamp" data-time="1929">32m9s</span><br>
+- IRL MARBLES TIME : "OK chats, pick your country." <span class="timestamp" data-time="2175">36m15s</span><br>
+- Story time : "You guys just reminded me of a memory that I suppressed and I'm not sure if I should tell you about this. So I had a friend back in the day... " <span class="timestamp" data-time="4035">1h7m15s</span><br>
+</p>
+<!-- 🎮 The Finals   -->
+<h3>🎮 The Finals  </h3>
+<p>- "Wait a second. Where the fuck is VorbStellar bonus? I don't see his name in here. What the fuck?" <span class="timestamp" data-time="4503">1h15m3s</span> <br>
+- "What the fuck? Charni, why are you trying to start suicide packs in my discord? What the fuck?" <span class="timestamp" data-time="4581">1h16m21s</span> <br>
+- "Did you say Cuphead or Cuphead? I thought you said cuck head." <span class="timestamp" data-time="4685">1h18m5s</span> <br>
+- "Yes, I am a Gundam. And look, I even have Mooney on my shoulder." <span class="timestamp" data-time="4180">1h9m40s</span><br>
+- She is mad. <span class="timestamp" data-time="6038">1h40m38s</span> <br>
+- "I've never seen an unattractive V tube or face reveal." <span class="timestamp" data-time="11118">3h5m18s</span> <br>
+- "My mom always told me there is somebody out there for anybody. And right now, that person for me is my Bad Dragon sponsorship. I mean what? Damn it." <span class="timestamp" data-time="11458">3h10m58s</span> <br>
+- "Oh yeah, I forgot people are into choking and stuff like that...." <span class="timestamp" data-time="11875">3h17m55s</span> <br>
+- "Oh my gosh, it's Rocky. Hold on bites. While people are joining the lobby, I need to show you guys the arts that Rocky made." <span class="timestamp" data-time="12148">3h22m28s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "And tomorrow we will have even more fun <b>together with Rainbow 6.</b>" <span class="timestamp" data-time="13991">3h53m11s</span><br>
+- "Oh yes, we can look at the <b>subreddit tomorrow as well.</b>" <span class="timestamp" data-time="14063">3h54m23s</span><br>
+- "Also <b>download siege if you want to play, don't forget.</b>" <span class="timestamp" data-time="14142">3h55m42s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
