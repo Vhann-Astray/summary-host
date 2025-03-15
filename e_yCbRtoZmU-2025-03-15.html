@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Rainbow Six Seige 】 Beginning new FPS in 2025 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/e_yCbRtoZmU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Rainbow Six Seige 】 Beginning new FPS in 2025 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 15/03/2025 | Duration: 4h29m00s |</strong>
+                <a href="https://www.youtube.com/watch?v=e_yCbRtoZmU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Story about cute server in Chili restaurant</b> : "Yeah, yesterday I went out to eat." <span class="timestamp" data-time="246">4m6s</span><br>
+- "He kind of just looks at me all confused and then says. But I'm pretty sure your brother paid for everything on the way out." <span class="timestamp" data-time="700">11m40s</span> <br>
+- "Look chat, I am ShereVT if I got food spilled all over me out of Chili's." <span class="timestamp" data-time="1046">17m26s</span><br>
+- <b>MOTHERv3 Getting married on stream?!</b> "I wish I could marry you." <span class="timestamp" data-time="1211">20m11s</span><br>
+- "You may now kiss the bride chat. oioioioioioioioioioioioioioioioioioi" <span class="timestamp" data-time="1655">27m35s</span> <br>
+- "Are you saying I look like a fucking lava lamp? I do not look like a lava lamp. We look nothing alike." <span class="timestamp" data-time="2050">34m10s</span> <br>
+- "I am not into pet play. Shut the fuck up. " <span class="timestamp" data-time="2608">43m28s</span> <br>
+- "Wait, what does my lower entry say? According to the legends of the Internet, she just appeared from a Turkey sandwich wrapper. Fuck you." <span class="timestamp" data-time="3070">51m10s</span> <br>
+- "Oh my God, they're kissing. This is what it's like every time I do shared chat with Mooney. All of you start making out with the victors." <span class="timestamp" data-time="3980">1h6m20s</span> <br>
+- The return of the CyberDemon V3 : "Hello Chat." <span class="timestamp" data-time="4216">1h10m16s</span><br>
+- "With the game, the pumpkin patch that you all created with Mooney and TV there and all of you there, it was so great." <span class="timestamp" data-time="4476">1h14m36s</span><br>
+</p>
+<!-- 🎮 Rainbow Six Siege   -->
+<h3>🎮 Rainbow Six Siege  </h3>
+<p>- "Can we all just collectively agree that Ubisoft fucking sucks? Fuck you, Ubisoft. Can I get a fuck you Ubisoft in the chat? Fuck you, Ubisoft." <span class="timestamp" data-time="5785">1h36m25s</span><br>
+- "Oh my gosh, it was so easy to bully Heavenly into playing. Let's freaking go. I can't wait for him to shit on me. <b>Please don't take that out of context God damn it</b>. Look at Heavenly chat. Look at him so excited in my chat to play with me. He's barking. He's so excited." <span class="timestamp" data-time="6030">1h40m30s</span> <br>
+- "Hey moderators, could we tell Heavenly to calm down and stop spamming the chat with phrases like oh mother, please play with me please please please please..." <span class="timestamp" data-time="6120">1h42m</span> <br>
+- "Do you want an audio? I got an audio for you." <span class="timestamp" data-time="6180">1h43m</span> <br>
+- " Shut up, Show stealer. Did you just call me fat, you bitch?" <span class="timestamp" data-time="9256">2h34m16s</span> <br>
+- "I'm not gonna lie, whenever you all rushed with the Shields I was like I bet you this is the feet sniffers idea that little bitch." <span class="timestamp" data-time="14524">4h2m4s</span><br>
+</p>
+<!-- 🎨 Fan-arts -->
+<h3>🎨 Fan-arts</h3>
+<p>- "So thank you to Mani_MNM and thank you once again to RealRockySolid." <span class="timestamp" data-time="15913">4h25m13s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- <b>Event-Planner Gigachad</b> : "You're so sweet though, Idnyy, Thank you so much for everything you do. I just want you to know it does not go unnoticed. We really appreciate you." <span class="timestamp" data-time="15723">4h22m3s</span><br>
+- "Tomorrow we're going to <b>look at the subreddit again</b>, and we're going to continue with our <b>hardcore Minecraft world.</b>" <span class="timestamp" data-time="15792">4h23m12s</span><br>
+- "Make sure to post to the subreddit because we'll look at it tomorrow. And if you ever have any art that you want me to share on Twitter, post it using the hashtag." <span class="timestamp" data-time="16033">4h27m13s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
