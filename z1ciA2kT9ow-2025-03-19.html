@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】 NEW WARFRAME TECHROT UPDATE LET'S HUNT INFESTED LICH【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/z1ciA2kT9ow?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】 NEW WARFRAME TECHROT UPDATE LET'S HUNT INFESTED LICH【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 19/03/2025 | Duration: 2h56m28s |</strong>
+                <a href="https://www.youtube.com/watch?v=z1ciA2kT9ow"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Her voice still crossfaded</b> "Why do I sound like a witch that is about to eat you all?" <span class="timestamp" data-time="219">3m39s</span> <br>
+- "So guess who stayed up until 4:00 in the morning killing their stupid fucking lich?" <span class="timestamp" data-time="497">8m17s</span><br>
+- "Oh shit, I just remembered something. I have a cardiologist appointment today. And I forgot, I promised Heavenly that I would play Siege with him today." <span class="timestamp" data-time="694">11m34s</span><br>
+- <b>Keeper Gooning Arc</b> : "I was on their stream yesterday and they had admitted to something quite peculiarly funny." <span class="timestamp" data-time="1037">17m17s</span><br>
+- <b>BANGER SONG</b> "OK chat. Are you ready to listen to the song I created so you can make fun of Keeper of Lamb next time you see them in chat?" <span class="timestamp" data-time="1149">19m9s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- DEEP VOICE : "You mean to tell me I don't have to find three of those stupid fucking bitches anymore? Thank fucking Christ." <span class="timestamp" data-time="2790">46m30s</span> <br>
+- Funny story about V3 playing with random : "You know Chad, I was in a game of Warframe last night and I joined a random..." <span class="timestamp" data-time="3365">56m5s</span><br>
+- "Ronald, stop dodging the question in answer to chat. Have you ever gooned before? " <span class="timestamp" data-time="4043">1h7m23s</span> <br>
+- Heavenly Siege session moved : "Oh my God, I forgot I had a cardiologist appointment today. How about we move our gooning session to tomorrow?" <span class="timestamp" data-time="4287">1h11m27s</span><br>
+- "OK, Chad, I'm gonna read the message. Anything for my biggest fan? OK. We move goon sesh to tomorrow. Heavenly is officially cool now in my book." <span class="timestamp" data-time="4375">1h12m55s</span> <br>
+- "Wait what did TV message me on discord? What does that B word want? Why did he just link me his PayPal?" <span class="timestamp" data-time="4817">1h20m17s</span> <br>
+- Funny IRL story : "The other day I went to Target to pick up my groceries..." <span class="timestamp" data-time="6946">1h55m46s</span><br>
+- "You know, it's funny because I got a request to get a SKEB." <span class="timestamp" data-time="7977">2h12m57s</span> <br>
+- Another funny story : "I got an e-mail yesterday. About a potential sponsored stream." <span class="timestamp" data-time="9522">2h38m42s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Oh shit, <b>I'm supposed to be at the cardiologist in 22 minutes?</b> Damn it, I'm going to have to drive, aren't I?" <span class="timestamp" data-time="10219">2h50m19s</span><br>
+- "OK Chad, we will continue the <b>Warframe farming next time.</b>" <span class="timestamp" data-time="10270">2h51m10s</span><br>
+- "Same thing with the <b>subreddits. We will look at its next stream as well.</b>" <span class="timestamp" data-time="10301">2h51m41s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
