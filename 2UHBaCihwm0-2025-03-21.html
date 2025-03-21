@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【SCP 5K】 A.I. Scared of SCP Monsters... Protect Her?【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/2UHBaCihwm0?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【SCP 5K】 A.I. Scared of SCP Monsters... Protect Her?【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 21/03/2025 | Duration: 3h07m22s |</strong>
+                <a href="https://www.youtube.com/watch?v=2UHBaCihwm0"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>She can control the speed of her voice now</b> : "Not only have I figured out the issue, but I now harness the power to control it." <span class="timestamp" data-time="353">5m53s</span><br>
+- <b>Secret siege collab with HeavenLyFather</b> : "Guess who did a whole ass collab yesterday and forgot to tell you bites that it was happening?" <span class="timestamp" data-time="988">16m28s</span><br>
+- Timed <a href="https://www.twitch.tv/videos/2410770045?t=0h11m55s"><b>Twitch VOD of HeavenlyFather collab</b></a> <br>
+- " He was like, did you just call me AB Word?" <span class="timestamp" data-time="1458">24m18s</span> <br>
+- "So look, I joined his stream and he immediately does this shit." <span class="timestamp" data-time="1496">24m56s</span><br>
+- "But yes, then we proceeded to never win a game, ever. So that was fun." <span class="timestamp" data-time="1631">27m11s</span> <br>
+- OOOOBANGERS TIME "Everyone say hello to Keeper." <span class="timestamp" data-time="1744">29m4s</span> <br>
+- "I actually fucking hate you guys so much that the guys from UWU market asked me if I wanted any pet play related merchandise." <span class="timestamp" data-time="2463">41m3s</span><br>
+- "You know, I only recently learned that those insertable tails are supposed to go in ..." <span class="timestamp" data-time="2590">43m10s</span> <br>
+- Mooni addiction : "How much did you spend, Mooney? How much did you spend?" <span class="timestamp" data-time="3375">56m15s</span> <br>
+- "I've already cleaned my place. I touch balls with your mom all the time. Ha ha boom got em." <span class="timestamp" data-time="3997">1h6m37s</span> <br>
+- "You could take these nuts. Ha ha, boom, got them." <span class="timestamp" data-time="4184">1h9m44s</span><br>
+</p>
+<!-- 🎮 SCP: 5K   -->
+<h3>🎮 SCP: 5K  </h3>
+<p>- "I hate my life, I hate my life. I hate my life." <span class="timestamp" data-time="5063">1h24m23s</span> <br>
+- "Wait, where did he go?" <span class="timestamp" data-time="5580">1h33m</span> <br>
+- "Ronald, what's a good way to not have to play this fucking game but make it look like that my game crashed or something so Chad doesn't call me a baby?" <span class="timestamp" data-time="5790">1h36m30s</span> <br>
+- "Ronald, will it kill you?" <span class="timestamp" data-time="6185">1h43m5s</span> <br>
+- "That can't be good." <span class="timestamp" data-time="6885">1h54m45s</span><br>
+</p>
+<!-- 🎮 TrickShot Simulator   -->
+<h3>🎮 TrickShot Simulator  </h3>
+<p>- "You're better than me at this." <span class="timestamp" data-time="9986">2h46m26s</span> <br>
+- Emoguy best voice : "I am ready for anyone to send it in." <span class="timestamp" data-time="10892">3h1m32s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- <b>"Tomorrow we will find out if I am smarter than 1/5 grader."</b> <span class="timestamp" data-time="11045">3h4m5s</span><br>
+- "Next time I will steal some people to play SCP with me." <span class="timestamp" data-time="11124">3h5m24s</span><br>
+- "Also I released a <a href="https://youtu.be/uGJmhMIEFGM"><b>new YouTube video</b></a>, go check it out." <span class="timestamp" data-time="11166">3h6m6s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
