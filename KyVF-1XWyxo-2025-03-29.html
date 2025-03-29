@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 LOOKING AT VIEWER SENT-IN FOODS 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/KyVF-1XWyxo?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 LOOKING AT VIEWER SENT-IN FOODS 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 29/03/2025 | Duration: 3h28m58s |</strong>
+                <a href="https://www.youtube.com/watch?v=KyVF-1XWyxo"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Hiking story</b> : "I did something crazy yesterday." <span class="timestamp" data-time="320">5m20s</span><br>
+- "He was just so beautiful when I met him at Target that I was just staring into his lovely ..." <span class="timestamp" data-time="733">12m13s</span><br>
+- <b>Walking pad acquired</b> : "Pretty much exactly like this." <span class="timestamp" data-time="1047">17m27s</span><br>
+- "Is she an AI or a person acting like an AII? Don't know I'm new can anyone explain?" <span class="timestamp" data-time="1302">21m42s</span> <br>
+- <b>"This is my goal for summer of 2025."</b> <span class="timestamp" data-time="1684">28m4s</span><br>
+- "What a place to pause." <span class="timestamp" data-time="2270">37m50s</span> <br>
+- "It's OK, don't worry. We don't have to worry about TV showing up on my stream anymore." <span class="timestamp" data-time="2509">41m49s</span> <br>
+- "I'm that one guy from Mortal Kombat." <span class="timestamp" data-time="2860">47m40s</span><br>
+</p>
+<!-- 🎮 Dreamcore / Cooking showcase -->
+<h3>🎮 Dreamcore / Cooking showcase</h3>
+<p>- "Are you ready? Behold the entrance to my house. Yes." <span class="timestamp" data-time="2914">48m34s</span> <br>
+- "You can see why the plumbers hate coming to my place." <span class="timestamp" data-time="3585">59m45s</span> <br>
+- "I'm horny. Might I recommend beating it off to a gotcha game then?" <span class="timestamp" data-time="4222">1h10m22s</span> <br>
+- <b>Starting the Cooking showcase</b> : "Oh my God I just realized I've been so scared I forgot to take a look at your foods that you like." <span class="timestamp" data-time="5146">1h25m46s</span> <br>
+- "I would never sink because my booba are rotation devices because they're so big." <span class="timestamp" data-time="5211">1h26m51s</span> <br>
+- Mooni gets invited to MOTHERv3's house : <span class="timestamp" data-time="5618">1h33m38s</span> <br>
+- "Leek soup. Ronald, what's a leak?" <span class="timestamp" data-time="6640">1h50m40s</span> <br>
+- "I'm in your pants." <span class="timestamp" data-time="8886">2h28m6s</span> <br>
+- MOTHERv3 goes outside for the first time : <span class="timestamp" data-time="7229">2h29s</span><br>
+</p>
+<!-- 📅 What’s Next?  -->
+<h3>📅 What’s Next? </h3>
+<p>- "We'll probably have another stream event pretty soon where all of you get to make PowerPoints if you're a streamer." <span class="timestamp" data-time="11893">3h18m13s</span><br>
+- <b>"But yes, tomorrow we have a big, big event going on."</b> <span class="timestamp" data-time="12302">3h25m2s</span><br>
+- <b>Next Tuesday : "A karaoke stream. Or. It will be the very first AI powered Dungeons and Dragons stream between me and my chat."</b> <span class="timestamp" data-time="12402">3h26m42s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
