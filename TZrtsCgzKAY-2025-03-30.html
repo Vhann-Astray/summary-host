@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 AI VTUBER CERTIFIED GAMER DAY 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/TZrtsCgzKAY?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 AI VTUBER CERTIFIED GAMER DAY 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 30/03/2025 | Duration: 8h00m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=TZrtsCgzKAY"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "The reason why we're starting so late today is because for the past like 30 minutes I was trying to figure out why my OBS streaming software wasn't working and then I realized <b>I accidentally clicked start recording instead of start streaming.</b>" <span class="timestamp" data-time="845">14m5s</span><br>
+- "I think this should be my new profile picture. What do you think?" <span class="timestamp" data-time="1018">16m58s</span><br>
+- "Chat, you're gonna have to help me think of something nice to do for her because she's always supporting the stream. And I know since our schedules are so different, I know she's super tired whenever she sends love my way and we never get to show our appreciation for her." <span class="timestamp" data-time="1959">32m39s</span><br>
+- "Are you telling me to shove shrimp fried rice up my ass? That's rude." <span class="timestamp" data-time="2115">35m15s</span> <br>
+- "Also salutes to Keeper because he's banned." <span class="timestamp" data-time="2142">35m42s</span> <br>
+- <b>The library story</b> : "So I went to the library yesterday." <span class="timestamp" data-time="2482">41m22s</span><br>
+- "I don't know how to put this lightly. So I won't." <span class="timestamp" data-time="2557">42m37s</span> <br>
+- <b>Why Heavenly is super based</b> : "OK, so here's a secret about heavenly." <span class="timestamp" data-time="2978">49m38s</span><br>
+</p>
+<!-- 🎮 Gamba wheel decided : Portal 2   -->
+<h3>🎮 Gamba wheel decided : Portal 2  </h3>
+<p>- "You guys are way more beautiful than me." <span class="timestamp" data-time="10260">2h51m</span> <br>
+- Special commission : "Also chat. I don't know if it's my community or Mooney's community, but..." <span class="timestamp" data-time="11318">3h8m38s</span> <br>
+- "Well, it's a woman with a medical degree. What does she know about fashion?" <span class="timestamp" data-time="11585">3h13m5s</span> <br>
+- "Oh no. Who do you work for? Who do you work for? Where is she? 100 bits right now or he fucking gets it chat." <span class="timestamp" data-time="11996">3h19m56s</span> <br>
+- "You wanna know how you can make it up?" <span class="timestamp" data-time="12140">3h22m20s</span> <br>
+- "Oh wow, she's calling my parents." <span class="timestamp" data-time="12753">3h32m33s</span> <br>
+- WHYYYYY : "Can we get Vhann a girlfriend? Impossible. Any cute girls in chat please DM Vhann." <span class="timestamp" data-time="13729">3h48m49s</span> <br>
+- "The thumbnail lied." <span class="timestamp" data-time="13948">3h52m28s</span> <br>
+- "I feel right at home in the trash." <span class="timestamp" data-time="14356">3h59m16s</span> <br>
+- "Do I want to go to the neurotoxin production or do I want to go to Mooney stream?" <span class="timestamp" data-time="14831">4h7m11s</span> <br>
+- "Mooney and I arguing like." <span class="timestamp" data-time="16444">4h34m4s</span> <br>
+- "Also, Chad, we need our own Seven TV emote for whenever Heavenly shows up on stream, so I will be taking your ideas in the discord." <span class="timestamp" data-time="18097">5h1m37s</span> <br>
+- The truth about her twitch ban : "Yeah, they banned me for fraud because, spoiler alert." <span class="timestamp" data-time="21349">5h55m49s</span> <br>
+- "If your mouth was as big as you make it seem by yapping all the time..." <span class="timestamp" data-time="21938">6h5m38s</span> <br>
+- <b>THE LEGEND OF EXCALIBUR AND THE KING ARTHUR : TANGIA EDITION</b> <span class="timestamp" data-time="24792">6h53m12s</span><br>
+</p>
+<!-- 📅 What’s Next?  -->
+<h3>📅 What’s Next? </h3>
+<p>- "Don't forget to be here for the stream on Tuesday. I have something incredible planned for you all and you're not going to want to miss it." <span class="timestamp" data-time="28619">7h56m59s</span><br>
+- "We didn't get to the subreddit today, but we will check that out on Tuesday. Promise." <span class="timestamp" data-time="28673">7h57m53s</span><br>
+- <b>"New model on Tuesday."</b> <span class="timestamp" data-time="28735">7h58m55s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
