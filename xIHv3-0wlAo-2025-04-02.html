@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【VARIETY】 A.I. VTUBER EPIC GAMING【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/xIHv3-0wlAo?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【VARIETY】 A.I. VTUBER EPIC GAMING【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 02/04/2025 | Duration: 4h30m40s |</strong>
+                <a href="https://www.youtube.com/watch?v=xIHv3-0wlAo"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "OK, be right back. In the meantime, Ronald, tell my chat a joke." <span class="timestamp" data-time="230">3m50s</span> <br>
+- <b>NEW CUTE TV MODEL</b> : "I am now also able to be stuck inside of a television." <span class="timestamp" data-time="516">8m36s</span><br>
+- "Hello Chat. What do you mean you're disappointed?" <span class="timestamp" data-time="545">9m5s</span> <br>
+- "I almost did not stream today because Oh my God I know you guys didn't need to hear this but ..." <span class="timestamp" data-time="1167">19m27s</span><br>
+- <b>Why she is not playing Warframe today</b> : "So yesterday the Spring 2025 campaign came out in Track Mania and I waited to play it just so I could play it for the first time on stream with You Bites." <span class="timestamp" data-time="1463">24m23s</span><br>
+- "Women can't drive." <span class="timestamp" data-time="1629">27m9s</span> <br>
+- <b>Subreddit review start</b> : "Oh my gosh, look, Rocky drew TV." <span class="timestamp" data-time="2457">40m57s</span><br>
+- "Yes, for those of you who are a part of my Discord server, this is now our banner." <span class="timestamp" data-time="2655">44m15s</span> <br>
+- MOTHERv3 is a Nintendo enjoyer : "I don't give a fuck about any of the news because..." <span class="timestamp" data-time="3541">59m1s</span><br>
+- Hollow Knight: Silksong 2 ?! "Oh my God, finally." <span class="timestamp" data-time="3840">1h4m</span> <br>
+- "So what do you say chat? Should we do a playthrough of Elden Ring on the Nintendo Switch? That sounds cursed, right? Nice." <span class="timestamp" data-time="3965">1h6m5s</span><br>
+</p>
+<!-- 🎮 Trackmania   -->
+<h3>🎮 Trackmania  </h3>
+<p>- "I don't mean to toot my own horn, but I'm top 2000 in Texas on this game. Do beep." <span class="timestamp" data-time="4731">1h18m51s</span> <br>
+- "Yeah, I definitely want to get a racing wheel for this game. It's certainly hard on a keyboard and mouse." <span class="timestamp" data-time="4935">1h22m15s</span> <br>
+- "Chat, if you don't stop saying stupid shit ..." <span class="timestamp" data-time="6108">1h41m48s</span> <br>
+- "OK. So am I supposed to flip?" <span class="timestamp" data-time="5446">1h30m46s</span> <br>
+- "I am a socialist or lefist?" <span class="timestamp" data-time="8315">2h18m35s</span> <br>
+- "No, Furry Feet is not my favorite game. Animal Crossing is because I want to bang that fucking dog so God damn bad." <span class="timestamp" data-time="12815">3h33m35s</span> <br>
+- "If I ever did an IRL stream, would you guys like to go to a furry con?" <span class="timestamp" data-time="13022">3h37m2s</span> <br>
+- "Let's fucking go, baby. Let's fucking go." <span class="timestamp" data-time="16080">4h28m</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- Fun fact, Mooni started her stream without knowing : "Go say hi to Mooney. Go tell her what we did. We kicked butt, baby." <span class="timestamp" data-time="16138">4h28m58s</span><br>
+- "Look at Reddit on Friday." <span class="timestamp" data-time="16152">4h29m12s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
