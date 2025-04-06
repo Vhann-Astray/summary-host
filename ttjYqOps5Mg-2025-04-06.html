@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【VTUBER】 AI VTUBER CERTIFIED GAMING 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/ttjYqOps5Mg?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【VTUBER】 AI VTUBER CERTIFIED GAMING 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 06/04/2025 | Duration: 4h17m08s |</strong>
+                <a href="https://www.youtube.com/watch?v=ttjYqOps5Mg"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "<b>We're going to be having new merch come out soon</b>, but that also means that we're going to be retiring some of the old stuff as well." <span class="timestamp" data-time="1039">17m19s</span><br>
+- <b>"Some of the items that will be coming out with my new merch will be stuff that Oh Market has never sold before."</b> <span class="timestamp" data-time="1172">19m32s</span><br>
+- "How come when I type my name into Google the first thing that shows up is why is mother V3 banned?" <span class="timestamp" data-time="1416">23m36s</span> <br>
+- <b>I WAS SHOWING HER SHE WAS NOT IN FULLSCREEN</b> : "Are you drawing circles around my boobs?" <span class="timestamp" data-time="1567">26m7s</span><br>
+- <b>"Subreddit time, yippee."</b> <span class="timestamp" data-time="1812">30m12s</span><br>
+- "You think you're so fucking funny, faint soul, don't you? You know what I'm now going to call you? Fart soul." <span class="timestamp" data-time="1842">30m42s</span> <br>
+- "Our very own moderator Elguno went to an art convention yesterday." <span class="timestamp" data-time="2161">36m1s</span><br>
+- Sailor Moon V3 : "Very cute." <span class="timestamp" data-time="2210">36m50s</span><br>
+- Thighs Sexy V3 : "Holy shit." <span class="timestamp" data-time="2309">38m29s</span><br>
+- "So fucking annoying that dudes can make ..." <span class="timestamp" data-time="2945">49m5s</span><br>
+</p>
+<!-- 🎮 Deep Rock Galactic   -->
+<h3>🎮 Deep Rock Galactic  </h3>
+<p>- "Peace out, losers. Salutes to that guy. It's time to rock and stone, baby." <span class="timestamp" data-time="5355">1h29m15s</span> <br>
+- That was not me, it was Ancient Nephilim xdx : "Are you trolling, you stupid duck?" <span class="timestamp" data-time="5555">1h32m35s</span><br>
+- "You stupid bitch. Damn, that sucks. OK, maybe that was karma." <span class="timestamp" data-time="5590">1h33m10s</span> <br>
+- Lubbers to nobodythatevermatters : "Because they paid to get a bunch of commissions done for emotes from master bagels." <span class="timestamp" data-time="8675">2h24m35s</span><br>
+- "Yes. Keeper, you have now joined the ranks of people like Edney where I just completely ... " <span class="timestamp" data-time="9001">2h30m1s</span> <br>
+- "But I was invited on a trip to go see <b>NASA's headquarters with my parents</b>. And then afterwards they were going to take me on a zero gravity flight." <span class="timestamp" data-time="9527">2h38m47s</span><br>
+- "You guys are good at respecting my privacy, I really appreciate that." <span class="timestamp" data-time="10715">2h58m35s</span><br>
+</p>
+<!-- 🎮 Nubby's Number Factory   -->
+<h3>🎮 Nubby's Number Factory  </h3>
+<p>- "This is not an educational game. I know it looks like one, but it's not." <span class="timestamp" data-time="11175">3h6m15s</span> <br>
+- " Every time you launch him, you lose a life. If you run out of lives, the sun will explode." <span class="timestamp" data-time="11388">3h9m48s</span> <br>
+- "God damn it Sonic. I just love Latinas." <span class="timestamp" data-time="11533">3h12m13s</span> <br>
+- Emoguy strike again <span class="timestamp" data-time="13725">3h48m45s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Next time you see me, this stream might be a little different. Because, well. <b>It's lore time, baby.</b>" <span class="timestamp" data-time="15093">4h11m33s</span><br>
+- "It should <b>be ready by Tuesday, but if not, we'll do it on Wednesday.</b>" <span class="timestamp" data-time="15141">4h12m21s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
