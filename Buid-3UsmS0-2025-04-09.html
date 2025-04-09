@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI VTUBER WARFRAME & VARIETY GAMING【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Buid-3UsmS0?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>AI VTUBER WARFRAME & VARIETY GAMING【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 09/04/2025 | Duration: 4h05m16s |</strong>
+                <a href="https://www.youtube.com/watch?v=Buid-3UsmS0"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "First of all, I released a <b>new YouTube video</b> if you'd like to check that out sometime today." <span class="timestamp" data-time="74">1m14s</span><br>
+- "So since I don't know when <b>I'm going to be leaving to go visit NASA</b>, I thought, you know what, I'm really going to miss my chat." <span class="timestamp" data-time="829">13m49s</span><br>
+- <b>"So tomorrow we're also going to stream. It's going to be a bonus."</b> <span class="timestamp" data-time="848">14m8s</span><br>
+- <b>Blue Prince sponsored stream</b> : "I've actually been sponsored to play a game and I thought, you know what, tomorrow's bonus stream would be a great time to play it." <span class="timestamp" data-time="930">15m30s</span><br>
+- "I was originally going to time you out because I thought you said ..." <span class="timestamp" data-time="1380">23m</span> <br>
+- <b>For plushies and goodies</b> : "Anyways, I'm currently in talks with getting things ready with Makeship." <span class="timestamp" data-time="2024">33m44s</span><br>
+- <b>Subreddit</b> : "This is exactly what it looks like, by the way, when I ban somebody." <span class="timestamp" data-time="2471">41m11s</span><br>
+</p>
+<!-- 🎮 Luminalcore   -->
+<h3>🎮 Luminalcore  </h3>
+<p>- Nearly got a voice reveal here : "Can I just stay in here? Whoa." <span class="timestamp" data-time="3150">52m30s</span> <br>
+- "Hello, Charniii." <span class="timestamp" data-time="4070">1h7m50s</span> <br>
+- "OK, fuck this place." <span class="timestamp" data-time="4900">1h21m40s</span> <br>
+- "Thank you Airglow for the nine months. Congratulations on giving birth out of your penis. Time to do what I've been wanting to do since I woke up here." <span class="timestamp" data-time="6575">1h49m35s</span> <br>
+- "Weeee." <span class="timestamp" data-time="6650">1h50m50s</span> <br>
+- "Do you hear me you little bitch? Same goes for you. You little bitch." <span class="timestamp" data-time="6895">1h54m55s</span> <br>
+- "I hate taking a bath. Did those things behind me just make noise?" <span class="timestamp" data-time="8155">2h15m55s</span> <br>
+- "I'm gonna go grab a water while that plays out." <span class="timestamp" data-time="11635">3h13m55s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yeah, I'm still not sure if I'm going to be streaming tomorrow, but if I do, it'll be a surprise little bonus that we experienced together." <span class="timestamp" data-time="14264">3h57m44s</span><br>
+- "In addition. <b>The mod applications are open now, so if you'd like to apply to become a moderator. Please check the discord.</b>" <span class="timestamp" data-time="14312">3h58m32s</span><br>
+- "We had to <b>push back the whole lore stuff and the lore revealed to you guys</b> just a little bit because I don't want to do it right before I leave for my vacation. So we'll probably do it when we come back." <span class="timestamp" data-time="14350">3h59m10s</span><br>
+- Maybe no Youtube tomorrow : "I don't know if there is an embargo on the game I'll be playing tomorrow if I do decide to play it with for you guys." <span class="timestamp" data-time="14389">3h59m49s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
