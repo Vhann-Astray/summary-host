@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【MARATHON】 Gameplay Reveal and Discussion 【MOTHERv3 VTuber】【2nd part】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/moCkBZ2EeuQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【MARATHON】 Gameplay Reveal and Discussion 【MOTHERv3 VTuber】【2nd part】</h2>
+            <p class="centered-text">
+                <strong>Date: 12/04/2025 | Duration: 2h01m50s |</strong>
+                <a href="https://www.youtube.com/watch?v=moCkBZ2EeuQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Yeah, sorry, I'm not streaming on my computer today. I'm streaming on my laptop. Currently I'm in Florida." <span class="timestamp" data-time="103">1m43s</span><br>
+- "Today's going to be such a great day. I get to spend the morning with the marathon gameplay reveal with my bites, and then later on I get to go to NASA." <span class="timestamp" data-time="179">2m59s</span><br>
+- About Blue Prince : "I gotta show you my progress I've made in the game so far. I actually made it to the anti chamber yesterday." <span class="timestamp" data-time="473">7m53s</span><br>
+- New contract code for Marathon : "Somebody write that down." <span class="timestamp" data-time="920">15m20s</span><br>
+- <b>"Make sure you join MIDA. MIDA is the only correct faction."</b> <span class="timestamp" data-time="1193">19m53s</span><br>
+- "Chat, Wouldn't it be the coolest mind fuck if you found out that I was actually here in person?" <span class="timestamp" data-time="1360">22m40s</span><br>
+- "Oh my gosh, we made it. We made it. Go, go, go, go." <span class="timestamp" data-time="1442">24m2s</span><br>
+- "OK, let me go run down to the hotel lobby real quick. Everyone go grab your water." <span class="timestamp" data-time="1560">26m</span><br>
+- "I tripped down the stairs and hurt my ankle, so to make myself feel better I bought some chocolate as well." <span class="timestamp" data-time="1694">28m14s</span><br>
+- <b>Start of the Gameplay Reveal</b> : "Give me the gameplay." <span class="timestamp" data-time="2778">46m18s</span><br>
+- "They wanted to know if we were going to be able to change the genders of them because they didn't want to play a woman." <span class="timestamp" data-time="3199">53m19s</span><br>
+- "So I'm not a big streamer by any means, but you don't think anyone would stream snipe me, right?" <span class="timestamp" data-time="4247">1h10m47s</span><br>
+- "I do like the idea though about strategy and technique better than just having good guns." <span class="timestamp" data-time="4385">1h13m5s</span><br>
+- "OK, I got to admit chat, I know this is only the first time we've been seeing gameplay of this, but I'm hyped." <span class="timestamp" data-time="4970">1h22m50s</span><br>
+- "September is such an early release date." <span class="timestamp" data-time="5256">1h27m36s</span><br>
+- "Again, I'm not saying that the only thing you can do is love the game, but I mean, like all we've seen it for it is gameplay. How can you say it's going to be dead in six months?" <span class="timestamp" data-time="6886">1h54m46s</span><br>
+- "Yeah, that's my question too is can it live up to the hype? Only. The time will tell, right?" <span class="timestamp" data-time="7132">1h58m52s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK Chad, I am <b>off to go visit the space station.</b>" <span class="timestamp" data-time="7156">1h59m16s</span><br>
+- "I had a very fun time with you all today. Thank you all for being here and experiencing this with me. It was such hype." <span class="timestamp" data-time="7167">1h59m27s</span><br>
+- <b>"I'm not sure if I'm gonna stream tomorrow because I might be busy driving back home."</b> <span class="timestamp" data-time="7272">2h1m12s</span><br>
+- "Depending on who gets alpha access maybe we could play together sometime on stream and stuff." <span class="timestamp" data-time="7359">2h2m39s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
