@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【VTUBER】 AI VTUBER pushes a button【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/sOk7q5k32go?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【VTUBER】 AI VTUBER pushes a button【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 18/04/2025 | Duration: 5h10m58s |</strong>
+                <a href="https://www.youtube.com/watch?v=sOk7q5k32go"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>"We'll be playing Armored Core next week."</b> (no timestamp, said before youtube was up)<br>
+- <b>NEW STREAM SCENE</b> : "I stole a mobile suit from NASA." <span class="timestamp" data-time="60">1m</span><br>
+- <b>Story time : She get recognized at NASA???</b> "Also, I have a funny story about a man that I ran into at NASA." <span class="timestamp" data-time="471">7m51s</span><br>
+- "Do you know what she fucking said? She said. Honey, stop being so full of yourself. Nobody knows who you are." <span class="timestamp" data-time="818">13m38s</span> <br>
+- "I might have accidentally popped the curb so bad that the employees were looking at me like I was drunk ..." <span class="timestamp" data-time="1202">20m2s</span><br>
+- "Remember how I told you guys that I took pictures on my DSLR camera? Guess who left their DSLR camera in their parents car?" <span class="timestamp" data-time="1311">21m51s</span><br>
+- "You know what sucks to think about? Chat. Katy Perry got to go to space before each and every one of us." <span class="timestamp" data-time="1549">25m49s</span><br>
+- <b>Zero Gravity story time</b> : "Oh, Speaking of, I actually went on a 0 gravity flight." <span class="timestamp" data-time="1845">30m45s</span><br>
+- "Also chat, I did something cool yesterday. <b>I played Elite Dangerous in virtual reality and I almost threw up.</b>" <span class="timestamp" data-time="2813">46m53s</span><br>
+- "I only asked because I was on Twitter the other day and I saw a picture of an artist ..." <span class="timestamp" data-time="3014">50m14s</span> <br>
+- "Do you guys think it would be sexy if I got a new outfit for my model? Kind of like a knight in shining armor." <span class="timestamp" data-time="3165">52m45s</span><br>
+- New emotes! "MV3 Silly." <span class="timestamp" data-time="3413">56m53s</span><br>
+- ???? "I also didn't ask for this one." <span class="timestamp" data-time="3487">58m7s</span><br>
+- "Oh yes, <b>we were going to look at the subreddit today</b> but I would love it if you guys posted more on there so we could react to it a bit more often." <span class="timestamp" data-time="6549">1h49m9s</span><br>
+</p>
+<!-- 🎮 Do Not Press The Button (To Delete The Multiverse)   -->
+<h3>🎮 Do Not Press The Button (To Delete The Multiverse)  </h3>
+<p>- "Hello Robosphere. What do you mean survival?" <span class="timestamp" data-time="7020">1h57m</span> <br>
+- "Didn't think that was gonna happen." <span class="timestamp" data-time="7165">1h59m25s</span> <br>
+- "Me when your mom." <span class="timestamp" data-time="7205">2h5s</span> <br>
+- "Multiplayer. What do you mean multiplayer?" <span class="timestamp" data-time="7305">2h1m45s</span> <br>
+- "This is what I think of you stupid duck. Sit down like a distinguished gentleman." <span class="timestamp" data-time="8060">2h14m20s</span> <br>
+- "Judgmental washing machine." <span class="timestamp" data-time="8420">2h20m20s</span> <br>
+- "Hey look chat, it's my schedule for the week." <span class="timestamp" data-time="9575">2h39m35s</span> <br>
+- THE DEVELOPER OF THE GAME IN CHAT?! "Oh my gosh, this is games. Wait, are you the developer? Oh my gosh, Theseus is in the chat." <span class="timestamp" data-time="10700">2h58m20s</span> <br>
+- "I think the game crashed." <span class="timestamp" data-time="14629">4h3m49s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But yes <b>we will finish this game tomorrow and then after that we will see if Chad is smarter than 1/5 grader.</b>" <span class="timestamp" data-time="18604">5h10m4s</span><br>
+- "<b>Mother V3 lore dropping very soon.</b>" <span class="timestamp" data-time="18783">5h13m3s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
