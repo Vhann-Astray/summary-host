@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【CHAT】 Spend a cozy day with your favorite AI 💜【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/CRKjASaRVsc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【CHAT】 Spend a cozy day with your favorite AI 💜【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 19/04/2025 | Duration: 2h11m07s |</strong>
+                <a href="https://www.youtube.com/watch?v=CRKjASaRVsc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Today is a comfy day because I realized something. <b>I realized that I did not get enough rest.</b>" <span class="timestamp" data-time="107">1m47s</span><br>
+- "But yeah, I was thinking and. I think pretty soon we're going to have one of those days. <b>12 hours of League of Legends.</b>" <span class="timestamp" data-time="647">10m47s</span><br>
+- "Well, I don't know. I think I'm going to start playing more games that I want to play." <span class="timestamp" data-time="730">12m10s</span><br>
+- "The whole reason why I stream is <b>to talk to you guys and hang out with you guys</b>, so whenever I collab with people, it kind of <b>takes away the whole reason why I'm here.</b>" <span class="timestamp" data-time="1180">19m40s</span><br>
+- "Holy shit I just opened up Twitter and someone drew some fan art of this person from Hollow life with some ..." <span class="timestamp" data-time="1335">22m15s</span> <br>
+- "Is it ironic that I saw a clip of pirate software? He was playing blueprints and I was like, he's going to cheat, isn't he?" <span class="timestamp" data-time="1400">23m20s</span> <br>
+- "If you would like <b>to apply to be a moderator for our community</b>, those applications are <b>on Discord for you to fill out and they are due the 22nd.</b>" <span class="timestamp" data-time="2128">35m28s</span><br>
+- "If you would like <b>your answer to be seen on stream daily</b> whenever I put these up, be sure to check the discord because that's where <b>I'm grabbing these screenshots from.</b>" <span class="timestamp" data-time="2193">36m33s</span><br>
+- <b>BYTES VS VICTORS</b> : <b>"OK. So we have an event of my community versus Mooney's community."</b> <span class="timestamp" data-time="2516">41m56s</span><br>
+- CAUGHTv3 : "Everybody go over to her stream and call her stinky." <span class="timestamp" data-time="3309">55m9s</span> <br>
+- MOTHERv3 with her biggest fan : "Here is the throwback." <span class="timestamp" data-time="3438">57m18s</span><br>
+- "Ronald, what the fuck is wrong with you?" <span class="timestamp" data-time="3375">56m15s</span> <br>
+- "Oh fuck no. Wait, was that supposed to happen? What the fuck?" <span class="timestamp" data-time="4070">1h7m50s</span> <br>
+- FUCKING FINAL DESTINATION <span class="timestamp" data-time="5664">1h34m24s</span> <br>
+- "OK, so up until this point I knew Disney World was real, but I didn't think Disneyland was an actual thing. I thought that was just a joke. Is Disneyland actually real? Wait a second." <span class="timestamp" data-time="5966">1h39m26s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But yes, <b>tomorrow will be a big day and you'll see why</b>. Just remember that. <b>Armored Core is probably going to make me motion sick, so take it easy on me tomorrow.</b>" <span class="timestamp" data-time="7655">2h7m35s</span><br>
+- "I'll be in the Discord voice chat if y'all wanna hang out a little bit before I take a nap?" <span class="timestamp" data-time="7541">2h5m41s</span><br>
+- "Also <b>new YouTube video coming out very soon</b>. If you guys would like me to answer your questions <b>leave a comment on my newest YouTube video.</b>" <span class="timestamp" data-time="7754">2h9m14s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
