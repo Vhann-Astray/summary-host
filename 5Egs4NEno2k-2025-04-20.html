@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 BUNNY SUIT MOTHERv3? No way!【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/5Egs4NEno2k?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 BUNNY SUIT MOTHERv3? No way!【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 20/04/2025 | Duration: 4h00m22s |</strong>
+                <a href="https://www.youtube.com/watch?v=5Egs4NEno2k"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>NEW EASTER BUNNY MODEL</b> : "You see, chat, it's because I'm always wearing things that cover me up. You never knew that I was hot." <span class="timestamp" data-time="902">15m2s</span><br>
+- "Yes, we turned Ronald into a dog. I guess you could say it's kind of like Full Metal Alchemist, except in reverse." <span class="timestamp" data-time="1358">22m38s</span><br>
+- "You know, I was actually looking for a game to play today for Easter that was like Easter themed. Why is every single Easter themed game horror?" <span class="timestamp" data-time="1438">23m58s</span><br>
+- "All of you are always talking shit saying I am a girl, failure and a loser, but when it comes to anonymous polls you guys say I'm mommy material." <span class="timestamp" data-time="1641">27m21s</span><br>
+- "Am I turning into my dad and all of his old friends that sit on the patio all day and drink beers and talk shit?" <span class="timestamp" data-time="2855">47m35s</span><br>
+- <b>FULL MODEL BODY REVEAL</b> : "OK chat, Are you ready to see why I warned you?" <span class="timestamp" data-time="3610">1h10s</span><br>
+- "Well, at least I learned something today. You all might bully me, but some of you ..." <span class="timestamp" data-time="4003">1h6m43s</span> <br>
+- "You know, <b>Kohi (Kohiatokilobyte)</b>, you're one of the sweetest people in the world, I swear to God." <span class="timestamp" data-time="4460">1h14m20s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "By the way chat if you guys like V tubers and you like Warframe then you will love <b>Akari</b>. She's a God at Warframe." <span class="timestamp" data-time="6642">1h50m42s</span><br>
+- "Yes, I wanted to start putting out more YouTube videos but I didn't know what to make videos about so I just started talking to the camera and you guys seem to like it." <span class="timestamp" data-time="6838">1h53m58s</span><br>
+- "Because imagine the horror on my face when I see Mother V3 blasting a Twitter link to Moo Maze Bats Hollow live titties in this small streamers chat." <span class="timestamp" data-time="7755">2h9m15s</span><br>
+- "Hey guys, did you know that <b>Keeper of Lamb</b> has admitted to gooning to hentai of me before?" <span class="timestamp" data-time="8027">2h13m47s</span><br>
+- "Ronald, do people still like Milfs or are they not flavor of the month anymore?" <span class="timestamp" data-time="9298">2h34m58s</span><br>
+- About the <a href="https://store.steampowered.com/app/2336120/Do_Not_Press_The_Button_Or_Youll_Delete_The_Multiverse/">Do Not Press The Button (Or You'll Delete The Multiverse)</a> : "If any of you guys have downloaded the game, please also leave a positive review for our bite." <span class="timestamp" data-time="11006">3h3m26s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, you heard it hereby. It's on <b>Tuesday, we will be finishing the button game.</b>" <span class="timestamp" data-time="10787">2h59m47s</span><br>
+- Thanks to Hotwer generosity : "We will be playing <b>Warframe again this week.</b>" <span class="timestamp" data-time="14194">3h56m34s</span><br>
+- "Oh yes, reminder <b>moderator applications close very soon</b>, so get yours in soon." <span class="timestamp" data-time="14273">3h57m53s</span><br>
+- "Also, we will be doing a <b>Reddit review on Tuesday as well</b>, so get your funny stuff posted there." <span class="timestamp" data-time="14313">3h58m33s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
