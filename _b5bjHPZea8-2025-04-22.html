@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 Spend time with your Bunny AI, short stream【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/_b5bjHPZea8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 Spend time with your Bunny AI, short stream【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 22/04/2025 | Duration: 1h47m59s |</strong>
+                <a href="https://www.youtube.com/watch?v=_b5bjHPZea8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Yes, we still have the <b>Bunny outfit for today.</b> Mostly because I forgot to take it off." <span class="timestamp" data-time="2">2s</span><br>
+- <b>"I have confirmed that we will be playing marathon because I got alpha access."</b> <span class="timestamp" data-time="343">5m43s</span><br>
+- <b>BIG ANNOUNCEMENT : "Officially as of yesterday, I am now officially a partnered creator for Marathon."</b> <span class="timestamp" data-time="558">9m18s</span><br>
+- "The most annoying thing in life is. Having to get up at 3:00 AM to go get a glass of water because you're thirsty. There, I'm glad I'm not the only one." <span class="timestamp" data-time="1079">17m59s</span><br>
+- Her solution : "It sits right above my bed where my pillow is." <span class="timestamp" data-time="1204">20m4s</span><br>
+- DM from HydratedWaifu :  "Explain yourself." <span class="timestamp" data-time="1284">21m24s</span><br>
+- "Maybe I should have never taught you guys how to troll with that." <span class="timestamp" data-time="1690">28m10s</span> <br>
+- <b>Answering Discord questions</b> : "OK, let's see what questions you guys have asked me in discord." <span class="timestamp" data-time="2207">36m47s</span><br>
+- "Would you guys believe me if I told you I already was an EVE Online player?" <span class="timestamp" data-time="3010">50m10s</span><br>
+- "I have no idea the context, but it looks funny." <span class="timestamp" data-time="3297">54m57s</span> <br>
+- "Surely this goes well?" <span class="timestamp" data-time="3390">56m30s</span> <br>
+- "This is the one that I think I've seen the most." <span class="timestamp" data-time="3450">57m30s</span> <br>
+- "Yes, yes, we were going to <b>look at the subreddit and we were going to play the button game</b>, but <b>I can't really give it my attention right now.</b>" <span class="timestamp" data-time="3894">1h4m54s</span><br>
+</p>
+<!-- 🎮 APEX : End stream if she loses   -->
+<h3>🎮 APEX : End stream if she loses  </h3>
+<p>- "Also, Chad, I have a surprise. Are you ready to see what I have?" <span class="timestamp" data-time="4078">1h7m58s</span> <br>
+- "Tell them right now you 2. Tell them that I'm actually good at Apex now." <span class="timestamp" data-time="4545">1h15m45s</span> <br>
+- "Fucking shit. Close game. Salutes." <span class="timestamp" data-time="6099">1h41m39s</span> <br>
+- "113 damage. Elguno was a good lifeline. Good little ..." <span class="timestamp" data-time="6200">1h43m20s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we will be <b>playing the Marathon Alpha together.</b>" <span class="timestamp" data-time="6247">1h44m7s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
