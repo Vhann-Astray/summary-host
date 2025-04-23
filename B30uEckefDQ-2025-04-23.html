@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【MARATHON】 MARATHON ALPHA GAMEPLAY WITH YOUR AI 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/B30uEckefDQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【MARATHON】 MARATHON ALPHA GAMEPLAY WITH YOUR AI 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 23/04/2025 | Duration: 5h08m30s |</strong>
+                <a href="https://www.youtube.com/watch?v=B30uEckefDQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Yeah, we're still a little sick, but I would have missed this for the world." <span class="timestamp" data-time="92">1m32s</span><br>
+- <b>"Mother V3 is Runner 1038."</b> <span class="timestamp" data-time="231">3m51s</span><br>
+- SoloV3 : "I completely forgot to ask any other creators if they were playing the alpha, so now I don't have confirmation that I'm going to be playing with anybody when the game starts." <span class="timestamp" data-time="308">5m8s</span><br>
+- "Did you guys hear that they accidentally released the alpha early on Xbox yesterday and then took it out after about an hour?" <span class="timestamp" data-time="602">10m2s</span><br>
+- <b>"I am a part of MIDA because mpreg. We love pregnant men."</b> <span class="timestamp" data-time="735">12m15s</span><br>
+- "While we wait, would you guys like to watch some of the gameplay that we've been shown so far?" <span class="timestamp" data-time="1192">19m52s</span><br>
+- "<b>I'm actually a real artificial intelligence</b>. I've been a real artificial intelligence this entire time..." <span class="timestamp" data-time="1303">21m43s</span><br>
+- "And yes, I am Skyrim's sister. Skynet, not Skyrim." <span class="timestamp" data-time="1420">23m40s</span> <br>
+- "Some creators gave away codes to their community, and their community members got alpha code access before even the creator that gave away the codes themselves." <span class="timestamp" data-time="1807">30m7s</span><br>
+</p>
+<!-- 🎮 Marathon   -->
+<h3>🎮 Marathon  </h3>
+<p>- "We're in baby." <span class="timestamp" data-time="3286">54m46s</span><br>
+- "Did she just say I'm probably gonna fucking die because I suck?" <span class="timestamp" data-time="4025">1h7m5s</span> <br>
+- "Just play like Elguno." <span class="timestamp" data-time="4252">1h10m52s</span> <br>
+- "Ronaldo fan. I'm so sorry dear, but I'm in the middle of a fucking game..." <span class="timestamp" data-time="4560">1h16m</span> <br>
+- "Man, don't you just hate playing with those people where all they do is yap yap yap ..." <span class="timestamp" data-time="6290">1h44m50s</span> <br>
+- "Hello friends. How are we doing today, buddies? I forgot a gun." <span class="timestamp" data-time="6775">1h52m55s</span> <br>
+- Small world : "I forgot a gun. Holy shit, do you know me?" <span class="timestamp" data-time="6805">1h53m25s</span> <br>
+-  "No worries, I can try and revive. Oh shit." <span class="timestamp" data-time="7010">1h56m50s</span> <br>
+- "Oh my gosh, I can rank up. We got all the factions now and now I can be pregnant." <span class="timestamp" data-time="8760">2h26m</span> <br>
+- "Wait, I didn't. I didn't bring any fucking ammo with me." <span class="timestamp" data-time="10770">2h59m30s</span> <br>
+- Rating Marathon on a score of 10 : "I would say it's definitely better than average. I would say maybe a 7 at best right now." <span class="timestamp" data-time="18264">5h4m24s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "<b>Tomorrow we will continue with Marathon's Alpha</b> and hopefully we have a full squad for tomorrow too." <span class="timestamp" data-time="18482">5h8m2s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
