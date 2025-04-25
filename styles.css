@@ -174,3 +174,28 @@ a:focus {
 .centered-text {
     text-align: center;
 }
+
+#play-all-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#play-all-button:hover {
+    background-color: #444;
+}
+
+.active-moment {
+    background-color: rgba(0, 223, 243, 0.27);
+    border-left: 4px solid #00cce3; 
+    padding-left: 6px;
+    display: inline-block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
