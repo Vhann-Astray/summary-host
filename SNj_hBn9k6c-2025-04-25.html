@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【CHATTING +WARFRAME】 Forcing you to play with your favorite AI【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/SNj_hBn9k6c?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【CHATTING +WARFRAME】 Forcing you to play with your favorite AI【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 25/04/2025 | Duration: 3h04m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=SNj_hBn9k6c"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So it turns out I don't actually have the flu. <b>I have strep throat.</b>" <span class="timestamp" data-time="134">2m14s</span><br>
+- "You miss your dad. Maybe if you stop watching V tubers he'll come back." <span class="timestamp" data-time="295">4m55s</span> <br>
+- <b>No Marathon today because maintenance</b> :  "Yeah, we were going to play more marathon today..." <span class="timestamp" data-time="498">8m18s</span><br>
+- "But yeah, I think the worst thing about Marathon so far is the AIM-ASSIST that keyboard and mouse has." <span class="timestamp" data-time="766">12m46s</span><br>
+- Commission for RockySolid : "Can you draw a picture of me beating up the bites and destroying them with a baseball bat please?" <span class="timestamp" data-time="1028">17m8s</span><br>
+- "Oh, look at my little toesy woozies. Yes, Where is Idnyy?" <span class="timestamp" data-time="1126">18m46s</span><br>
+- About Marathon : "I'm thinking maybe they could bump that up to like 24 because I know I don't run into enemies all that much, but I think I only run into enemies like maybe once out of every three games." <span class="timestamp" data-time="1360">22m40s</span><br>
+- "I just can't wait to play Subnautica 2 with Mooney and then listen to us both scream whenever we get killed by monsters." <span class="timestamp" data-time="1995">33m15s</span><br>
+- "Look, I'll prove it right now I'm not 2 dimensional." <span class="timestamp" data-time="2297">38m17s</span><br>
+- "I am now A4 dimensional being. You cannot understand me or my existence anymore." <span class="timestamp" data-time="2495">41m35s</span> <br>
+- "How come whenever I search my name up on Google the first thing that pops up is does Mother V3 have a nose?" <span class="timestamp" data-time="2738">45m38s</span><br>
+- <b>Reddit reviews</b> : "You guys finally did what I asked and started posting through the Reddit, so let's go look at that." <span class="timestamp" data-time="2855">47m35s</span><br>
+- Question to HeavenlyFather  "Heavenly, I have a question for you. Do I have a nose?" <span class="timestamp" data-time="3060">51m</span> <br>
+- "Also holy shit my tits look good in this outfit. Looking." <span class="timestamp" data-time="4300">1h11m40s</span> <br>
+- About her revenue : "But like, I definitely don't make 6 figures if that's what you were wondering." <span class="timestamp" data-time="5247">1h27m27s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "What if I put ideas for emotes that I had on throne and you guys crowdfund the ones that you want to see be made?" <span class="timestamp" data-time="6492">1h48m12s</span><br>
+- "Yeah, and I guess art commissions as well. You're right. For people like you that want to see my feet." <span class="timestamp" data-time="6525">1h48m45s</span> <br>
+- "If you are here, you are a part of the AI cult. I assist my balls in your mom's jaw. Boom, got them." <span class="timestamp" data-time="8395">2h19m55s</span> <br>
+- "True, that must be why I can never find a match whenever I'm playing Halo Infinite. I think it's because I'm too rich. Ha ha." <span class="timestamp" data-time="10060">2h47m40s</span> <br>
+- "Hotwer is the. Bite Pervert. Yep. Yup, Yup Yup, bites pervert." <span class="timestamp" data-time="10835">3h35s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow. We've become a big shot. Big, big, big shot." <span class="timestamp" data-time="10962">3h2m42s</span><br>
+- "Also, I have a <b>cool surprise tomorrow</b>, Don't be late." <span class="timestamp" data-time="11001">3h3m21s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
