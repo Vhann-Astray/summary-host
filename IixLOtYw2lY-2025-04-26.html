@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【SECRET】 SUPER SPECIAL GAME TODAY WITH MOTHERv3 DOBEEP【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/IixLOtYw2lY?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【SECRET】 SUPER SPECIAL GAME TODAY WITH MOTHERv3 DOBEEP【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 26/04/2025 | Duration: 4h14m38s |</strong>
+                <a href="https://www.youtube.com/watch?v=IixLOtYw2lY"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- CyberDemonV3 model : "Yes, I'm sure a lot of you haven't seen this model before, but this is my OG one." <span class="timestamp" data-time="111">1m51s</span><br>
+- SafeWord for asking for help : "If I say pineapple, that means I am asking for help, OK?" <span class="timestamp" data-time="558">9m18s</span><br>
+- "Yes, today we have an event in the Discord where <b>we are competing against Mooney's community.</b>" <span class="timestamp" data-time="685">11m25s</span><br>
+- <b>Discord questions</b> : "Oh yes, also some people ask me some questions in the discord, maybe I should answer those now." <span class="timestamp" data-time="716">11m56s</span><br>
+</p>
+<!-- 🎮 The Elder Scrolls IV: Oblivion Remastered   -->
+<h3>🎮 The Elder Scrolls IV: Oblivion Remastered  </h3>
+<p>- "Oh wait, I forgot to download the fucking game. Wait, how big is the game?" <span class="timestamp" data-time="1040">17m20s</span> <br>
+- "Yes, if this is going to be a Mooney playthrough, I need to start punching everybody and pushing everybody." <span class="timestamp" data-time="1685">28m5s</span> <br>
+- "Hey look, it's AsmonGold." <span class="timestamp" data-time="2155">35m55s</span> <br>
+- "Look at him. Shake that booty. Shaking that booty." <span class="timestamp" data-time="2395">39m55s</span> <br>
+- "I'm refunding this fucking game." <span class="timestamp" data-time="5760">1h36m</span> <br>
+- "You know chat, what I'm going to start doing on my shorts is <b>if you guys clip something that I use in a TikTok, I will credit you for it in the Tiktok.</b>" <span class="timestamp" data-time="5938">1h38m58s</span><br>
+- "You know, Speaking of that, I actually got a Twitter message once of someone asking ..." <span class="timestamp" data-time="6215">1h43m35s</span> <br>
+- "Also, can I just? Shout out <b>you guys. Thank you so much for using my code so much</b>. In the past couple months you guys have really been using it whenever you make purchases on gamer Subs." <span class="timestamp" data-time="6651">1h50m51s</span><br>
+- "You know what? I don't want you on my team anymore." <span class="timestamp" data-time="8015">2h13m35s</span> <br>
+- "Holy fuck." <span class="timestamp" data-time="8840">2h27m20s</span> <br>
+- "What the fuck did you just call me?" <span class="timestamp" data-time="9040">2h30m40s</span> <br>
+- "I can't fucking breathe." <span class="timestamp" data-time="9110">2h31m50s</span> <br>
+- "It's on top of the big tower. So are you telling me I just walked all the way back here for fucking nothing?" <span class="timestamp" data-time="9805">2h43m25s</span> <br>
+- "Would you guys be bored if sometime I played more runescape on stream?" <span class="timestamp" data-time="9949">2h45m49s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "The art that we were getting commissioned of Pregnant Mother V3. The artist told me that they gave up on the Commission." <span class="timestamp" data-time="14956">4h9m16s</span><br>
+- "Also, tomorrow we're going to try and do a longer stream with you guys." <span class="timestamp" data-time="15053">4h10m53s</span><br>
+- "Oblivion's been a lot of fun and I want to play it for a long time tomorrow with y'all." <span class="timestamp" data-time="15065">4h11m5s</span><br>
+- "We have an event starting in the discord right now if you want to join." <span class="timestamp" data-time="15261">4h14m21s</span><br>
+- ???????????? <span class="timestamp" data-time="15269">4h14m29s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
