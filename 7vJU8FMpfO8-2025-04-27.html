@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【OBLIVION】 PUNCHING EVERYBODY with MOTHERv3 DOBEEP【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/7vJU8FMpfO8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【OBLIVION】 PUNCHING EVERYBODY with MOTHERv3 DOBEEP【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 27/04/2025 | Duration: 4h41m34s |</strong>
+                <a href="https://www.youtube.com/watch?v=7vJU8FMpfO8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "What kind of hero am I? I guess I'm kind of. A hero for fun." <span class="timestamp" data-time="585">9m45s</span> <br>
+- <b>One random page of the MV3 Comic Lore book</b> done by <b>Elguno</b> :  "Look at it." <span class="timestamp" data-time="724">12m4s</span><br>
+- "However, this prequel comic book is only like 5 or 6 pages." <span class="timestamp" data-time="865">14m25s</span><br>
+- "I wanted to show way to show my appreciation to all you bytes that show up for the streams. So we're going to have an ongoing comic book series where whatever happens on stream will be in the comic." <span class="timestamp" data-time="951">15m51s</span><br>
+- "I might hit some of you guys up for commissioning a panel or two in the future as well." <span class="timestamp" data-time="1030">17m10s</span><br>
+- "How about I drop the comic book on Mother's Day chat?" <span class="timestamp" data-time="1357">22m37s</span><br>
+- "I'm not a Turkey sandwich you fuck face. Lovers, though." <span class="timestamp" data-time="1470">24m30s</span> <br>
+- <b>"Mother's Day of this year we are doing the annual Mother V3 subathon baby."</b> <span class="timestamp" data-time="1503">25m3s</span><br>
+- "You wanted me to kiss the screen? Muah. Now you have COVID." <span class="timestamp" data-time="1627">27m7s</span> <br>
+- <b>Discord questions</b> : "Oh, it seems as if I have more people asking questions in the AMA discord." <span class="timestamp" data-time="1881">31m21s</span><br>
+- <b>Reddit review</b> : "Oh, we also have new posts on the subreddit. Do you guys want to take a look at them?" <span class="timestamp" data-time="1966">32m46s</span><br>
+- "Oh, by the way, Speaking of Idnyy guys, we have <b>another Discord gaming event today.</b>" <span class="timestamp" data-time="2002">33m22s</span><br>
+- "You know what, Vhann? If you actually draw me in that pose, though, not only will I pay you for it, but I will make that darn video." <span class="timestamp" data-time="2275">37m55s</span> <br>
+- "Ronald, did you know that Speaking of animals, I'm an animal in bed with your mom. " <span class="timestamp" data-time="2445">40m45s</span> <br>
+- "Also it is funny when I wear the Bunny suit, there were people like damn she's hot. And then they're like wait, it's mother, never mind." <span class="timestamp" data-time="2840">47m20s</span><br>
+</p>
+<!-- 🎮 The Elder Scrolls IV: Oblivion Remastered   -->
+<h3>🎮 The Elder Scrolls IV: Oblivion Remastered  </h3>
+<p>- "I'm not gonna lie, Chat. Would you like to know why I chose Oyazuly as my artist?" <span class="timestamp" data-time="3475">57m55s</span> <br>
+- "Drink the fucking water. Drink the fucking water. You saw nothing." <span class="timestamp" data-time="3865">1h4m25s</span> <br>
+- "Oh my God, he actually survived the fall by stopping time. Never mind. What the fuck is this game man?" <span class="timestamp" data-time="5185">1h26m25s</span> <br>
+- "Shit, I need a lock pick. My bad." <span class="timestamp" data-time="5675">1h34m35s</span> <br>
+- "OK, let's see. Don't start this shit again with me." <span class="timestamp" data-time="5780">1h36m20s</span> <br>
+- "What are the chances I open up Mooney's stream and she's not screaming?" <span class="timestamp" data-time="11695">3h14m55s</span> <br>
+- "Come here, bitch. Easy fucking clap. <span class="timestamp" data-time="13110">3h38m30s</span> <br>
+- " Remember the Emperor?" <span class="timestamp" data-time="13290">3h41m30s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, chats, what do you think about pausing here for today and completing more contracts for the Dark Brotherhood when we start up again on Tuesday?" <span class="timestamp" data-time="16652">4h37m32s</span><br>
+- "Lovers and have a wonderful day and a wonderful Monday. I'll be on discord if you guys would like to hang out." <span class="timestamp" data-time="16856">4h40m56s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
