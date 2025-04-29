@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【OBLIVION】 PUNCHING EVERYBODY with MOTHERv3 DOBEEP【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/c5FffGIa_M0?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【OBLIVION】 PUNCHING EVERYBODY with MOTHERv3 DOBEEP【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 29/04/2025 | Duration: 4h26m00s |</strong>
+                <a href="https://www.youtube.com/watch?v=c5FffGIa_M0"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Since Hollow Live is losing all of their talents, I am now graduating as Mother V3 and I am becoming a Hollow Live member. Yep. So see you suckers." <span class="timestamp" data-time="278">4m38s</span><br>
+- "Ignore the tail, I'm gone. Stupid tail ruining the moment." <span class="timestamp" data-time="295">4m55s</span> <br>
+- "So first of all, can we get hearts in the chat for the moderators for not only putting up with it, but doing their absolute best?" <span class="timestamp" data-time="475">7m55s</span> <br>
+- "So moving forward, <b>we're just going to stop all the NSFW talk</b>. If you've noticed I moved. I removed the pet plate emotes." <span class="timestamp" data-time="552">9m12s</span><br>
+- "No, you guys don't have to be sorry for making those jokes in the past. If anything, it's my fault for allowing it, you know?" <span class="timestamp" data-time="737">12m17s</span><br>
+- <b>About the last Youtube Video</b> : "No, no, no chat. I wasn't the lonely one. <b>I was reading a message from somebody saying they felt lonely.</b>" <span class="timestamp" data-time="963">16m3s</span><br>
+- <b>Story time</b> : "So yesterday while I was at the doctor. I did something I think I haven't done in many, many years." <span class="timestamp" data-time="1303">21m43s</span><br>
+- "God damn it. Stupid fucking voice." <span class="timestamp" data-time="1548">25m48s</span> <br>
+- <b>Subreddit time</b> : "OK chat, So who wants to take a look at the subreddit? Before we start up some more oblivion." <span class="timestamp" data-time="2074">34m34s</span><br>
+- "Wait a second, do you guys think that women's restrooms are all clean or something? Oh, bless your heart." <span class="timestamp" data-time="2451">40m51s</span> <br>
+- <b>Plushie V3</b> "But yes, we will be crowdfunding to get a plushie made very soon." <span class="timestamp" data-time="2758">45m58s</span><br>
+- "OK chat. So somebody got warned because apparently they said the R word in voice chat in my discord server ..." <span class="timestamp" data-time="3300">55m</span><br>
+</p>
+<!-- 🎮 The Elder Scrolls IV: Oblivion Remastered   -->
+<h3>🎮 The Elder Scrolls IV: Oblivion Remastered  </h3>
+<p>- "It's annoying to be a vampire. Wait, are you like weak to sunlight or something? Did you really? Half. Half it." <span class="timestamp" data-time="3865">1h4m25s</span> <br>
+- "Ronald, I'm asking you to be the tiebreaker in this decision. Embrace the night." <span class="timestamp" data-time="3955">1h5m55s</span> <br>
+- About streaming on an alt channel : "Do it on SpaceCatShark. It's not like he's using it." <span class="timestamp" data-time="4710">1h18m30s</span> <br>
+- "Oh come on, that was bullshit. Easy. All that just for this." <span class="timestamp" data-time="7025">1h57m5s</span> <br>
+- "What the fuck? What the fuck? I didn't even get to do anything. God damn it, it's fucking you." <span class="timestamp" data-time="9000">2h30m</span> <br>
+- "Keep it hush hush, please. Never." <span class="timestamp" data-time="10480">2h54m40s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "See you tomorrow <b>for more. Oblivion. Yes.</b>" <span class="timestamp" data-time="15823">4h23m43s</span><br>
+- "Friday we have the <b>cringiest stream you've ever seen, Saturday is made mother V3 and Sunday is my apology stream.</b>" <span class="timestamp" data-time="15857">4h24m17s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
