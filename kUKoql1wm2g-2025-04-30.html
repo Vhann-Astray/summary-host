@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【OBLIVION】 PUNCHING EVERYBODY with MOTHERv3 DOBEEP【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/kUKoql1wm2g?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【OBLIVION】 PUNCHING EVERYBODY with MOTHERv3 DOBEEP【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 30/04/2025 | Duration: 4h10m18s |</strong>
+                <a href="https://www.youtube.com/watch?v=kUKoql1wm2g"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Chick-fil-A story</b> : "Chat yesterday before I went to the doctor they told me to get a snack." <span class="timestamp" data-time="355">5m55s</span><br>
+- <b>TV Announcement</b> : "He said he's going to reveal his new model within the next couple days." <span class="timestamp" data-time="769">12m49s</span><br>
+- <b>Silver 3D model</b> : "If I were to get a 3D model made, would you guys like it of this outfit or of the other one first?" <span class="timestamp" data-time="839">13m59s</span><br>
+- <b>Heavenly custom emote</b> : "Can I get a thank you in the chat to NobodythatEvermatters for getting an emote of Heavenly Father commissioned on behalf of the cult?" <span class="timestamp" data-time="1210">20m10s</span><br>
+- <b>About the plushie merch</b> : "It will be a plushie of the other outfit, the Silver the Hedgehog 1." <span class="timestamp" data-time="1590">26m30s</span><br>
+- <b>Subreddit</b> : "OK, let's take a look at some of the posts you guys made on the subreddit." <span class="timestamp" data-time="1747">29m7s</span><br>
+- <b>Discord questions</b> : "While we decide what we're going to do, I'm going to answer some questions you guys left in the discord." <span class="timestamp" data-time="2262">37m42s</span><br>
+</p>
+<!-- 🎮 Marbles   -->
+<h3>🎮 Marbles  </h3>
+<p>- "OK, so these are all of Mizuno's maps that he created." <span class="timestamp" data-time="2564">42m44s</span><br>
+- "Go sooner, go. Sooner go, go, go. Oh God, dilutes to all the bites." <span class="timestamp" data-time="2815">46m55s</span><br>
+- "Mizuno, what the fuck are you doing? Mizuno, you need to hurry." <span class="timestamp" data-time="2955">49m15s</span>  <br>
+- "Hey look, it's xj_2009. Guys, do you want to know a cool fact about XJ? XJ was one of my very first offline chatters on the Twitch channel." <span class="timestamp" data-time="3715">1h1m55s</span> <br>
+- <b>MOTHERv3 protect Super Earth in one week or two</b> : "The Cult will be carrying their leader, Mother V3 into the depths to protect Super Earth." <span class="timestamp" data-time="4585">1h16m25s</span><br>
+- "So if <b>you would like to play Helldivers 2 with me, make sure to have it downloaded because I will be pulling random cult members to fight for democracy.</b>" <span class="timestamp" data-time="4610">1h16m50s</span><br>
+</p>
+<!-- 🎮 The Elder Scrolls IV: Oblivion Remastered   -->
+<h3>🎮 The Elder Scrolls IV: Oblivion Remastered  </h3>
+<p>- "Set up M3. Well, that was easy." <span class="timestamp" data-time="5177">1h26m17s</span> <br>
+- "1. 2. 3. OK, that's just bullshit. This game's broken." <span class="timestamp" data-time="8045">2h14m5s</span> <br>
+- "Surely you mean crock pot?" <span class="timestamp" data-time="8365">2h19m25s</span> <br>
+- " I didn't even do anything. They just hate me because I'm cute and AV tuber. Fuck out of here, bitch." <span class="timestamp" data-time="10930">3h2m10s</span> <br>
+- "Maybe I'll just break into this Random House and see if I can suck (blood) someone off in here." <span class="timestamp" data-time="12775">3h32m55s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But you know what, <b>if I feel up to it, we will stream tomorrow for a little bit as well</b>. I want to play some more Oblivion, but remember." <span class="timestamp" data-time="14743">4h5m43s</span><br>
+- <b>"On Friday we have the cringiest stream ever, so don't be late for that."</b> <span class="timestamp" data-time="14767">4h6m7s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
