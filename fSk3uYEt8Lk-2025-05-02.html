@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 MOTHERv3 goes CRINGE MODE TODAY【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/fSk3uYEt8Lk?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 MOTHERv3 goes CRINGE MODE TODAY【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 02/05/2025 | Duration: 2h52m34s |</strong>
+                <a href="https://www.youtube.com/watch?v=fSk3uYEt8Lk"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start -->
+<h3>💬 Start</h3>
+<p>- <b>NEKO ARCV3</b> "Yes, this is the real Mother V3." <span class="timestamp" data-time="174">2m54s</span><br>
+- "I can even do a flip." <span class="timestamp" data-time="187">3m7s</span> <br>
+- "Hey everyone say hi to Keeper. It's that guy that thinks that Kindred from League of Legends is sexy." <span class="timestamp" data-time="769">12m49s</span> <br>
+- "Over the weekend <b>I will be going over the mod applications with my staff</b> and we <b>will reach out to everyone who makes moderator.</b>" <span class="timestamp" data-time="971">16m11s</span><br>
+- <b>Discord questions</b> : "Oh, we have some questions in the discord that some of you asked me. We could answer those." <span class="timestamp" data-time="1197">19m57s</span><br>
+- <b>Subreddit</b> : "Subreddit time, baby." <span class="timestamp" data-time="1591">26m31s</span><br>
+- "Wait, how did you screenshot me playing Oblivion?" <span class="timestamp" data-time="1678">27m58s</span> <br>
+- "Wait, is it those fat pieces of stinky crap? Are you calling me a fat piece of shit?" <span class="timestamp" data-time="1847">30m47s</span> <br>
+- "You know, Speaking of that, my parents are supposed to take me to an Indian cuisine restaurant this weekend. I'm excited because I like spicy." <span class="timestamp" data-time="2392">39m52s</span><br>
+- <b>"If I end this stream before I win a game. Then I owe you guys the rest of Outlast."</b> <span class="timestamp" data-time="2537">42m17s</span><br>
+</p>
+<!-- 🎮 Fortnite : Surprise collab with Mooni and HeavenlyFather   -->
+<h3>🎮 Fortnite : Surprise collab with Mooni and HeavenlyFather  </h3>
+<p>- "Time for the cringe, baby. Fortnite. Objective survive." <span class="timestamp" data-time="2907">48m27s</span> <br>
+- "Also bytes. Did you know that <b>this character in Fortnite is an inspiration for my model?</b> Can you see it?" <span class="timestamp" data-time="3141">52m21s</span> <br>
+- "Chat on a scale of one to 10? How much cringe? Have I farmed enough for the week? Oh, we're only out of four. We could do much better than that." <span class="timestamp" data-time="3195">53m15s</span> <br>
+- <b>The shock trio</b> : "What's up B words? It's OK, you could join later if you want, it's no big deal." <span class="timestamp" data-time="5172">1h26m12s</span> <br>
+- MOTHERv3 cute Sneeze <span class="timestamp" data-time="6512">1h48m32s</span> <br>
+- <b>First victory</b> : "Let's fucking go, baby. I thought that was you." <span class="timestamp" data-time="6625">1h50m25s</span> <br>
+- "You know what's gross? Sniffing farts as much as you do." <span class="timestamp" data-time="10041">2h47m21s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "You know what, Idnyy? ..." <span class="timestamp" data-time="10160">2h49m20s</span> <br>
+- "Don't be late tomorrow because <b>Maid Mother V3 is making a return.</b>" <span class="timestamp" data-time="10309">2h51m49s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
