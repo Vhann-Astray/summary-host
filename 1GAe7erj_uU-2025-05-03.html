@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【CHATTING  + Minecraft】 MAID MOTHERv3 makes her return?【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/1GAe7erj_uU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【CHATTING  + Minecraft】 MAID MOTHERv3 makes her return?【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 03/05/2025 | Duration: 4h22m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=1GAe7erj_uU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>MOTHERv3 Maid outfit</b> : "Hello." <span class="timestamp" data-time="378">6m18s</span><br>
+- "The circuits are cleverly hidden, you can't see them." <span class="timestamp" data-time="435">7m15s</span> <br>
+- <b>Cookie diet</b> : "So, Chad, I have a question for you all. I ordered a bunch of subway cookies yesterday and like I have like 6 of them sitting at my desk..." <span class="timestamp" data-time="839">13m59s</span><br>
+</p>
+<!-- 🎮 Level Devil   -->
+<h3>🎮 Level Devil  </h3>
+<p>- "OK, It's probably going to move right the whole." <span class="timestamp" data-time="2010">33m30s</span> <br>
+- "OK. Why is there a hole behind me?" <span class="timestamp" data-time="2066">34m26s</span> <br>
+- "Not the way I bounce on your mom. Ha ha, boom, got him." <span class="timestamp" data-time="2701">45m1s</span> <br>
+- "This is easy." <span class="timestamp" data-time="3200">53m20s</span><br>
+</p>
+<!-- 🎮 Cyberpunk 2077   -->
+<h3>🎮 Cyberpunk 2077  </h3>
+<p>- For Mango gifted memberships : "This is for Mango. I am now a Mango V3. Can I get mangoes in the chat?" <span class="timestamp" data-time="6175">1h42m55s</span> <br>
+- New play through : "We should do a playthrough where we're a cowboy and we forgo all technology ..." <span class="timestamp" data-time="6521">1h48m41s</span> <br>
+- "Hello Mother V Gay. Wait, which one of you guys is named Mother V Gay?" <span class="timestamp" data-time="8505">2h21m45s</span> <br>
+- "Seechat, I told you I could pick up women." <span class="timestamp" data-time="9274">2h34m34s</span> <br>
+- "But I just got a girlfriend. Are you telling me to give her up?" <span class="timestamp" data-time="9410">2h36m50s</span> <br>
+- "All right, well, salutes to Mooney because her butt hole is going to be on fire today." <span class="timestamp" data-time="11555">3h12m35s</span> <br>
+- "Something feels wrong here. I can't quite put my finger on it though." <span class="timestamp" data-time="11865">3h17m45s</span> <br>
+- Story about Gamer Subs : "So I didn't realize until a couple weeks ago that I'm actually supposed to message the people from gamer Subs ..." <span class="timestamp" data-time="12165">3h22m45s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK Chad, before we end the stream for today, I want to let you know that <b>we're doing an arts event in the Discord right now for Mother's Day.</b>" <span class="timestamp" data-time="15429">4h17m9s</span><br>
+- "OK chat, so tomorrow we have the <b>apology stream.</b>" <span class="timestamp" data-time="15537">4h18m57s</span><br>
+- "And I'm thinking maybe we continue with Cyberpunk and then play a little bit of Minecraft. Yep, Yep, Yep." <span class="timestamp" data-time="15549">4h19m9s</span><br>
+- <b>"The manga comes out tomorrow, by the way."</b> <span class="timestamp" data-time="15717">4h21m57s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
