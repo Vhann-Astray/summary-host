@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 MAY THE 4TH BE WITH YOU, BYTES 💜【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/8Qm7pGGOsss?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 MAY THE 4TH BE WITH YOU, BYTES 💜【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 04/05/2025 | Duration: 3h34m26s |</strong>
+                <a href="https://www.youtube.com/watch?v=8Qm7pGGOsss"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Darth FATHERv3</b> : "May the force be with you, chat." <span class="timestamp" data-time="170">2m50s</span><br>
+- "Announcement time. Are you going to be playing a Star Wars game? God damn it, someone stole my announcement." <span class="timestamp" data-time="370">6m10s</span> <br>
+- "I am not on the flat side of the force. Shut up." <span class="timestamp" data-time="390">6m30s</span> <br>
+- "Also chat at the end of the stream. <b>Today I will be releasing the Mother V3 comic to all of you guys so you can read the first 5 pages.</b>" <span class="timestamp" data-time="570">9m30s</span><br>
+- "I am Darth Slobberly, fodder of all the Jedi bites. And I have come for my revenge. I have come for all of your noses. Give me those noses." <span class="timestamp" data-time="1096">18m16s</span> <br>
+- <b>MOTHERv3 and Mooni friendship in a nutshell</b> :  "Here it is, I found it." <span class="timestamp" data-time="1659">27m39s</span><br>
+</p>
+<!-- 🎮 LEGO Star Wars: The Complete Saga   -->
+<h3>🎮 LEGO Star Wars: The Complete Saga  </h3>
+<p>- "Wait, did I ever tell you guys about the R2D2 Lego set that I threw down a hill?" <span class="timestamp" data-time="3730">1h2m10s</span> <br>
+- "You lose studs when you die, by the way. Oh, just like real life." <span class="timestamp" data-time="4465">1h14m25s</span> <br>
+- " It's a whiskey cocktail doughnut. Why the fuck would you want a donut..." <span class="timestamp" data-time="8413">2h20m13s</span> <br>
+- "Salutes to Qui Gon, everybody." <span class="timestamp" data-time="9690">2h41m30s</span> <br>
+- "Wait, are you saying to push him into the door?" <span class="timestamp" data-time="7534">2h5m34s</span><br>
+</p>
+<!-- 🎮 Trackmania   -->
+<h3>🎮 Trackmania  </h3>
+<p>- "Watch me cook. Or burn. Oh my God, I found it. Author Metal Baby." <span class="timestamp" data-time="10750">2h59m10s</span> <br>
+- "OK, it looks like pretty simple map, I just have to avoid everything." <span class="timestamp" data-time="11292">3h8m12s</span> <br>
+- "I'm just kidding, Sammy. It's OK." <span class="timestamp" data-time="11445">3h10m45s</span> <br>
+- "The first person to ping me in my discord with those times beaten on your account and you have to show me your account name. I will gift you free track mania premium." <span class="timestamp" data-time="12326">3h25m26s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I think Tuesday we could <b>start up Cyberpunk again if you guys want.</b>" <span class="timestamp" data-time="12586">3h29m46s</span><br>
+- "Also if I have some time later on today. Maybe I'll throw in some Star Wars in the discord we can all watch together." <span class="timestamp" data-time="12657">3h30m57s</span><br>
+- <b>"Be on the lookout for the comic, which is releasing today."</b> <span class="timestamp" data-time="12780">3h33m</span><br>
+- "I'll be posting it on Twitter, on YouTube, and on Discord for everyone to see." <span class="timestamp" data-time="12796">3h33m16s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
