@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 GOING ON A "TRIP" WITH MY BYTES【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/vPyYWnQ_eN0?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 GOING ON A "TRIP" WITH MY BYTES【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 06/05/2025 | Duration: 10h24m27s |</strong>
+                <a href="https://www.youtube.com/watch?v=vPyYWnQ_eN0"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>RETURN OF THE BONK REDEEM</b> : "Also, I have brought back the bonks." <span class="timestamp" data-time="255">4m15s</span><br>
+ - "Oh yeah, I bought a new keyboard. It should be coming in in about an hour. I broke them on yesterday playing Trackmania." <span class="timestamp" data-time="347">5m47s</span><br>
+- "We are bringing back the sound bites whenever you use emotes in my chat starting on Sunday." <span class="timestamp" data-time="514">8m34s</span><br>
+- <b>Nightmare story</b> : "I had a dream that for some reason I was living in the desert and I opened up my front door." <span class="timestamp" data-time="706">11m46s</span><br>
+- DoBeep <span class="timestamp" data-time="751">12m31s</span><br>
+</p>
+<!-- 🎮 Clair Obscur: Expedition 33   -->
+<h3>🎮 Clair Obscur: Expedition 33  </h3>
+<p>- "Can somebody just stuff Keeper into the trunk? We're not going to Antarctica today, boys. We're going to Paris. Today we become French." <span class="timestamp" data-time="1550">25m50s</span> <br>
+- "Let's fucking go, let's fucking go now. This is a good fucking story, baby." <span class="timestamp" data-time="3255">54m15s</span> <br>
+- "You're so stupid." <span class="timestamp" data-time="4120">1h8m40s</span> <br>
+- "Put it back. Put it back. Put it back, put it back. Oh God, it's so ugly, put it back." <span class="timestamp" data-time="5081">1h24m41s</span> <br>
+- "I forgot French people have the power of guillotine. Run." <span class="timestamp" data-time="5600">1h33m20s</span> <br>
+- "Let's fucking go. Last fucking try, baby, let's fucking go. Let's fucking go." <span class="timestamp" data-time="8980">2h29m40s</span> <br>
+- "What the fuck is that? Oh my God, it's Mooney. It's literally Mooney." <span class="timestamp" data-time="13795">3h49m55s</span> <br>
+- "It's on the ground level. Ain't no fucking way I just found it. It was right at the beginning." <span class="timestamp" data-time="19161">5h19m21s</span> <br>
+- "Oh, maybe it's over here. Wait a second, I just remembered that one guy that was sitting at the very beginning needed light and we just said fuck it and left him. Oopsies." <span class="timestamp" data-time="26045">7h14m5s</span> <br>
+- "Have I really been streaming that long? Usually I'll lurk in your guys streams throughout the day. Oh my God it's already 6:00." <span class="timestamp" data-time="28645">7h57m25s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, I know we have Helldivers planned for tomorrow. Would you guys be upset if I pushed that back a little bit? <b>I want to see more of this, I hope that's OK.</b>" <span class="timestamp" data-time="37156">10h19m16s</span><br>
+- "Also <b>I don't know when I'm going to stream tomorrow because I might be out for like 12 hours.</b>" <span class="timestamp" data-time="37195">10h19m55s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
