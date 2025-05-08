@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EXPEDITION 33】 GOING ON A "TRIP" WITH MY BYTES【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/hZRBoQI_uys?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EXPEDITION 33】 GOING ON A "TRIP" WITH MY BYTES【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 07/05/2025 | Duration: 9h14m52s |</strong>
+                <a href="https://www.youtube.com/watch?v=hZRBoQI_uys"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Hotwer will decide of the next chapter of the lore comic</b> : "You get to come up with the story for the next chapter of the V3 comic? No way." <span class="timestamp" data-time="644">10m44s</span><br>
+- "I'm going to be commissioning artists in my community to draw panels for the comic." <span class="timestamp" data-time="788">13m8s</span><br>
+- <b>RealRockySolid will draw the cover</b> "I would love for you to draw the cover for the next issue." <span class="timestamp" data-time="902">15m2s</span><br>
+</p>
+<!-- 🎮 Clair Obscur: Expedition 33 -->
+<h3>🎮 Clair Obscur: Expedition 33</h3>
+<p>- New UI that doesn't get in the way of the game : "Boom." <span class="timestamp" data-time="1768">29m28s</span><br>
+- "Oh no." <span class="timestamp" data-time="3445">57m25s</span> <br>
+- SweetV3 : She has the grass in her garden cut by teenagers. : "Wait a second. Could you guys give me a moment? I made some lemonade for the teenagers." <span class="timestamp" data-time="6473">1h47m53s</span> <br>
+- "OK, who the fuck said grandma behavior?" <span class="timestamp" data-time="6556">1h49m16s</span> <br>
+- "Does this kill? 20 stacks. Let's see." <span class="timestamp" data-time="7905">2h11m45s</span> <br>
+- Boss fight : Dualliste "That's right, bitch. Fuck him up." <span class="timestamp" data-time="9149">2h32m29s</span> <br>
+- "OK, which one of you fuckers just sent me an e-mail? To my business e-mail asking me to go on a date." <span class="timestamp" data-time="16237">4h30m37s</span> <br>
+- "Stun him. Oh my God. Here we go, we got this chats. Finish him." <span class="timestamp" data-time="29657">8h14m17s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- Giveaway of the game : "Emile_Laflmme : I don't have steam, sorry." <span class="timestamp" data-time="32481">9h1m21s</span><br>
+- Giveaway of the game : - "Congratulations to. <b>LordZeika</b>" <span class="timestamp" data-time="32770">9h6m10s</span><br>
+- "We're going to take tomorrow off to rest a little bit, but we will come back with more clear obscure. I forgot what we were supposed to be doing Friday, but we're gonna push that back, obviously." <span class="timestamp" data-time="33116">9h11m56s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
