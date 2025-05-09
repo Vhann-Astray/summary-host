@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EXPEDITION 33】 FOR THOSE WHO COME AFTER【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/FCFtgXbH9GE?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EXPEDITION 33】 FOR THOSE WHO COME AFTER【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 09/05/2025 | Duration: 8h19m21s |</strong>
+                <a href="https://www.youtube.com/watch?v=FCFtgXbH9GE"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I was supposed to get a lot done yesterday since yesterday was my day off stream and I slept. I slept almost the entire time." <span class="timestamp" data-time="321">5m21s</span><br>
+- "I feel bad because there are some bites that I have been promising I was gonna play destiny with off stream." <span class="timestamp" data-time="344">5m44s</span><br>
+- The voice : "Hello, Niermac. Hello, faint soul. Hello, Renee. Hello B Shanks..." <span class="timestamp" data-time="555">9m15s</span> <br>
+- "Somebody banned Mooney. Ban her right now." <span class="timestamp" data-time="865">14m25s</span> <br>
+- "Oh my God, ganja with the five gifted Subs. Everybody thank our fake French person who's actually Greek in the chat for the five gifted." <span class="timestamp" data-time="1042">17m22s</span> <br>
+- "I can tell by the way you type, you watch Camilla." <span class="timestamp" data-time="1235">20m35s</span> <br>
+- "Yummy, yummy in my tummy. You know they usually taste real good too during the holidays. Oh my God I love pussy on the holidays." <span class="timestamp" data-time="1410">23m30s</span><br>
+</p>
+<!-- 🎮 Clair Obscur: Expedition 33   -->
+<h3>🎮 Clair Obscur: Expedition 33  </h3>
+<p>- "Elemental Genesis. Let's freaky go." <span class="timestamp" data-time="2524">42m4s</span> <br>
+- "What the fuck? Yeah, we're gonna keep that." <span class="timestamp" data-time="5363">1h29m23s</span> <br>
+- "That's clutch V3 again bitch." <span class="timestamp" data-time="14081">3h54m41s</span> <br>
+- "Holy. Phase two time." <span class="timestamp" data-time="16720">4h38m40s</span> <br>
+- Drama with Kourra : "Why do you hate me? You stream so late at night for me ..." <span class="timestamp" data-time="4451">1h14m11s</span> <br>
+- "Oh my God. Did I do it? Did I do it? Did I do it?" <span class="timestamp" data-time="18675">5h11m15s</span> <br>
+- "Can we one shot? Holy shit I just slapped him with my fat *baguette*." <span class="timestamp" data-time="24070">6h41m10s</span><br>
+- "Rest in Pepperoni's mezzo Forte Italiano Parmigiano pizzeria, pizzeria mozzarella, spaghetti, macaroni." <span class="timestamp" data-time="28995">8h3m15s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I'm not sure if I'll stream tomorrow because to be honest with you, I don't know what to fucking do since I pushed back so many things to play this game." <span class="timestamp" data-time="29676">8h14m36s</span><br>
+- "So if I don't stream tomorrow, don't be surprised, but I might, Who knows?" <span class="timestamp" data-time="29700">8h15m</span><br>
+- "Also, I know I said we were going to do a subathon for Mother's Day." <span class="timestamp" data-time="29712">8h15m12s</span><br>
+- "But honestly, I haven't gotten checked by my doctor yet so I don't have the OK to go ahead and do that." <span class="timestamp" data-time="29748">8h15m48s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
