@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 MOTHERv3 MOTHER'S DAY STREAM【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/AlKcMWFanDY?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 MOTHERv3 MOTHER'S DAY STREAM【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 11/05/2025 | Duration: 6h24m16s |</strong>
+                <a href="https://www.youtube.com/watch?v=AlKcMWFanDY"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Fan-art</b> : "Oh yeah, Speaking of gifts, check this out. Come here, Chad, let me punch you. Thank you to Vhann Astray for the awesome art." <span class="timestamp" data-time="44">44s</span><br>
+- <b>Reverse subathon</b> : "Every 100 bits or $1 superchat takes away 12 seconds, every tier 1 sub removes a minute. It all scales with tier 2 and tier 3." <span class="timestamp" data-time="186">3m6s</span><br>
+- "So I just want to say before we start, <b>congratulations to everyone who is finished with their finals or are finishing them up and happy summer.</b>" <span class="timestamp" data-time="529">8m49s</span><br>
+- "All right, so today we are going to start with a game that you guys have been begging me to play for years now." <span class="timestamp" data-time="606">10m6s</span><br>
+- "If I cannot beat this game before that timer hit 0." <span class="timestamp" data-time="651">10m51s</span><br>
+- "But yes, if I cannot beat today's game before that timer hit 0." <span class="timestamp" data-time="933">15m33s</span><br>
+- "You guys have to <b>choose a game that I must beat on stream.</b>" <span class="timestamp" data-time="948">15m48s</span><br>
+- "Also chat will choose <b>my next outfit and I must get it created.</b>" <span class="timestamp" data-time="994">16m34s</span><br>
+- <b>INCREDIBILIS</b> : "I'm not sure if it'll be next week or the week after, but I noticed that quite a few of you guys play <b>For Honor</b> in the discord, so I think we're going to try that out on stream sometime soon." <span class="timestamp" data-time="814">13m34s</span><br>
+- <b>Subreddit time</b> : "And you finally get it." <span class="timestamp" data-time="1261">21m1s</span><br>
+- " You wanna know how I know Vettel didn't code me? Because I can't find my code anywhere else on Stack Exchange." <span class="timestamp" data-time="1412">23m32s</span> <br>
+- "You know, funny story about this emote. Elguno showed this to me and I was like Oh my God that's so cute but why does it look like he's humping that heart?" <span class="timestamp" data-time="1774">29m34s</span> <br>
+- <b>Art event with the Bytes</b> : "So this is a bytes around the world Mother's Day event." <span class="timestamp" data-time="2617">43m37s</span><br>
+</p>
+<!-- 🎮 Dark Souls: Remastered   -->
+<h3>🎮 Dark Souls: Remastered  </h3>
+<p>- "So is this game like Elden Ring but for babies?" <span class="timestamp" data-time="4353">1h12m33s</span> <br>
+- "Let's fucking go. Let's go. We did it. We did it. We did it. We did it." <span class="timestamp" data-time="9445">2h37m25s</span> <br>
+- "I need to find a bonfire. Please be nice. Oh, wait. Is this the guy from the memes? Praise the Sun. Hello Solaire." <span class="timestamp" data-time="9610">2h40m10s</span> <br>
+- "The truth is bites. What I actually AM. Quack." <span class="timestamp" data-time="12775">3h32m55s</span> <br>
+- "I'm going to fuck you up, you stupid gargoyle little bitch. That's why your children's cartoon show got cancelled in the 90s, you fuck face. Your show wasn't even that good, it was boring as fuck." <span class="timestamp" data-time="14378">3h59m38s</span> <br>
+- "I freaking did it. I freaking did it. I freaking did it. I freaking did it." <span class="timestamp" data-time="15335">4h15m35s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I don't normally stream tomorrow. But we might stream a couple hours just to see how the marathon is going." <span class="timestamp" data-time="22750">6h19m10s</span><br>
+- "Like I said, <b>I'm not sure how long tomorrow will stream for, maybe a few hours at the most</b>. It all depends because honestly I'm probably going to take a shower right now. My muscles are feeling really weird." <span class="timestamp" data-time="22853">6h20m53s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
