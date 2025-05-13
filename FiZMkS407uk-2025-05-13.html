@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS】 MOTHERv3 DARK SOULS MARATHON【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/FiZMkS407uk?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS】 MOTHERv3 DARK SOULS MARATHON【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 13/05/2025 | Duration: 6h04m08s |</strong>
+                <a href="https://www.youtube.com/watch?v=FiZMkS407uk"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "<b>Sorry we didn't stream yesterday.I ended up being pretty darn sick.</b> Still am sick but. I at least have medicine for the symptoms now." <span class="timestamp" data-time="76">1m16s</span><br>
+- <b>NEW HYPE TRAIN FEATURE</b> : "For hype trains, we are going to bring back the sound redeems for emotes. <b>I only have mv3bark, mv3bonk, mv3heart, and mv3kuru.</b>" <span class="timestamp" data-time="474">7m54s</span><br>
+- "Most males don't get free stuff. If you're ugly, just say that." <span class="timestamp" data-time="750">12m30s</span> <br>
+- <b>STREAMAVATARS IS BACK ON BOTH TWITCH & YOUTUBE</b>:  "Boom." <span class="timestamp" data-time="1220">20m20s</span><br>
+- "Let's go. Siebras has won the Battle Royale! + 500 gold Congratulations dear." <span class="timestamp" data-time="1405">23m25s</span><br>
+</p>
+<!-- 🎮 Dark Souls: Remastered   -->
+<h3>🎮 Dark Souls: Remastered  </h3>
+<p>- "I guess it would be nice to get some Moss to help with poison." <span class="timestamp" data-time="6106">1h41m46s</span> <br>
+- "Curl up like a ball? What the fuck? Egg. Are we fucking serious?" <span class="timestamp" data-time="8751">2h25m51s</span> <br>
+- The "OK sorry I didn't need to pee I just farted. Hey, what the fuck?" <span class="timestamp" data-time="8865">2h27m45s</span> <br>
+- "Wait, what? Are you telling me I could have just ran back to the start and he would die?" <span class="timestamp" data-time="12955">3h35m55s</span> <br>
+- "Nope. Nope. Oh my God, they can go through the fucking walls." <span class="timestamp" data-time="14225">3h57m5s</span> <br>
+- Asking for a date by email : "What the fuck is this? What the fuck? An e-mail from simpversion1@gmail.com." <span class="timestamp" data-time="14431">4h31s</span> <br>
+- "The newest secret about Vedal987? He told me this himself, so I know it's true." <span class="timestamp" data-time="19230">5h20m30s</span> <br>
+- Iron Golem first try : "Let's go. Let's go. We did it, Chat. We did it. We did it. We did it. We did it. Oh my God, first try." <span class="timestamp" data-time="19440">5h24m</span> <br>
+- "It's because when I wear the cat ears, furries give me money and furries have lots of money." <span class="timestamp" data-time="19916">5h31m56s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we should start at the same time." <span class="timestamp" data-time="21640">6h40s</span><br>
+- "And then we'll play until we find a good stopping point once again." <span class="timestamp" data-time="21649">6h49s</span><br>
+- <b>29:43:00 Time remaining</b> : "Yes, pause the timer." <span class="timestamp" data-time="21786">6h3m6s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
