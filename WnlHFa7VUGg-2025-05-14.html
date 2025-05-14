@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS】 MOTHERv3 DARK SOULS MARATHON【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/WnlHFa7VUGg?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS】 MOTHERv3 DARK SOULS MARATHON【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 14/05/2025 | Duration: 5h24m24s |</strong>
+                <a href="https://www.youtube.com/watch?v=WnlHFa7VUGg"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>RIP Air conditionner story</b> : "While I was dealing with the HVAC people that said they were going to come fix my air conditioner, they gave me a free night stay at a hotel." <span class="timestamp" data-time="170">2m50s</span><br>
+- <b>NEW SUBATHON CHANGE</b>: "After today's stream, I will be doubling the time that gets subtracted from the timer." <span class="timestamp" data-time="510">8m30s</span><br>
+- <b>Sound effects for the emotes work at all times</b> "Yeah, I decided to keep it on after the hype train just so you guys could play with it for a bit." <span class="timestamp" data-time="1334">22m14s</span><br>
+- "Actually, you know what we need to do. We need to do another VIP wipe soon so we could do streams where you guys can earn it." <span class="timestamp" data-time="1372">22m52s</span><br>
+</p>
+<!-- 🎮 Game Name -->
+<h3>🎮 Game Name</h3>
+<p>- "Yes, chat, praise the sun." <span class="timestamp" data-time="2890">48m10s</span> <br>
+- "Let's fucking go. You guys said That was hard." <span class="timestamp" data-time="4420">1h13m40s</span><br>
+- Amazing chest ahead : "Praise the fucking son." <span class="timestamp" data-time="4650">1h17m30s</span> <br>
+- "What the fuck is going on? Holy shit. I thought they said to jump off." <span class="timestamp" data-time="7315">2h1m55s</span>  <br>
+- "That's right, bitch. Holy. What a death sound that was." <span class="timestamp" data-time="7470">2h4m30s</span> <br>
+- "You're a Vtuber with jiggle physics." <span class="timestamp" data-time="8963">2h29m23s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Fuck Dark Souls, fuck that boss, fuck all this shit. I'm gonna go have a Margarita." <span class="timestamp" data-time="19287">5h21m27s</span><br>
+- "More Dark Souls on Friday." <span class="timestamp" data-time="19450">5h24m10s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
