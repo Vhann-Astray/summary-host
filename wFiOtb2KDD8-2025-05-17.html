@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS】 MOTHERv3 DARK SOULS 1 MARATHON (DLC)【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/wFiOtb2KDD8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS】 MOTHERv3 DARK SOULS 1 MARATHON (DLC)【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 17/05/2025 | Duration: 3h54m36s |</strong>
+                <a href="https://www.youtube.com/watch?v=wFiOtb2KDD8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>"Rocky has been cooking on the cover for the new edition of the comic."</b> <span class="timestamp" data-time="2">2s</span><br>
+- <b>Arts from discord will be shown sometime at the start</b> : "Did you guys like the art at the very beginning? Thanks to Vhann for putting that together for me." <span class="timestamp" data-time="114">1m54s</span><br>
+- SleepyV3 Story : "While I was waiting for it to cool down my house, I was like, you know what? I'm gonna eat my leftover orange chicken." <span class="timestamp" data-time="263">4m23s</span><br>
+- "I made the mistake of redownloading Destiny 2. So who's gonna join my clan?" <span class="timestamp" data-time="692">11m32s</span><br>
+<b>Subreddit time</b> : - "Oh my God, look, Rocky posted the cover." <span class="timestamp" data-time="1290">21m30s</span><br>
+- "Dodo beep. You know, we kind of look alike. The fact that we both have big noses and big booties." <span class="timestamp" data-time="1705">28m25s</span><br>
+</p>
+<!-- 🎮 Dark Souls: Remastered : DLC   -->
+<h3>🎮 Dark Souls: Remastered : DLC  </h3>
+<p>- "Nice Kitty, good Kitty. Be a good Kitty, stay back. Are we fucking serious?" <span class="timestamp" data-time="4275">1h11m15s</span> <br>
+- "I felt more confident that time though. I'm finally not falling for the delayed attacks." <span class="timestamp" data-time="5605">1h33m25s</span> <br>
+- Knigh Artorias down : "Let's go. Yippee, yippee, yippee, yippee." <span class="timestamp" data-time="6230">1h43m50s</span> <br>
+- "I now have the power of balls. I just sneezed everywhere on my monitor." <span class="timestamp" data-time="6864">1h54m24s</span> <br>
+- Manus down : <span class="timestamp" data-time="11305">3h8m25s</span> <br>
+- Gwyn down : "Sit down, b*tch. Easy." <span class="timestamp" data-time="13006">3h36m46s</span><br>
+</p>
+<!-- 📅 What’s Next?  -->
+<h3>📅 What’s Next? </h3>
+<p>- "So we might not start out last tomorrow. We might do like a fun little offhanded stream tomorrow and then start it on Tuesday." <span class="timestamp" data-time="13792">3h49m52s</span><br>
+- "Or maybe I'll just say f*ck it and we'll start it tomorrow as well." <span class="timestamp" data-time="13807">3h50m7s</span><br>
+- "We'll see. <b>Tomorrow will be a surprise.</b>" <span class="timestamp" data-time="13815">3h50m15s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
