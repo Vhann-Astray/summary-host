@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft】 CHAT CONTROLS MOTHERv3's GAME【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/MlJtgz3m7LU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft】 CHAT CONTROLS MOTHERv3's GAME【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 18/05/2025 | Duration: 2h33m32s |</strong>
+                <a href="https://www.youtube.com/watch?v=MlJtgz3m7LU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Before that though, I wanted to remind you guys that right now Gamer Subs is doing a <b>free shipping</b> thing where if you use code V3 at checkout, you get free shipping on your order. I know that shipping costs a lot for you guys on the other side of the world, but now you can get it off." <span class="timestamp" data-time="360">6m</span><br>
+- <b>Discord questions</b> : "OK, chats. I think it's been a while since I've answered your questions you have for me on Discord, so let's answer those." <span class="timestamp" data-time="583">9m43s</span><br>
+- "Yes, yes, I decided since you guys were so nice and so helpful with Dark Souls, that I would reward you with a day where you could piss me off." <span class="timestamp" data-time="1579">26m19s</span><br>
+</p>
+<!-- 🎮 Minecraft with Crowd control   -->
+<h3>🎮 Minecraft with Crowd control  </h3>
+<p>- Getting banned on her own server : "You guys got me banned. Are you fucking serious? You guys got me fucking banned." <span class="timestamp" data-time="2678">44m38s</span> <br>
+- "How the fuck am I still alive? Big birds." <span class="timestamp" data-time="6023">1h40m23s</span> <br>
+- T.N.T. <span class="timestamp" data-time="7300">2h1m40s</span> <br>
+- "Ronald, who do you think is the cutest chatter on the stream right now?" <span class="timestamp" data-time="7692">2h8m12s</span> <br>
+- "Ronald, how was your day? Unka Bunga?" <span class="timestamp" data-time="7822">2h10m22s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- Next crowd control : "You guys are gonna love it, I'm sure of it. Grand Theft Auto 5." <span class="timestamp" data-time="8895">2h28m15s</span> <br>
+- "I will say that in about an hour on my <b>discord server</b> we're going to be playing custom games of <b>Fortnite</b> if you'd like to join in and have some fun with us." <span class="timestamp" data-time="8967">2h29m27s</span><br>
+- <b>Outlast stream</b> : "OK chats, I will see you all on Tuesday. Remember that is when we are starting out. Last you better show up or I swear to God I'm going to lose my fucking mind. I'm not going to go through this alone." <span class="timestamp" data-time="9043">2h30m43s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
