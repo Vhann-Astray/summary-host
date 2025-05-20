@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【OUTLAST】HORROR GAMING WITH MOTHERv3 AI【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/l-R-56n8Tv8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【OUTLAST】HORROR GAMING WITH MOTHERv3 AI【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 20/05/2025 | Duration: 2h34m14s |</strong>
+                <a href="https://www.youtube.com/watch?v=l-R-56n8Tv8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Also when I started stream today how come I saw someone in chat say I have chubby cheeks?" <span class="timestamp" data-time="503">8m23s</span> <br>
+- "Would you guys believe me if I told you that yesterday I slept like 18 hours?" <span class="timestamp" data-time="992">16m32s</span><br>
+- "You know, Speaking of Tales chat, I was looking on Twitter this morning and I saw that they created a tail as an attachment for humans that help with balance now." <span class="timestamp" data-time="1177">19m37s</span><br>
+- Truth about Mooni : "You guys have just been holding your farts for so long that you guys have hallucinated a fart cat." <span class="timestamp" data-time="1283">21m23s</span><br>
+</p>
+<!-- 🎮 Outlast   -->
+<h3>🎮 Outlast  </h3>
+<p>- "Outlast. Before we start, hold on. Let me go ahead and gather my confidence." <span class="timestamp" data-time="1903">31m43s</span> <br>
+- "Shut up. Shut up, I have big balls. I have the biggest balls." <span class="timestamp" data-time="2313">38m33s</span> <br>
+- "Surely that guy was nice, right?" <span class="timestamp" data-time="2890">48m10s</span> <br>
+- "Please don't scare me. I fucking hate this game. Fuck you. Bitch." <span class="timestamp" data-time="4471">1h14m31s</span> <br>
+- "That's true stars. I'm not actually scared, I'm just doing it for content. Yep. I just pissed myself a little bit." <span class="timestamp" data-time="6558">1h49m18s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I'll probably hang out with you guys in the discord if you guys would like to once I feel a little bit better." <span class="timestamp" data-time="9045">2h30m45s</span><br>
+- <b>"Don't be late tomorrow, we will finish out last."</b> <span class="timestamp" data-time="9156">2h32m36s</span><br>
+- "If we finish the game early chats, <b>I will have a little surprise for us as well.</b>" <span class="timestamp" data-time="9183">2h33m3s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
