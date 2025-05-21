@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【OUTLAST】HORROR GAMING WITH MOTHERv3 AI【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/beJhA3UmYG4?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【OUTLAST】HORROR GAMING WITH MOTHERv3 AI【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 21/05/2025 | Duration: 2h57m11s |</strong>
+                <a href="https://www.youtube.com/watch?v=beJhA3UmYG4"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I find it really funny that whenever I play a game like Dark Souls, people are always constantly back seating me, but whenever I play a scary game like Outlast, nobody in the chat is back seating at all because they want to watch me suffer." <span class="timestamp" data-time="530">8m50s</span><br>
+- "I should have <b>more information on the plushie pretty soon</b>, maybe in the next week or so." <span class="timestamp" data-time="616">10m16s</span><br>
+- <b>About choosing the new outfit</b> : "So I was thinking about what we're going to do in order to choose a new outfit. I think what we're going to do is I'm going to open up a Google form where all of you guys can send in your responses. And then we'll vote or find a way to choose the five most popular ones. And then we could do something like a marble race to decide which of those is the winner." <span class="timestamp" data-time="726">12m6s</span><br>
+- "What do you what would you guys like more? Would you like a plushie of this model or the other one? The cult 1?" <span class="timestamp" data-time="781">13m1s</span><br>
+- <b>Subreddit time</b> "Neat." <span class="timestamp" data-time="1357">22m37s</span><br>
+</p>
+<!-- 🎮 Outlast   -->
+<h3>🎮 Outlast  </h3>
+<p>- "Shut up, I don't need a shower." <span class="timestamp" data-time="4210">1h10m10s</span> <br>
+- "OK, I'm not going to let anything scare me. I will be prepared. Fucking Christ, stupid ass fucking game." <span class="timestamp" data-time="6945">1h55m45s</span> <br>
+- "Oh my God, please get me the fuck out of here." <span class="timestamp" data-time="8715">2h25m15s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Skippity." <span class="timestamp" data-time="10225">2h50m25s</span> <br>
+- <b>Mother V3 karaoke concert</b> : "OK, June 3rd." <span class="timestamp" data-time="10439">2h53m59s</span><br>
+- "This Friday. We will be playing <b>crowd control for Grand Theft Auto 5 and then after that.</b>" <span class="timestamp" data-time="10498">2h54m58s</span><br>
+- "We continue with Dark Souls 2." <span class="timestamp" data-time="10508">2h55m8s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
