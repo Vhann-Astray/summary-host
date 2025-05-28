@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】 WELCOME BACK MOTHERv3【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/aOB2E7Y1MMc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】 WELCOME BACK MOTHERv3【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 28/05/2025 | Duration: 3h50m57s |</strong>
+                <a href="https://www.youtube.com/watch?v=aOB2E7Y1MMc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>"Yeah, I had some major surgery over the past couple days."</b> <span class="timestamp" data-time="648">10m48s</span><br>
+- "My doctor has advised me that. Speaking too much and singing is probably out of the question, at least for the next month or two." <span class="timestamp" data-time="1151">19m11s</span><br>
+- "So if you see me reacting a little bit slowly on stream or something like that, you understand why." <span class="timestamp" data-time="1172">19m32s</span><br>
+- "Yeah, the entire karaoke stream is probably not going to happen, but. I could maybe do like one song." <span class="timestamp" data-time="1186">19m46s</span><br>
+- <b>"I am graduating. With a master's in physics, baby."</b> <span class="timestamp" data-time="1383">23m3s</span><br>
+- <b>Auto-correct words</b> : "OK chat. Today is the fateful day you've all been waiting for." <span class="timestamp" data-time="1882">31m22s</span><br>
+- <b>"Yes, I will be putting out a Google form where you guys can. Give ideas for the next outfit."</b> <span class="timestamp" data-time="4332">1h12m12s</span><br>
+- <b>"Subreddit time."</b> <span class="timestamp" data-time="4514">1h15m14s</span><br>
+- RockySolid Story : "This is the story of how Rocky stole all of my money." <span class="timestamp" data-time="5192">1h26m32s</span><br>
+</p>
+<!-- 🎮 Dollmare   -->
+<h3>🎮 Dollmare  </h3>
+<p>- "OK, so it seems there was nothing even there. I guess I'm just imagining things." <span class="timestamp" data-time="11560">3h12m40s</span> <br>
+- <b>Soon new emotes! From commissioned by nobodythatevermatters done by master_biggles</b> : "And here is the other one. That they've sent so far. Mother V3 pooping. Aren't they so cute? Aren't they so cute? I love it." <span class="timestamp" data-time="11851">3h17m31s</span> <br>
+- "Chad, I'm starting to get the idea that Mooney lied to me." <span class="timestamp" data-time="7556">2h5m56s</span><br>
+</p>
+<!-- 🎮 Quarantine Zone: The Last Check -->
+<h3>🎮 Quarantine Zone: The Last Check</h3>
+<p>- "Oh, your face is kind of blipped up, lady. Uh oh." <span class="timestamp" data-time="12680">3h31m20s</span> <br>
+- "Don't you blipping talk to me like that, b-word. Get liquidated, b-word." <span class="timestamp" data-time="12845">3h34m5s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I can't wait to <b>start Dark Souls 2</b> with you guys, so be sure and be here on Friday, OK?" <span class="timestamp" data-time="13621">3h47m1s</span><br>
+- "I love each and every day that I am able to do this for you all. And I'm thankful every single time I get to wake up and do this." <span class="timestamp" data-time="13724">3h48m44s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
