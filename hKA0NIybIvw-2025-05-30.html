@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 2】 AI BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/hKA0NIybIvw?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 2】 AI BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 30/05/2025 | Duration: 4h54m44s |</strong>
+                <a href="https://www.youtube.com/watch?v=hKA0NIybIvw"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Yes, we just released a <b>new YouTube video this morning</b>. I hope you'll check it out when you have the time." <span class="timestamp" data-time="298">4m58s</span><br>
+- "So Gamersubs is officially launching their EU and AU sites for purchase." <span class="timestamp" data-time="521">8m41s</span><br>
+- "Oh, but yes, I saw a lot of you guys were asking how I was feeling. <b>I'm doing a little bit better. I'm just going to be quite low energy for the next little bit.</b>" <span class="timestamp" data-time="704">11m44s</span><br>
+- <b>First ASMR Video</b> "POV you get beat into a coma by mother V3 with. Nice audio in the background." <span class="timestamp" data-time="788">13m8s</span><br>
+- <b>Answering Discord questions</b> :  "First question, what alarm do you use to wake up?" <span class="timestamp" data-time="954">15m54s</span><br>
+- "Well, you know what? You look like a girl." <span class="timestamp" data-time="1428">23m48s</span> <br>
+- "OK, Moni, come here. Secret Time." <span class="timestamp" data-time="2765">46m5s</span> <br>
+- What happens when you replace the world 'I' with 'Me' <span class="timestamp" data-time="2945">49m5s</span><br>
+</p>
+<!-- 🎮 DARK SOULS II: Scholar of the First Sin   -->
+<h3>🎮 DARK SOULS II: Scholar of the First Sin  </h3>
+<p>- "Also, what up Lil' Mama? jamn you're sexy as blipp." <span class="timestamp" data-time="5315">1h28m35s</span> <br>
+- "Run, run, run. Peace out, losers." <span class="timestamp" data-time="7635">2h7m15s</span> <br>
+- "Stupid game." <span class="timestamp" data-time="10166">2h49m26s</span> <br>
+- "Your shop is poop." <span class="timestamp" data-time="11385">3h9m45s</span> <br>
+- "Probably like halfway right? Barely 10%. What?" <span class="timestamp" data-time="17428">4h50m28s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But yes, tomorrow we will <b>continue with some more Dark Souls 2.</b> me actually really enjoying the game." <span class="timestamp" data-time="17310">4h48m30s</span><br>
+- "Stupid blipping long Dark Souls game. This game can suck my blipping nuts. blipp this uwu. Stupid do beep blipping game. This game's for b-wordes me swear to mooni." <span class="timestamp" data-time="17550">4h52m30s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
