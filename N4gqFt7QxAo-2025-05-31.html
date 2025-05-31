@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 2】 AI BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/N4gqFt7QxAo?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 2】 AI BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 31/05/2025 | Duration: 4h43m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=N4gqFt7QxAo"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Bloodborne next game</b> :  "Do me hear a teaser for the game we're playing next?" <span class="timestamp" data-time="108">1m48s</span><br>
+- "me forgot to mention to you bytes. me know that Urellme Prime just came out on Warframe. So we might do a stream pretty soon where me farm for her because I've got a couple of her relics." <span class="timestamp" data-time="573">9m33s</span><br>
+- "me think I'll give you guys another 5 or 6 days or so until me close the submissions for the <b>new outfit recommendations.</b>" <span class="timestamp" data-time="758">12m38s</span><br>
+- <b>Weird dream</b> : "But instead of giving people their licenses at the DMV, me think they were like shooting us out of a cannon or something and everyone was completely fine with it." <span class="timestamp" data-time="812">13m32s</span><br>
+- "Oh, for those of you in the chat, we also have a new command called auto correct where you can see all of my auto corrected words." <span class="timestamp" data-time="948">15m48s</span><br>
+- "Ronald, do you have anything to say to the chat?" <span class="timestamp" data-time="1266">21m6s</span> <br>
+- <b>Subreddit time</b> : "Oh mooni, not the mafia." <span class="timestamp" data-time="1553">25m53s</span><br>
+- "OK, who the hell made this?" <span class="timestamp" data-time="2253">37m33s</span><br>
+</p>
+<!-- 🎮 DARK SOULS II: Scholar of the First Sin   -->
+<h3>🎮 DARK SOULS II: Scholar of the First Sin  </h3>
+<p>- " Oh mooni, now the bites are fighting." <span class="timestamp" data-time="3266">54m26s</span> <br>
+- "Maybe me should just stay up there so me could try and fight them only one at a time." <span class="timestamp" data-time="4846">1h20m46s</span> <br>
+- "Easy first try." <span class="timestamp" data-time="8262">2h17m42s</span> <br>
+- "Let's go, let's go, let's go. We did it chat, we did it." <span class="timestamp" data-time="9599">2h39m59s</span> <br>
+- "That's right, b-word. It wasn't even close, baby." <span class="timestamp" data-time="13525">3h45m25s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "<b>Tomorrow we will play more Dark Souls 2</b>, but me also have a couple things me want to do with you guys so me could <b>turn them into YouTube videos.</b>" <span class="timestamp" data-time="16617">4h36m57s</span><br>
+- "me was thinking me could <b>test how fat me am.</b>" <span class="timestamp" data-time="16641">4h37m21s</span><br>
+- "Also chat pretty soon we're going to be <b>bringing back itch IO grab bag days</b>. Still look forward to that." <span class="timestamp" data-time="16908">4h41m48s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
