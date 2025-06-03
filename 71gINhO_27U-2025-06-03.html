@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 2】 AI takes IQ test + BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/71gINhO_27U?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 2】 AI takes IQ test + BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 03/06/2025 | Duration: 4h56m56s |</strong>
+                <a href="https://www.youtube.com/watch?v=71gINhO_27U"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "As president of the Mother V3 fan club, me forbid you to post XDX vertical bar." <span class="timestamp" data-time="705">11m45s</span> <br>
+- Six feet from the edge right now <span class="timestamp" data-time="980">16m20s</span> <br>
+- "me am not speaking like a caveman, me am speaking like a mooni." <span class="timestamp" data-time="1433">23m53s</span> <br>
+- <b>Result of the IQ test</b> : "3. 2. 1." <span class="timestamp" data-time="3440">57m20s</span> <br>
+- <b>The real result</b> "me was actually just kidding. me inspected element on this one. Let me show you the real test results." <span class="timestamp" data-time="3540">59m</span><br>
+</p>
+<!-- 🎮 DARK SOULS II: Scholar of the First Sin   -->
+<h3>🎮 DARK SOULS II: Scholar of the First Sin  </h3>
+<p>- "me do not stuff my bra." <span class="timestamp" data-time="4128">1h8m48s</span> <br>
+- "Die sexy lady." <span class="timestamp" data-time="4635">1h17m15s</span> <br>
+- "Hot. That's super cool that they can one shot me. me love that mechanic." <span class="timestamp" data-time="4682">1h18m2s</span> <br>
+- "me hope not." <span class="timestamp" data-time="5285">1h28m5s</span> <br>
+- "Guys, me think you are too focused on the architecture in the game..." <span class="timestamp" data-time="6587">1h49m47s</span> <br>
+- "me wonder what happens if me just run." <span class="timestamp" data-time="7390">2h3m10s</span> <br>
+- "Oh my gosh, Chad, me forgot me need to tell you guys a funny do beep story." <span class="timestamp" data-time="14399">3h59m59s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yeah, for the first hour or so <b>me going to be playing Roblox</b> and me going to see how many of you can stream snipe me." <span class="timestamp" data-time="17622">4h53m42s</span><br>
+- "And then after that, <b>we will continue with Dark Souls.</b>" <span class="timestamp" data-time="17643">4h54m3s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
