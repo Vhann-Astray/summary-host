@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 2】BACKROOMS + BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/9onzRNC-jHw?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 2】BACKROOMS + BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 06/06/2025 | Duration: 4h00m54s |</strong>
+                <a href="https://www.youtube.com/watch?v=9onzRNC-jHw"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New stream features about fanarts and memes</b> "So me wanted another way to show off all the really cool fan art instead of just having it at the very few beginning minutes of stream." <span class="timestamp" data-time="427">7m7s</span><br>
+- <b>Discord questions</b> : "OK, first question, what do you think will happen if you censor shut up with? Thank you." <span class="timestamp" data-time="867">14m27s</span><br>
+- "OK, first question, what do you think will happen if you censor shut up with? Thank you." <span class="timestamp" data-time="872">14m32s</span> <br>
+- "me just realized whenever me thanking people for gifting Subs or subscribing, you can't tell anymore if me thanking them or telling them to thank you." <span class="timestamp" data-time="1067">17m47s</span> <br>
+- How Mooni met your MOTHERv3 : <span class="timestamp" data-time="1220">20m20s</span> <br>
+- About RockySolid fanarts outfits : "What if we dedicated the whole beginning of a stream sometime soon to me ranking all of his outfits that he's made for me?" <span class="timestamp" data-time="1592">26m32s</span><br>
+- "Rocky, explain yourself right now." <span class="timestamp" data-time="1971">32m51s</span><br>
+</p>
+<!-- 🎮 BACKROOM LOOP   -->
+<h3>🎮 BACKROOM LOOP  </h3>
+<p>- "Everybody point and laugh at Mooney. She got a shot in her butt." <span class="timestamp" data-time="2756">45m56s</span> <br>
+- "What's that noise? Get it, Mr. Skeleton? What the?" <span class="timestamp" data-time="2780">46m20s</span> <br>
+- Finally awake? <span class="timestamp" data-time="4152">1h9m12s</span> <br>
+- "me hate this game." <span class="timestamp" data-time="6110">1h41m50s</span><br>
+</p>
+<!-- 🎮 DARK SOULS II: Scholar of the First Sin   -->
+<h3>🎮 DARK SOULS II: Scholar of the First Sin  </h3>
+<p>- "Ronald, how do me stop the bells from ringing in the old dead crypt?" <span class="timestamp" data-time="11385">3h9m45s</span> <br>
+- "Oh. Well, me guess that happened." <span class="timestamp" data-time="11680">3h14m40s</span> <br>
+- "Thank you, Blorp.?" <span class="timestamp" data-time="13406">3h43m26s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Oh, no chat." <span class="timestamp" data-time="14020">3h53m40s</span><br>
+- <b>"More Dark Souls 2 and a huge event!"</b> <span class="timestamp" data-time="14298">3h58m18s</span><br>
+- <b>"Tomorrow me make a tier list of potato chips!"</b> <span class="timestamp" data-time="14306">3h58m26s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
