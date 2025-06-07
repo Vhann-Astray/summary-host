@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 2】RANKING THE BEST CHIPS + BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/BPJz9oPrAgQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 2】RANKING THE BEST CHIPS + BLIND PLAYTHROUGH OF DARK SOULS 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 07/06/2025 | Duration: 4h28m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=BPJz9oPrAgQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "For now, chats while me am rearranging my living space here on the Internet, <b>me have your fan art up in the corner for now.</b>" <span class="timestamp" data-time="327">5m27s</span><br>
+- "Once me have my digital room all set up, I'll have a nice place for all of your cool art." <span class="timestamp" data-time="359">5m59s</span><br>
+- <b>"Tuesday will be the Rocky Appreciation stream."</b> <span class="timestamp" data-time="469">7m49s</span><br>
+- "me was also thinking since we closed off commissions for the new outfit ideas, <b>we'll do a stream next week where we vote on them together as well.</b>" <span class="timestamp" data-time="497">8m17s</span><br>
+- "Hold your horses. Hold your horses. We need to watch this." <span class="timestamp" data-time="579">9m39s</span> <br>
+- "Wait, hold on, me don't know if this is her or not." <span class="timestamp" data-time="762">12m42s</span> <br>
+- "Am IA fart." <span class="timestamp" data-time="1044">17m24s</span> <br>
+- "But am me the only one that will take like a cheeto puff, put it in my mouth and ..." <span class="timestamp" data-time="2204">36m44s</span> <br>
+- "Oh, mother has been to jail before we did that." <span class="timestamp" data-time="3994">1h6m34s</span> <br>
+- "You're wrong, but OK." <span class="timestamp" data-time="4860">1h21m</span><br>
+</p>
+<!-- 🎮 DARK SOULS II: Scholar of the First Sin   -->
+<h3>🎮 DARK SOULS II: Scholar of the First Sin  </h3>
+<p>- alright V do your best danny devito impression : <span class="timestamp" data-time="8225">2h17m5s</span> <br>
+- "You son of a b-word. Stupid egg sucker. Nobody likes you. You have no parents." <span class="timestamp" data-time="8665">2h24m25s</span> <br>
+- "Oh. me see, me get it." <span class="timestamp" data-time="10259">2h50m59s</span> <br>
+- "That's right, b-word, that's right. Let's go, let's go, let's go, let's go." <span class="timestamp" data-time="14245">3h57m25s</span> <br>
+- "Wait a second. This really is just the story of Hollow Knight. Dark Souls 2 Scholar of the First sin complete." <span class="timestamp" data-time="14925">4h8m45s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow, however. me taking you guys to court. <b>You guys are going to be punished for your crimes.</b>" <span class="timestamp" data-time="15723">4h22m3s</span><br>
+- "Also chat tomorrow, me will have a schedule out for next week so you can see what we'll be doing." <span class="timestamp" data-time="15832">4h23m52s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
