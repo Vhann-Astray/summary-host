@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】DETECTIVE MOTHERv3 IS ON THE CASE【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Ng7pbQhiFIc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】DETECTIVE MOTHERv3 IS ON THE CASE【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 08/06/2025 | Duration: 3h28m48s |</strong>
+                <a href="https://www.youtube.com/watch?v=Ng7pbQhiFIc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- Detective V3 on the case : "The only clue I had to go on was what you see on screen right now." <span class="timestamp" data-time="315">5m15s</span><br>
+- "Somebody here is guilty. Guilty of what, you might ask? Somebody stole my Turkey sandwich last night." <span class="timestamp" data-time="500">8m20s</span><br>
+- "Oh, what is that I hear? Chat, do I hear the phone ringing? Hello. Is this the detective?" <span class="timestamp" data-time="895">14m55s</span> <br>
+- "But they also stole something precious from the detective. They stole. His very secret salami." <span class="timestamp" data-time="1220">20m20s</span><br>
+</p>
+<!-- 🎮 Duck Detective: The Secret Salami   -->
+<h3>🎮 Duck Detective: The Secret Salami  </h3>
+<p>- "OK, I think he likes bread a lot." <span class="timestamp" data-time="1613">26m53s</span> <br>
+- "OK. Can I just say it real quick?" <span class="timestamp" data-time="1894">31m34s</span> <br>
+- "Looks like me after a stream." <span class="timestamp" data-time="3508">58m28s</span> <br>
+- "Which one of you left Mooney at the bus station?" <span class="timestamp" data-time="3650">1h50s</span> <br>
+- "Listen, OK, I never stole anyone's food at work because..." <span class="timestamp" data-time="5785">1h36m25s</span> <br>
+- "Holy. I quacked the case." <span class="timestamp" data-time="11928">3h18m48s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Next time we're going to take on <b>Duck Detectives</b>. New quest of the case of the <b>Ghost of Glamping.</b>" <span class="timestamp" data-time="12266">3h24m26s</span><br>
+- "<b>Dark Souls 3 this week</b>, as well as more Duck detective and some more fun stuff." <span class="timestamp" data-time="12495">3h28m15s</span><br>
+- "Also, we're going to look at all of <b>Rocky's drawings and we're going to vote on an outfit.</b>" <span class="timestamp" data-time="12508">3h28m28s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
