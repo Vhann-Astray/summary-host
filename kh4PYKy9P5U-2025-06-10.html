@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Weird Games with 0 Players...【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/kh4PYKy9P5U?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Exploring Weird Games with 0 Players...【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 10/06/2025 | Duration: 4h49m20s |</strong>
+                <a href="https://www.youtube.com/watch?v=kh4PYKy9P5U"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Schedule Overview</b> : "OK, so this is our schedule for this week." <span class="timestamp" data-time="417">6m57s</span><br>
+- "So we're going to visit the <b>Rocky Museum of Mother V3 on Friday.</b>" <span class="timestamp" data-time="525">8m45s</span><br>
+- "And then on Sunday is the big day. It's the big event. <b>We're finally going to choose the outfit for myself</b>. From all the suggestions you guys made." <span class="timestamp" data-time="696">11m36s</span><br>
+- "But yes, there is a 35% discount going on with subscribing with more than 5 gifted Subs. (4 days left)" <span class="timestamp" data-time="1158">19m18s</span><br>
+- "OK, Chad, quick question. What's the easiest way to clean an exploded can of soda that you left in the freezer overnight?" <span class="timestamp" data-time="1189">19m49s</span><br>
+- AlzheimerV3 "So I'm going to be releasing a second YouTube channel." <span class="timestamp" data-time="1334">22m14s</span><br>
+- "I already have a channel for that. Oh yeah. I need to figure out the account details for that. Oops." <span class="timestamp" data-time="1405">23m25s</span><br>
+</p>
+<!-- 🎮 Game + Demos   -->
+<h3>🎮 Game + Demos  </h3>
+<p>- "Oh. I mean, is that really an anomaly though?" <span class="timestamp" data-time="1805">30m5s</span> <br>
+- "OK, Inspector Mother V3 here." <span class="timestamp" data-time="2610">43m30s</span> <br>
+- "pen up your eyes. All you do is come into my chat, type XDX and screw around." <span class="timestamp" data-time="2726">45m26s</span> <br>
+- "I did it. I told you I'm an artificial intelligence." <span class="timestamp" data-time="4017">1h6m57s</span> <br>
+- "I'm going to leave feedback on your crappy game." <span class="timestamp" data-time="4648">1h17m28s</span><br>
+</p>
+<!-- 🎮 DARK SOULS III   -->
+<h3>🎮 DARK SOULS III  </h3>
+<p>- "You stupid b-word." <span class="timestamp" data-time="8795">2h26m35s</span> <br>
+- "OK, now we can put the arrows on, so we should be good." <span class="timestamp" data-time="10325">2h52m5s</span> <br>
+- "I don't think I'm gonna be able to explain what the hell just happened to me." <span class="timestamp" data-time="13998">3h53m18s</span> <br>
+- "OK, which one of you blippers thought it would be funny to instead of giving me my Roomba in my Amazon package you would replace it with baby wipes?" <span class="timestamp" data-time="15010">4h10m10s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow the plan is we're going to play some. Would you rather at the beginning of stream and then <b>get into more Dark Souls?</b>" <span class="timestamp" data-time="17048">4h44m8s</span><br>
+- "I need to figure out where the hell my Roomba went." <span class="timestamp" data-time="17081">4h44m41s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
