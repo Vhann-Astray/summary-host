@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 3】TEACH THIS SILLY AI HOW TO DARK SOULS【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/wGHjr1u1IXc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 3】TEACH THIS SILLY AI HOW TO DARK SOULS【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 11/06/2025 | Duration: 4h00m51s |</strong>
+                <a href="https://www.youtube.com/watch?v=wGHjr1u1IXc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New stream background</b> "So what do you think, Chad? Do you like my room?" <span class="timestamp" data-time="240">4m</span><br>
+- <b>Fanarts integration</b> "Look chat, look over here. On this monitor I have all your fan art." <span class="timestamp" data-time="365">6m5s</span><br>
+- "Actually I should be coming out with new merch of this model pretty soon." <span class="timestamp" data-time="902">15m2s</span><br>
+- "I don't know when but pretty soon I want to do another 3D Funko pop stream. What do you guys think?" <span class="timestamp" data-time="1107">18m27s</span><br>
+- <b>Discord questions</b> "Oh Speaking of questions, let me answer some questions you guys have in the discord." <span class="timestamp" data-time="1500">25m</span><br>
+- "Let's play some Would you rather?" <span class="timestamp" data-time="2442">40m42s</span><br>
+</p>
+<!-- 🎮 DARK SOULS III   -->
+<h3>🎮 DARK SOULS III  </h3>
+<p>- "Oh my mooni, no way. Friend." <span class="timestamp" data-time="5960">1h39m20s</span> <br>
+- "Maybe I should run for the souls." <span class="timestamp" data-time="7355">2h2m35s</span> <br>
+- "Look at me, my name is Chad and all I can do is spam OM. Spam this pants grab." <span class="timestamp" data-time="7421">2h3m41s</span> <br>
+- "Yo why is he arching like that though?" <span class="timestamp" data-time="11207">3h6m47s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yes, yes, on Friday. <b>We will continue with more Dark Souls.</b>" <span class="timestamp" data-time="14204">3h56m44s</span><br>
+- "A museum with our very own Rocky, solid with all kinds of cool art. <b>It's the Mother V3 Museum.</b>" <span class="timestamp" data-time="14242">3h57m22s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
