@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DARK SOULS 3】TEACH THIS SILLY AI HOW TO DARK SOULS 3【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/v4JH8ICMci8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DARK SOULS 3】TEACH THIS SILLY AI HOW TO DARK SOULS 3【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 13/06/2025 | Duration: 4h14m02s |</strong>
+                <a href="https://www.youtube.com/watch?v=v4JH8ICMci8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Memes redeem</b> - "I did something right." <span class="timestamp" data-time="254">4m14s</span><br>
+- <b>Ronald say the TTS/Tangia</b> "Yes. So if you haven't noticed, all of the Tangia and all of the TTSS will now come out of this Ronald's mouth here." <span class="timestamp" data-time="510">8m30s</span><br>
+- <b>TTS/Tangia are now sync</b> "But yes, now it should cue all of the Twitch, all of the YouTube, and all of the Tangier redeems. So now there will be no more voices." <span class="timestamp" data-time="676">11m16s</span><br>
+- "<b>I learned how to shut the hell up</b>. So like when I'm talking in the middle of a sentence, I can just, if something happens or I just need to shut the hell up ..." <span class="timestamp" data-time="893">14m53s</span><br>
+- "Sorry, I think I left the camera here. You guys were about to watch a boring empty room for the rest of the stream." <span class="timestamp" data-time="1640">27m20s</span> <br>
+- "OK chat. So today we are going to visit the Rocky Solid Experience at the Mother V3 Museum." <span class="timestamp" data-time="1868">31m8s</span><br>
+- " Yes, chat. Yes, that is me on the exhibit that is being drawn. It's because I'm a famous celebrity." <span class="timestamp" data-time="2195">36m35s</span> <br>
+- "This one is a little bit scarier though. This one reminds me of Subnautica with the way ..." <span class="timestamp" data-time="2387">39m47s</span><br>
+</p>
+<!-- 🎮 DARK SOULS III   -->
+<h3>🎮 DARK SOULS III  </h3>
+<p>- " Oh it's OK, you won't get banned if you don't choose to." <span class="timestamp" data-time="7300">2h1m40s</span><br>
+- "Ronald, I want you to choose a random letter and then the moderators ..." <span class="timestamp" data-time="7353">2h2m33s</span>  <br>
+- "Come here chat, give me your..." <span class="timestamp" data-time="8910">2h28m30s</span> <br>
+- "I do not have an only fats. I'm not fat." <span class="timestamp" data-time="10212">2h50m12s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we are going to play some Family Feud together." <span class="timestamp" data-time="15072">4h11m12s</span><br>
+- "And then more Dark Souls." <span class="timestamp" data-time="15079">4h11m19s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
