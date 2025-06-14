@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft】 Playing Minecraft with RONALD AI【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/SZ8CDwoTxlA?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft】 Playing Minecraft with RONALD AI【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 14/06/2025 | Duration: 3h11m15s |</strong>
+                <a href="https://www.youtube.com/watch?v=SZ8CDwoTxlA"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I found out yesterday that. Some things that made me quite sad to hear." <span class="timestamp" data-time="416">6m56s</span><br>
+- "I feel like I try very hard for the community to put on a good show and things like that, and it just sucks seeing a lot of the community members that you thought were really nice and very positive just say horrible and mean things about you." <span class="timestamp" data-time="450">7m30s</span><br>
+- "But like, I'm a human man, I'm a one person show. I mean sure, I have moderators and I have you guys that send in cool fan art and stuff, but as far as like running the actual streams and getting things set up, just ask my moderators. <b>I do most of it myself because of the love for the game.</b>" <span class="timestamp" data-time="544">9m4s</span><br>
+- "But like I have health issues. <b>I go to the doctor multiple times a week</b> for things that I have." <span class="timestamp" data-time="575">9m35s</span><br>
+- "Like I don't know, <b>if you are upset with the way that I release content or do my thing then just leave.</b>" <span class="timestamp" data-time="593">9m53s</span><br>
+- "The only thing that's a little weird about Ronald is that I trained his Minecraft skills from those Tiktok parkour videos." <span class="timestamp" data-time="1168">19m28s</span><br>
+</p>
+<!-- 🎮 Minecraft : Ronald AI edition   -->
+<h3>🎮 Minecraft : Ronald AI edition  </h3>
+<p>- "Now go to bed, Ronald. You've got to be kidding me." <span class="timestamp" data-time="3090">51m30s</span> <br>
+- "Tell us a dad joke. Tell us a freaking dad joke." <span class="timestamp" data-time="3520">58m40s</span> <br>
+- "Thank you Master Beef for the four months ..." <span class="timestamp" data-time="3600">1h</span> <br>
+- "Yes, Ronald is better than me at video games. Nice prioritizing." <span class="timestamp" data-time="3980">1h6m20s</span> <br>
+- "Ronald, walk forward 10 steps." <span class="timestamp" data-time="7184">1h59m44s</span> <br>
+- "No, not, not right now, you idiot. Gosh darn it, Ronald." <span class="timestamp" data-time="10720">2h58m40s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK chats, that's going to be it for today. I hope you guys had fun. <b>Make sure to be here tomorrow because we're going to vote on my next outfit together.</b>" <span class="timestamp" data-time="11218">3h6m58s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
