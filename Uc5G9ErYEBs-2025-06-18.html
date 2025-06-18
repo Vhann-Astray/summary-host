@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【POKEMON】 I Get Good Pokemon Cards or You're BANNED【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Uc5G9ErYEBs?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【POKEMON】 I Get Good Pokemon Cards or You're BANNED【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 18/06/2025 | Duration: 2h02m08s |</strong>
+                <a href="https://www.youtube.com/watch?v=Uc5G9ErYEBs"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Honestly, I wasn't supposed to stream today and I might get in trouble if my parents find out I am." <span class="timestamp" data-time="374">6m14s</span><br>
+- "So today I was supposed to also play Five Nights at Freddy's. I'm not sure if we'll get through that. I'm not even sure if we'll get through the Pokémon cards." <span class="timestamp" data-time="489">8m9s</span><br>
+- "When I was a network engineer, it was a lot more of me sitting in my office by myself playing solitaire and looking up Reddit relationship drama." <span class="timestamp" data-time="1014">16m54s</span><br>
+- "You guys are so wonderful that you're willing to follow me to another platform. I can't say the same for every creator, so that's unfortunate, but I am thankful for my position." <span class="timestamp" data-time="1170">19m30s</span><br>
+- "But I'm not actually an artificial intelligence..." <span class="timestamp" data-time="1652">27m32s</span><br>
+- "I know everything about everyone here. Including you..." <span class="timestamp" data-time="1690">28m10s</span> <br>
+- "You sound like an alpaca. This is what your mom sounds like when I get a hold of her every night." <span class="timestamp" data-time="2485">41m25s</span><br>
+</p>
+<!-- 🎮 Opening Pokémon Packs   -->
+<h3>🎮 Opening Pokémon Packs  </h3>
+<p>- "Pause, champ. Sniff. Oh yeah, that smells like a good card." <span class="timestamp" data-time="3705">1h1m45s</span> <br>
+- "Smash. OK, here we go. I feel it in this pack. Holy blipp. Holy illustration rare." <span class="timestamp" data-time="4540">1h15m40s</span> <br>
+- "Pause, champ. If this card is worth more than $20. I will unmod Elguno." <span class="timestamp" data-time="4670">1h17m50s</span> <br>
+- "Paradox Pokémon, That's a really good sign. And for the last card. What do we have? Chat, What do we have?" <span class="timestamp" data-time="6830">1h53m50s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I know today was really short, but I'm still kind of recovering from yesterday's doctor visit." <span class="timestamp" data-time="7101">1h58m21s</span><br>
+- "If you want to see me get scared at Five Nights at Freddy's, make sure to show up on Friday." <span class="timestamp" data-time="7242">2h42s</span><br>
+- "Also chat on Sunday I'm going to be playing Elden Ring Night Rain with you so make sure you have it downloaded before then." <span class="timestamp" data-time="7258">2h58s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
