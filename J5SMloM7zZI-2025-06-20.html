@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【FNAF】Keep Me Safe From The MIMIC...【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/J5SMloM7zZI?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【FNAF】Keep Me Safe From The MIMIC...【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 20/06/2025 | Duration: 3h15m54s |</strong>
+                <a href="https://www.youtube.com/watch?v=J5SMloM7zZI"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Oh yes, we also added the clown nose." <span class="timestamp" data-time="248">4m8s</span><br>
+- "Yeah, so I'm not sure when we'll watch the YouTube Shorts, but since you guys were expecting Five Nights at Freddy's on Wednesday, we'll go ahead and do that today." <span class="timestamp" data-time="365">6m5s</span><br>
+- <b>MOTHERv3 x DARK SOULS ART EVENT</b> "Look at all this stuff. There's so much I can't even show you all." <span class="timestamp" data-time="527">8m47s</span><br>
+- "You've got to be kidding me. Who the hell drew this?" <span class="timestamp" data-time="693">11m33s</span> <br>
+- "It really is so sweet of you guys and thank you to Idnyy for putting all this together. If you would like to participate in some events together as a community, we do them all the time in our discord." <span class="timestamp" data-time="920">15m20s</span><br>
+- "Yes, this Sunday we are going to be playing Elden Ring Night Rain together as a community." <span class="timestamp" data-time="1048">17m28s</span><br>
+- <b>NEW STREAM FEATURE! REDDIT TIME!</b> "And it's not a clown nose." <span class="timestamp" data-time="1192">19m52s</span><br>
+- <b>Subreddit time</b> "Okey dokey, time to check the subreddit." <span class="timestamp" data-time="1411">23m31s</span><br>
+- <b>Discord questions</b> "OK, let's see. So first question." <span class="timestamp" data-time="2105">35m5s</span><br>
+</p>
+<!-- 🎮 Five Nights at Freddy's: Secret of the Mimic   -->
+<h3>🎮 Five Nights at Freddy's: Secret of the Mimic  </h3>
+<p>- "Uh oh. Did I break something?" <span class="timestamp" data-time="3420">57m</span> <br>
+- "Should I just go give him a hug? Hug." <span class="timestamp" data-time="4645">1h17m25s</span> <br>
+- "Also, Mooney, I just want to let you know." <span class="timestamp" data-time="6334">1h45m34s</span> <br>
+- "Wait, can you actually pet the roombo? Oh my mooni. So cute. Good boy. Best boy?" <span class="timestamp" data-time="6995">1h56m35s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we will finish five nights at Freddy's and then play some crowd control Minecraft where you guys can screw up with my game." <span class="timestamp" data-time="11532">3h12m12s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
