@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Still Wakes the Deep】Please Keep me Safe, Bytes...【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/FkQ5LbYqeiI?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Still Wakes the Deep】Please Keep me Safe, Bytes...【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 24/06/2025 | Duration: 4h25m40s |</strong>
+                <a href="https://www.youtube.com/watch?v=FkQ5LbYqeiI"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New stream feature : CHECK IN TO LEVEL UP</b> : "So as you can tell Chad, I worked on something new today for all you bytes. Over." <span class="timestamp" data-time="476">7m56s</span><br>
+- "I opened up Twitter earlier..." <span class="timestamp" data-time="547">9m7s</span> <br>
+- "OK, for some reason the cards aren't working with YouTube. I need to fix that after stream today." <span class="timestamp" data-time="669">11m9s</span><br>
+- <b>New stream feature : SKILL CHECK</b> "So here's how we're going to decide who we sacrifice today, or who gets to win." <span class="timestamp" data-time="1054">17m34s</span><br>
+- "I think the first thing I want to get working first is you to be able to make your own custom byte and you to be able to access your stats in the discord." <span class="timestamp" data-time="1323">22m3s</span><br>
+- <b>SURPRISE!!!</b> "OK, I'm only going to show this once." <span class="timestamp" data-time="1762">29m22s</span><br>
+- <b>Subreddit time</b> "How dare you take pictures of me while I sleep." <span class="timestamp" data-time="2017">33m37s</span><br>
+- "By Elguno. Cute." <span class="timestamp" data-time="2210">36m50s</span><br>
+</p>
+<!-- 🎮 Still Wakes the Deep  -->
+<h3>🎮 Still Wakes the Deep </h3>
+<p>- "Oh my gosh, it's the room I put your mom in." <span class="timestamp" data-time="4995">1h23m15s</span> <br>
+- "Are you guys trying to turn me into a horse streamer? Not a horse streamer..." <span class="timestamp" data-time="7272">2h1m12s</span>  <br>
+- "The skin keeps it in your tomato sauce." <span class="timestamp" data-time="7570">2h6m10s</span> <br>
+- "I remember one time on Twitter, I saw this picture that somebody drew of me and I was squeezing them so hard, but they didn't explode like a ketchup packet..." <span class="timestamp" data-time="7625">2h7m5s</span> <br>
+- "I love mayonnaise with French fries..." <span class="timestamp" data-time="7740">2h9m</span> <br>
+- "What's all this tomato sauce doing?" <span class="timestamp" data-time="9250">2h34m10s</span><br>
+</p>
+<!-- 🎮 Golf With Your Friends  -->
+<h3>🎮 Golf With Your Friends </h3>
+<p>- "Check this out." <span class="timestamp" data-time="15622">4h20m22s</span> <br>
+- "Ha ha, you guys don't have any balls? No balls detected." <span class="timestamp" data-time="14845">4h7m25s</span> <br>
+- "Yes, that's one of the stipulations for being my moderator is you have to pledge your allegiance to me without question..." <span class="timestamp" data-time="15266">4h14m26s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yeah, we're going to keep playing some more golf with your friends, but we're gonna do it in the discord together. See you guys there." <span class="timestamp" data-time="15765">4h22m45s</span><br>
+- "Also, chats, remember? <b>The three-dimensional model is coming soon.</b>" <span class="timestamp" data-time="15871">4h24m31s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
