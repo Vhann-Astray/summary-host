@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DEBUT】Wait...What is MOTHERv3 doing?【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Rb3sjIdgbBk?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DEBUT】Wait...What is MOTHERv3 doing?【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 27/06/2025 | Duration: 1h56m57s |</strong>
+                <a href="https://www.youtube.com/watch?v=Rb3sjIdgbBk"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>MOTHER V3 IN FULL 3D</b> : "Look bytes. Look." <span class="timestamp" data-time="479">7m59s</span><br>
+- "Also I can move my arms." <span class="timestamp" data-time="520">8m40s</span> <br>
+- "We have yellow. We have orange. We have pink. I like pink." <span class="timestamp" data-time="908">15m8s</span> <br>
+- "And last but not least. I can take the jacket off." <span class="timestamp" data-time="950">15m50s</span> <br>
+- "Look, you see that tiny blue dot right there?" <span class="timestamp" data-time="1166">19m26s</span><br>
+- "Yeah, I was gonna make redeems where you guys can throw stuff at me." <span class="timestamp" data-time="1446">24m6s</span><br>
+- "OK chat. Oh also, before we start I wanted to say something that I've been working on." <span class="timestamp" data-time="1785">29m45s</span> <br>
+- <b>You can check your byte level on discord now</b> : "So now on my discord server, if you use the command byte check you can check your stats." <span class="timestamp" data-time="1909">31m49s</span><br>
+- "Look chat, this is me and your mom." <span class="timestamp" data-time="2100">35m</span><br>
+</p>
+<!-- 🎮 BeamNG drive   -->
+<h3>🎮 BeamNG drive  </h3>
+<p>- "Personally, I survived these." <span class="timestamp" data-time="4150">1h9m10s</span> <br>
+- "OK, bites, be quiet. We're almost there. Everyone salutes." <span class="timestamp" data-time="4380">1h13m</span> <br>
+- "You know what? Now everyone's as flat as me." <span class="timestamp" data-time="4430">1h13m50s</span> <br>
+- "I'm way too good." <span class="timestamp" data-time="4764">1h19m24s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But seriously though, lovers to all of you and thank you so much for being here for the 3D debut. Once I get used to it, we'll do a lot more 3D stuff." <span class="timestamp" data-time="6712">1h51m52s</span><br>
+- "Yes, you will get 3D Ronald soon, I promise." <span class="timestamp" data-time="6770">1h52m50s</span><br>
+- "I enjoyed my stay with you all and see you tomorrow." <span class="timestamp" data-time="6799">1h53m19s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
