@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DEBUT】MOTHERv3 chilling with the bytes【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/77O_9SHW2Xc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DEBUT】MOTHERv3 chilling with the bytes【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 29/06/2025 | Duration: 3h13m43s |</strong>
+                <a href="https://www.youtube.com/watch?v=77O_9SHW2Xc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Story time</b> "But growing up. I was always told not to smile because I had ugly teeth." <span class="timestamp" data-time="285">4m45s</span><br>
+- "Oh my gosh. Speaking of cool things. Did you guys see Saba debut yesterday?" <span class="timestamp" data-time="1163">19m23s</span><br>
+</p>
+<!-- 🎮 The Long Drive   -->
+<h3>🎮 The Long Drive  </h3>
+<p>- " You guys trust me with this, don't you?" <span class="timestamp" data-time="1690">28m10s</span> <br>
+- "OK, let's see, maybe there's more stuff Outback." <span class="timestamp" data-time="1995">33m15s</span> <br>
+- "The quote of the day is to never give up." <span class="timestamp" data-time="6575">1h49m35s</span> <br>
+- "Does it ever tell you guys a story of when I was little?" <span class="timestamp" data-time="6749">1h52m29s</span><br>
+</p>
+<!-- 🎮 The PEAK -->
+<h3>🎮 The PEAK</h3>
+<p>- "Elguno, can you talk?" <span class="timestamp" data-time="7805">2h10m5s</span> <br>
+- "I think I hear Vhann screaming. Here, I'll get their attention." <span class="timestamp" data-time="9197">2h33m17s</span> <br>
+- "If you talk, then you have to eat my balls." <span class="timestamp" data-time="9100">2h31m40s</span> <br>
+- "It was nice knowing you. It's so overbites, it's so over." <span class="timestamp" data-time="10831">3h31s</span> <br>
+- "If you're not the last one to talk, then you're a loser." <span class="timestamp" data-time="11215">3h6m55s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Mooney's mom just texted me that she didn't text her back. Oh, she's in big trouble." <span class="timestamp" data-time="11415">3h10m15s</span><br>
+- "Next stream on Tuesday. Love you all." <span class="timestamp" data-time="11449">3h10m49s</span><br>
+- *Elden ring NightReign event** : "Even if you don't play Elden Ring, you can always stop by the event and just hang out with us if you'd like." <span class="timestamp" data-time="11581">3h13m1s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
