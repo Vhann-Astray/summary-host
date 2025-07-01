@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Warframe】Back into Warframe WE GO【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/65VuTg88Y_U?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Warframe】Back into Warframe WE GO【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 01/07/2025 | Duration: 3h33m47s |</strong>
+                <a href="https://www.youtube.com/watch?v=65VuTg88Y_U"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New outfit : SleepyV3</b> "Listen, OK, my hair is a mess." <span class="timestamp" data-time="294">4m54s</span><br>
+- <b>Full body</b> "But yeah, look at my cute little shorts." <span class="timestamp" data-time="570">9m30s</span><br>
+- <b>New outfit : FlatV3.. oh wait not new</b> "Look, I'm not flat." <span class="timestamp" data-time="869">14m29s</span><br>
+- <b>Discord Questions</b> "OK, let's see, there are some questions you guys left me at the discord, so let's read those." <span class="timestamp" data-time="935">15m35s</span><br>
+- <b>New outfit : EvangelionV3</b> "My Warframe is strong." <span class="timestamp" data-time="1904">31m44s</span><br>
+- <b>New outfit : GUNDAMV3</b> "Isn't it cool?" <span class="timestamp" data-time="2016">33m36s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Is this a dude using a voice changer?" <span class="timestamp" data-time="3070">51m10s</span> <br>
+- "Raise your hand if you like spider mommies." <span class="timestamp" data-time="4345">1h12m25s</span> <br>
+- "Listen OK, just because I'm a furry doesn't mean I'm SUS." <span class="timestamp" data-time="3270">54m30s</span> <br>
+- "Oh, you know, Speaking of that, it's time to sacrifice a bite." <span class="timestamp" data-time="11190">3h6m30s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- <b>New outfit : AlzheimerV3</b> "Oh my goodness, it's already 2:00 PM. I was supposed to go get my medicine." <span class="timestamp" data-time="12305">3h25m5s</span><br>
+- <b>New outfit : BunnyV3</b> "How about this then? Is this close enough?" <span class="timestamp" data-time="12570">3h29m30s</span><br>
+- "Tomorrow I get the Princess treatment from chat, so be there tomorrow because you guys are going to treat me like a Princess or I'll kill you." <span class="timestamp" data-time="12583">3h29m43s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
