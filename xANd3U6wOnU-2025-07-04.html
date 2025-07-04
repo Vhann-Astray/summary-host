@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Mecha BREAK】 MOTHERv3 DARK SOULS GETS IN THE MECH【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/xANd3U6wOnU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Mecha BREAK】 MOTHERv3 DARK SOULS GETS IN THE MECH【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 04/07/2025 | Duration: 3h31m50s |</strong>
+                <a href="https://www.youtube.com/watch?v=xANd3U6wOnU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New mech interface</b> "Look, you're on my screen." <span class="timestamp" data-time="69">1m9s</span><br>
+- "Yes, not only did I steal a mech, but on my off time I learned enough unity. To learn how to import 3D environments." <span class="timestamp" data-time="143">2m23s</span><br>
+- "Check this out at the push of a button." <span class="timestamp" data-time="224">3m44s</span><br>
+- "Look, now you're above. Now you can see the whole eggpit." <span class="timestamp" data-time="245">4m5s</span> <br>
+- "Somebody on Twitter said that I look like Zen(Zentreya) in this outfit." <span class="timestamp" data-time="1441">24m1s</span><br>
+- "You guys should add me on Mecca break. By the way my name is "MOTHERv3" on there." <span class="timestamp" data-time="2461">41m1s</span><br>
+- "Random fact, Mooney invited me yesterday to play PalWorld with her and she killed me. So we're not friends for 5 minutes." <span class="timestamp" data-time="2617">43m37s</span> <br>
+- "Oh by the way bytes. I am playing on North American server." <span class="timestamp" data-time="2841">47m21s</span><br>
+- "If you need friends to play this game with you should join our discord there's tons of people that play." <span class="timestamp" data-time="3219">53m39s</span><br>
+</p>
+<!-- 🎮 Mech BREAK   -->
+<h3>🎮 Mech BREAK  </h3>
+<p>- "Oh my gosh yes, push me closer to the booty." <span class="timestamp" data-time="3090">51m30s</span> <br>
+- "Aquila. Also bytes look, I have the laughing emoji skin." <span class="timestamp" data-time="3395">56m35s</span> <br>
+- "Wait a second, why is Narukami kind of hot?" <span class="timestamp" data-time="4165">1h9m25s</span> <br>
+- "Oh, I saw why you guys like the death animation." <span class="timestamp" data-time="5153">1h25m53s</span> <br>
+- "OK, there we go. Wait, somebody rejected my request? What the hell?" <span class="timestamp" data-time="6213">1h43m33s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "So before it gets too crowded outside, I think I'm going to go try and grab some lunch." <span class="timestamp" data-time="12352">3h25m52s</span><br>
+- "Once I go get my food and come back after eating lunch, I'll play some games with you guys in the discord if you want." <span class="timestamp" data-time="12448">3h27m28s</span><br>
+- "You guys are truly the awesomest. Thank you so much for enjoying today with me and spending a little bit of your 4th of July with me." <span class="timestamp" data-time="12485">3h28m5s</span><br>
+- "All right, how do I move the twitch chat off of the screen? I need to go goon to my big booty Latina pictures." <span class="timestamp" data-time="12569">3h29m29s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
