@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【DEBUT】 MOTHERv3 invites you aboard.【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/6s9Q-ehyMDU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【DEBUT】 MOTHERv3 invites you aboard.【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 08/07/2025 | Duration: 4h29m46s |</strong>
+                <a href="https://www.youtube.com/watch?v=6s9Q-ehyMDU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New 3D Scene : Spaceship</b> "Welcome aboard Bytes." <span class="timestamp" data-time="387">6m27s</span><br>
+- "This is my bedside." <span class="timestamp" data-time="590">9m50s</span><br>
+- "Here's my Armory. You know it's my Armory because it says Armory." <span class="timestamp" data-time="827">13m47s</span><br>
+- "Check out these guns." <span class="timestamp" data-time="892">14m52s</span><br>
+- <b>Soon MOTHERv3 in your language</b> "Check this out right here." <span class="timestamp" data-time="1302">21m42s</span><br>
+- "So this is the bathroom right here." <span class="timestamp" data-time="1757">29m17s</span><br>
+- "Lovers, though." <span class="timestamp" data-time="1847">30m47s</span> <br>
+- "Do it. Somebody eat me right now. Not eat. Yeet." <span class="timestamp" data-time="2384">39m44s</span> <br>
+- "Let's go to the eggpit." <span class="timestamp" data-time="2159">35m59s</span><br>
+- <b>YEET</b> "Oh, it's on cooldown? I forgot to put it on cooldown." <span class="timestamp" data-time="2399">39m59s</span><br>
+- <b>"I have the opportunity to become a Warhammer creator."</b> <span class="timestamp" data-time="3988">1h6m28s</span><br>
+- "Stop it. If I'm dating anybody, I'm dating the wolf guy from Zenless Zone 0." <span class="timestamp" data-time="4877">1h21m17s</span><br>
+</p>
+<!-- 🎮 Umamusume: Pretty Derby   -->
+<h3>🎮 Umamusume: Pretty Derby  </h3>
+<p>- "Special week. Thank you, Charney Sama." <span class="timestamp" data-time="6650">1h50m50s</span> <br>
+- "Would you pdo beep her already? Let's go." <span class="timestamp" data-time="9198">2h33m18s</span> <br>
+- "Three years. What happens after three years?" <span class="timestamp" data-time="9355">2h35m55s</span> <br>
+- "Wait, there's PvP in this game? That's pretty cool. So do the horses kill each other?" <span class="timestamp" data-time="9767">2h42m47s</span> <br>
+- "Yeah, bites. For those of you who don't know, my real life name is Gabe." <span class="timestamp" data-time="10134">2h48m54s</span> <br>
+- "Not that blue girl. I want twin turbo. Give me twin turbo." <span class="timestamp" data-time="10964">3h2m44s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Also on Friday we're going to be doing viewer submitted confessions, so I'll be giving you information on how to do that tomorrow." <span class="timestamp" data-time="15910">4h25m10s</span><br>
+- "We'll also be having a viewer submission You Laugh, You Lose on Sunday as well. I'll be posting information on that too." <span class="timestamp" data-time="15943">4h25m43s</span><br>
+- "But yes, tomorrow we're going to suit back up. I'm not going to tell you what that means. It's going to be a surprise." <span class="timestamp" data-time="15973">4h26m13s</span><br>
+- "So also in about an hour and a half we're going to be watching Jurassic Park and the Discord server." <span class="timestamp" data-time="16141">4h29m1s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
