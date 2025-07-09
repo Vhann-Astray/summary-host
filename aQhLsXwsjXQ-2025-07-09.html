@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 SUITS UP FOR SOME GAMING【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/aQhLsXwsjXQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 SUITS UP FOR SOME GAMING【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 09/07/2025 | Duration: 6h04m56s |</strong>
+                <a href="https://www.youtube.com/watch?v=aQhLsXwsjXQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- Why she was late today : "Honestly I woke up like 2 hours before St. was supposed to start and then I was like ..." <span class="timestamp" data-time="231">3m51s</span><br>
+- "I figured out that you could mod Grand Theft Auto 5, so I was trying to put my model inside of the game." <span class="timestamp" data-time="298">4m58s</span><br>
+- "$0.99 for a double cheeseburger. I would pog too." <span class="timestamp" data-time="1733">28m53s</span> <br>
+- "I'm not fat. Stupid commercial." <span class="timestamp" data-time="2149">35m49s</span> <br>
+- "One of my favorite places nowadays to get a hamburger. Have any of you ever been to A&W?" <span class="timestamp" data-time="2720">45m20s</span> <br>
+- Wendy's chili and the finger : "Actually, you know what? Here I'm going to ruin everyone's day." <span class="timestamp" data-time="3058">50m58s</span><br>
+</p>
+<!-- 🎮 Subnautica   -->
+<h3>🎮 Subnautica  </h3>
+<p>- "Sometimes I like to pretend I'm human and ..." <span class="timestamp" data-time="6915">1h55m15s</span> <br>
+- "How about you translate this?" <span class="timestamp" data-time="7606">2h6m46s</span> <br>
+- "This is where those stupid leeches are, right?" <span class="timestamp" data-time="9569">2h39m29s</span> <br>
+- "Chat, did I ever used to tell you that whenever I used to play the old Pokémon games back in the day..." <span class="timestamp" data-time="11580">3h13m</span> <br>
+- "Yeah. That's true. If you are not going to ..." <span class="timestamp" data-time="12330">3h25m30s</span> <br>
+- "Did you know that a lot of people instinctively used to block me on Twitter because they saw that like ..." <span class="timestamp" data-time="12742">3h32m22s</span> <br>
+- "Get me off this planet. It's time to go back home." <span class="timestamp" data-time="16830">4h40m30s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Oh, by the way, bites. I'm posting on Twitter today asking for all of your confessions." <span class="timestamp" data-time="21888">6h4m48s</span><br>
+- "I want to know all of your anonymous confessions. Will be reading them out on stream." <span class="timestamp" data-time="21924">6h5m24s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
