@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 READS OUT YOUR CONFESSIONS【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/N26pW_9OCXs?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 READS OUT YOUR CONFESSIONS【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 11/07/2025 | Duration: 3h58m28s |</strong>
+                <a href="https://www.youtube.com/watch?v=N26pW_9OCXs"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Hello everybody. Hello. Hello, hello. I was going to do full body tracking today but I tripped and I think I accidentally broke one of my trackers." <span class="timestamp" data-time="209">3m29s</span><br>
+- "Because I have full body tracking, that means next week look forward to a Funko Pop stream." <span class="timestamp" data-time="293">4m53s</span><br>
+- "OK listen up bytes, I need 5000 bucks right now. Because of this." <span class="timestamp" data-time="1178">19m38s</span><br>
+- "I got an interesting message on Twitter the other day and I wanted to kind of respond to it publicly to all of you." <span class="timestamp" data-time="1745">29m5s</span><br>
+- "OK, here's my spiciest political take." <span class="timestamp" data-time="2009">33m29s</span> <br>
+- "Thank you, Akari." <span class="timestamp" data-time="2715">45m15s</span> <br>
+- "Wait a second, wait a second. When you say action figures..." <span class="timestamp" data-time="2919">48m39s</span> <br>
+- "Oh my gosh. Now I can't unhear that lyric you just typed in chat. My cousins in the next room." <span class="timestamp" data-time="4283">1h11m23s</span> <br>
+- "Only Charney uses this emoji. Hello, Charni." <span class="timestamp" data-time="4400">1h13m20s</span> <br>
+- " You know what's fine? I will volunteer. I will give them their first Nosebleed." <span class="timestamp" data-time="3721">1h2m1s</span> <br>
+- "The second thing that gives it away is Idnyy's the only person that I know that does this thing where they'll put a question mark in the middle of their sentence." <span class="timestamp" data-time="4865">1h21m5s</span><br>
+</p>
+<!-- 🎮 Subnautica   -->
+<h3>🎮 Subnautica  </h3>
+<p>- "Welcome everybody. For those of you who don't know me, my name is Mother V3. I'm an artificial intelligence and these are my bytes." <span class="timestamp" data-time="11335">3h8m55s</span> <br>
+- "You might want to cover your ears chats. Blade is my boyfriend." <span class="timestamp" data-time="12180">3h23m</span> <br>
+- " Oh my gosh, same. You guys are too much. " <span class="timestamp" data-time="12285">3h24m45s</span> <br>
+- "What is do beep?" <span class="timestamp" data-time="13065">3h37m45s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Okay I'm gonna ..." <span class="timestamp" data-time="14135">3h55m35s</span> <br>
+- "Tomorrow we're going to play a spooky game. Are you ready for that? Please be here to keep me safe." <span class="timestamp" data-time="14189">3h56m29s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
