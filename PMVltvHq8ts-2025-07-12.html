@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 GOES ON A JOURNEY【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/PMVltvHq8ts?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 GOES ON A JOURNEY【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 12/07/2025 | Duration: 3h59m14s |</strong>
+                <a href="https://www.youtube.com/watch?v=PMVltvHq8ts"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>New scene</b> "Hello dears. We're on my ship now." <span class="timestamp" data-time="109">1m49s</span><br>
+- On twitter : "I got like 3 messages in the span of like 10 minutes, all of them saying I was flat." <span class="timestamp" data-time="237">3m57s</span><br>
+- "See, now you can finally see how much the tie hides." <span class="timestamp" data-time="349">5m49s</span><br>
+- "It kind of feels weird without the goggles." <span class="timestamp" data-time="483">8m3s</span><br>
+- "So I was thinking at the beginning of every stream for like the first 30 minutes or 45 minutes, we're going to do workout streams in 3D." <span class="timestamp" data-time="648">10m48s</span><br>
+- "Or, you know, I could be like all the others V tubers that have secret boyfriends that are secretly my manager. Is that too soon?" <span class="timestamp" data-time="1100">18m20s</span> <br>
+- "What the heck? Is it broken?" <span class="timestamp" data-time="1900">31m40s</span> <br>
+- "I need some chicken Nuggets. We're running out of food here on our ship. Pretty soon we're going to have to start eating each other. And Cyan is getting very hungry." <span class="timestamp" data-time="2080">34m40s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Beep beep beep beep beep beep beep beep beep beep beep." <span class="timestamp" data-time="5037">1h23m57s</span> <br>
+- "You know, I know I say this a lot, but I just wanted to as a reminder, let you guys know. Thank you all for showing up today and saying hello. It truly does mean the world." <span class="timestamp" data-time="8085">2h14m45s</span> <br>
+- "Listen, OK, if there's one thing I've taught you in life, let it be this." <span class="timestamp" data-time="11956">3h19m16s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK dears, I'm going to go grab some food and then I'll hang out in the discord with you guys and farm some more." <span class="timestamp" data-time="14183">3h56m23s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
