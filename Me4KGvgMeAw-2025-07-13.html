@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 GOES ON A MISSION【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Me4KGvgMeAw?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 GOES ON A MISSION【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 13/07/2025 | Duration: 3h42m20s |</strong>
+                <a href="https://www.youtube.com/watch?v=Me4KGvgMeAw"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Listen, OK, I'm already not in a good mood today because this morning my moderators were telling me some things in my moderator discord chats..." <span class="timestamp" data-time="160">2m40s</span><br>
+- "You guys were supposed to send in videos and I'm supposed to react to them and not laugh?" <span class="timestamp" data-time="453">7m33s</span><br>
+- "The problem with that was is I forgot to ask you guys to submit videos." <span class="timestamp" data-time="485">8m5s</span><br>
+- "Yes, we will do that on Tuesday. We will have a channel on the discord where you guys can submit videos" <span class="timestamp" data-time="863">14m23s</span><br>
+- "Let's watch some paint dry, boys." <span class="timestamp" data-time="1161">19m21s</span><br>
+</p>
+<!-- 🎮 Paint Dry Simulator -->
+<h3>🎮 Paint Dry Simulator</h3>
+<p>- "Let's go with purple." <span class="timestamp" data-time="1764">29m24s</span><br>
+- "So this morning I ordered a coffee from McDonald's to be delivered." <span class="timestamp" data-time="2229">37m9s</span><br>
+- "I recently found this cool website called Scramble." <span class="timestamp" data-time="3213">53m33s</span><br>
+- "I saw this video of British high schoolers trying Texas BBQ." <span class="timestamp" data-time="4692">1h18m12s</span><br>
+- "Oh, he's so dead. Oh his mom definitely saw this." <span class="timestamp" data-time="5729">1h35m29s</span> <br>
+- Warframe event progression : "Let's see how much work you guys did." <span class="timestamp" data-time="6491">1h48m11s</span><br>
+</p>
+<!-- 🎮 Counter-Strike (while the paint is drying) -->
+<h3>🎮 Counter-Strike (while the paint is drying)</h3>
+<p>- "How is the paint looking? Here, let me pull it up real quick." <span class="timestamp" data-time="11357">3h9m17s</span> <br>
+- "OK chats, which one are you most excited for?" <span class="timestamp" data-time="12255">3h24m15s</span> <br>
+- "Can you purr like a cat for your subscribers? Sure." <span class="timestamp" data-time="12015">3h20m15s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- New discord pin : "So this is our pin for the month." <span class="timestamp" data-time="12893">3h34m53s</span><br>
+- "You know, Speaking of body pillows chat ..." <span class="timestamp" data-time="13150">3h39m10s</span> <br>
+- "Prepare for the missions of the week. Star command requires your do beepistance." <span class="timestamp" data-time="13269">3h41m9s</span><br>
+- "Prepare for Runescape. We're going back into medieval times, baby." <span class="timestamp" data-time="13287">3h41m27s</span><br>
+- "Don't forget to be happy, smile and spread some kindness." <span class="timestamp" data-time="13322">3h42m2s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
