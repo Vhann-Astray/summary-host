@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 EDGING MY FATE ON DESTINY 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/2FOsrlUSLSI?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 EDGING MY FATE ON DESTINY 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 16/07/2025 | Duration: 5h02m18s |</strong>
+                <a href="https://www.youtube.com/watch?v=2FOsrlUSLSI"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- New Ronald skin : "He's my ghost." <span class="timestamp" data-time="546">9m6s</span><br>
+- "Also, I can pout my cheeks, this is how much I used to be able to pout them before." <span class="timestamp" data-time="722">12m2s</span><br>
+- "Also now whenever one of you guys say something really weird, I can just do this." <span class="timestamp" data-time="812">13m32s</span><br>
+- "Don't I look like I'm about to kill you?" <span class="timestamp" data-time="1347">22m27s</span> <br>
+- <b>Starting to look at the YLYL videos</b> : "Who's ready to not laugh?" <span class="timestamp" data-time="1427">23m47s</span><br>
+- "To prevent my mouth moving whenever I speak. I think in my time streaming as a V tuber, I've spent more than 30 grand on it." <span class="timestamp" data-time="2691">44m51s</span> <br>
+- "Banana. Salutes to Siren." <span class="timestamp" data-time="3279">54m39s</span> <br>
+- "Yes, we gotta play repo sometime then in that case." <span class="timestamp" data-time="2555">42m35s</span> <br>
+- "Oh my gosh, why does it look just like you?" <span class="timestamp" data-time="3793">1h3m13s</span><br>
+</p>
+<!-- 🎮 Destiny 2   -->
+<h3>🎮 Destiny 2  </h3>
+<p>- "Normal difficulty or legendary? I don't even think it's a choice. Legendary baby." <span class="timestamp" data-time="5053">1h24m13s</span> <br>
+- "Oh my God, I never thought I would be sexually attracted to a gun." <span class="timestamp" data-time="8050">2h14m10s</span> <br>
+- "Thank you, Mooney." <span class="timestamp" data-time="8590">2h23m10s</span> <br>
+- "Look, I can turn into a ball. I can turn into a marble." <span class="timestamp" data-time="9265">2h34m25s</span> <br>
+- "Oh my gosh, it really is a girl. How does my breath smell chat? Does it smell good? OK, let's go." <span class="timestamp" data-time="9655">2h40m55s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "But who knows, maybe I'll just start upstream tomorrow anyways to play more of this destiny." <span class="timestamp" data-time="17765">4h56m5s</span><br>
+- "Very true. I'm going to go ice my neck and everything like that." <span class="timestamp" data-time="17858">4h57m38s</span><br>
+- "What is my destiny? My destiny. Is to make you all join my clan on Destiny 2. Also, join the discord already, dammit." <span class="timestamp" data-time="17888">4h58m8s</span><br>
+- "I need more people to play with please and thank you. Also my destiny is ..." <span class="timestamp" data-time="17962">4h59m22s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
