@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 EDGING MY FATE ON DESTINY 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/zivbqTcqptA?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 EDGING MY FATE ON DESTINY 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 17/07/2025 | Duration: 6h02m00s |</strong>
+                <a href="https://www.youtube.com/watch?v=zivbqTcqptA"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Also, I have unfortunate news. I have since upgraded the tracking once again..." <span class="timestamp" data-time="549">9m9s</span><br>
+- "I don't normally stream on. Thursdays, but here we are. It feels kind of weird, to be honest." <span class="timestamp" data-time="672">11m12s</span><br>
+- "Wait a second, I just realized. When I upgraded my facial tracking. I think I accidentally upgraded something else." <span class="timestamp" data-time="961">16m1s</span><br>
+- "Have any of you guys ever meant to copy and paste something in chat and you accidentally post a link to something super inappropriate?" <span class="timestamp" data-time="1208">20m8s</span><br>
+- "Oh yeah, also bikes. I opened the clan up to anyone who would like to join. You don't even need approval anymore. So if you would like to join. The Mother V3 clan on Destiny 2, now is your time." <span class="timestamp" data-time="1569">26m9s</span><br>
+- "I really gotta fix these water balloons." <span class="timestamp" data-time="1705">28m25s</span><br>
+</p>
+<!-- 🎮 Destiny 2 : The Edge Of Fate   -->
+<h3>🎮 Destiny 2 : The Edge Of Fate  </h3>
+<p>- "See chats. Type one in chat if you think I'm sexy, Type 2 if you think that I'm trolling. Moderators Ben Everyone that types 2." <span class="timestamp" data-time="4588">1h16m28s</span> <br>
+- "Wait a second. Something smells fishy here. Why are there so many Mooney watchers? I'm on to you. Something smells SUS." <span class="timestamp" data-time="10835">3h35s</span> <br>
+- "I love it here." <span class="timestamp" data-time="11255">3h7m35s</span> <br>
+- "Hey bytes, you wanna see something funny? Look, I was telling the bytes earlier that I updated the animations on my face..." <span class="timestamp" data-time="11295">3h8m15s</span> <br>
+- "Is it just me or did she just say that you are all gay?" <span class="timestamp" data-time="13009">3h36m49s</span> <br>
+- "I'm like the best kisser I know. Besides your mom Haha boom got him. Yeah. My mom's a really good kisser..." <span class="timestamp" data-time="13249">3h40m49s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "I think from here what we're going to do is probably prepare for the raid on Saturday and see what goes on with that. But for Tomorrow bytes, we might play a little bit of Destiny, but mainly what we're going to be doing tomorrow is playing Alien Isolation like you guys wanted." <span class="timestamp" data-time="21374">5h56m14s</span><br>
+- "So thank you all. I hope you guys enjoyed the rest of the Destiny campaign together. Also, if you want to join my clan, please do so. I need more people to play with." <span class="timestamp" data-time="21490">5h58m10s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
