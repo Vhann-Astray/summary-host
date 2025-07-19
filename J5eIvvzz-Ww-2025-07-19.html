@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 DAY 1 DESTINY 2 RAID WITH THE BYTES【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/J5eIvvzz-Ww?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 DAY 1 DESTINY 2 RAID WITH THE BYTES【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 19/07/2025 | Duration: 7h16m01s |</strong>
+                <a href="https://www.youtube.com/watch?v=J5eIvvzz-Ww"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Let me just make one thing clear very quickly. You're probably going to hear us getting frustrated at some point." <span class="timestamp" data-time="269">4m29s</span><br>
+- "Give me one second, let's see if we can get in." <span class="timestamp" data-time="463">7m43s</span> <br>
+- "Actually, before I do that, let me show you guys what my build is for today." <span class="timestamp" data-time="669">11m9s</span><br>
+- "Hold on, let me put your guys's names on the screen so people can see who you are. Would you like to introduce yourselves? I'm sure a lot of people know y'all, but still." <span class="timestamp" data-time="896">14m56s</span><br>
+- "OK, this is Charni and this is Ennaverse. Everyone say hi." <span class="timestamp" data-time="1040">17m20s</span><br>
+</p>
+<!-- 🎮 Destiny 2   -->
+<h3>🎮 Destiny 2  </h3>
+<p>- "If propane doesn't show up, I'm removing his founder badge." <span class="timestamp" data-time="1324">22m4s</span> <br>
+- "How about I swap you out with a German who actually has good Internet?" <span class="timestamp" data-time="1827">30m27s</span> <br>
+- "Yeah, chat, look at that gameplay. You like that gameplay?" <span class="timestamp" data-time="4990">1h23m10s</span> <br>
+- "Yeah, Keeper. Go drink, you ..." <span class="timestamp" data-time="24445">6h47m25s</span> <br>
+- "Are you saying you want to pussy out?" <span class="timestamp" data-time="24669">6h51m9s</span> <br>
+- "Let's go, boys. Let's go. Let's go. World's first. Oh my God, I'm coming. I mean, what?" <span class="timestamp" data-time="25525">7h5m25s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, bytes. Thank you all for being here today for the world's first raid race in Destiny Two. It was so much fun, and even though we didn't get past the first encounter, holy guacamole was this fun." <span class="timestamp" data-time="25921">7h12m1s</span><br>
+- "Tomorrow is Alien Isolation with cheap TTS." <span class="timestamp" data-time="25992">7h13m12s</span><br>
+- "Holy crap. I just realized there's gunk in between my toes that I haven't cleaned out." <span class="timestamp" data-time="26151">7h15m51s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
