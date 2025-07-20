@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 finally plays Alien Isolation【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/Z7yCqnLr6pc?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 finally plays Alien Isolation【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 20/07/2025 | Duration: 5h26m40s |</strong>
+                <a href="https://www.youtube.com/watch?v=Z7yCqnLr6pc"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I want you, bikes, to know that I did go to the clinic yesterday to take a look at my neck. They said apparently what had happened was I've been having really bad muscle spasms. And so I got to go back this week." <span class="timestamp" data-time="391">6m31s</span><br>
+- "I had a weird dream as well. I can't exactly remember it, but I remember we were like living amongst dinosaurs, but they were like nice dinosaurs." <span class="timestamp" data-time="450">7m30s</span><br>
+- "What does mother look like without her headphones on? I'm too sexy when I take them off." <span class="timestamp" data-time="1048">17m28s</span><br>
+</p>
+<!-- 🎮 Alien isolation   -->
+<h3>🎮 Alien isolation  </h3>
+<p>- "What are my thoughts on busing? I think it is a. Very respectable job..." <span class="timestamp" data-time="4411">1h13m31s</span> <br>
+- "See, I told you it's a pussy." <span class="timestamp" data-time="13150">3h39m10s</span> <br>
+- "What if I let the alien kill them?" <span class="timestamp" data-time="13287">3h41m27s</span> <br>
+- "Oh my gosh, it's my friends." <span class="timestamp" data-time="13535">3h45m35s</span><br>
+</p>
+<!-- 🎮 Warframe last news -->
+<h3>🎮 Warframe last news</h3>
+<p>- "Oh my God, it's coming out before the end of the year. This is the best game in the fucking world." <span class="timestamp" data-time="17565">4h52m45s</span> <br>
+- "Holy Mother of Smash. Type 1 if you want it. Wait, it releases tomorrow, right?" <span class="timestamp" data-time="18020">5h20s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Now if you'll excuse me, I'm going to go g**n to pictures of Wisp's proto frame." <span class="timestamp" data-time="19424">5h23m44s</span><br>
+- "I'll be on discord in a little bit bytes if you guys want to play some Warframe or just hang out in general." <span class="timestamp" data-time="19450">5h24m10s</span><br>
+- "I'll either be playing Warframe or Destiny." <span class="timestamp" data-time="19454">5h24m14s</span><br>
+- "Obviously while playing. My Runescape on the side. Join my clans, jamn it." <span class="timestamp" data-time="19469">5h24m29s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
