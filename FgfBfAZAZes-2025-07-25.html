@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 goes fishing with chat【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/FgfBfAZAZes?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 goes fishing with chat【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 25/07/2025 | Duration: 5h12m46s |</strong>
+                <a href="https://www.youtube.com/watch?v=FgfBfAZAZes"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "I don't usually drink soda in the morning like this, but I ordered Dairy Queen last night and I forgot to get it out of my front porch. So now I'm drinking the coke that came with it." <span class="timestamp" data-time="348">5m48s</span><br>
+- "Alaska, by Valiant Hearts." <span class="timestamp" data-time="1413">23m33s</span><br>
+- "Although HQ says our mission today is to go fishing, we will also play a little bit of Warframe because I completely forgot to sell all of my stuff to Barrow." <span class="timestamp" data-time="1979">32m59s</span><br>
+- "I decided that there is a hole in the marketplace right now and now is my time to strike. It's like a house cleaning company but for V tubers." <span class="timestamp" data-time="2260">37m40s</span><br>
+- "OK anyways. Look at what Mooney showed me." <span class="timestamp" data-time="2877">47m57s</span><br>
+- "Here comes. Are you ready? Are you ready for absolute cinema?" <span class="timestamp" data-time="2990">49m50s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- " Would you guys really watch a stream of me just cleaning my house?" <span class="timestamp" data-time="6180">1h43m</span> <br>
+- "But yes, super controversial take incoming. I'm not a fan of blondes." <span class="timestamp" data-time="7408">2h3m28s</span> <br>
+- "Yeah, I love ..." <span class="timestamp" data-time="7615">2h6m55s</span> <br>
+- " I think someone earlier said gamers always want a player too that they can ..." <span class="timestamp" data-time="10057">2h47m37s</span> <br>
+- "That would be super awkward. Who would do that?" <span class="timestamp" data-time="10452">2h54m12s</span> <br>
+- "Yeah, this was the very first voice I used. Yep. Oh my gosh." <span class="timestamp" data-time="11065">3h4m25s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we will be playing some Destiny and also some Runescape since we didn't get to get to that today." <span class="timestamp" data-time="18375">5h6m15s</span><br>
+- "You know, dear, it's funny you say that because we're actually planning on having a Super Smash Brothers tournament soon." <span class="timestamp" data-time="18494">5h8m14s</span><br>
+- "Thank you all for the wonderful stream today. You're all the best, You're all the best, you're all the best." <span class="timestamp" data-time="18516">5h8m36s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
