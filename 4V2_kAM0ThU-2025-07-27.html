@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【EVENT】MOTHERv3 GIVES CHAT THE POWER【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/4V2_kAM0ThU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【EVENT】MOTHERv3 GIVES CHAT THE POWER【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 27/07/2025 | Duration: 2h34m51s |</strong>
+                <a href="https://www.youtube.com/watch?v=4V2_kAM0ThU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So I don't know if this was a dream or not, but. I think last night I woke up in the middle of the night and went into the restroom. And there was. A rodent or a snake or something in my toilet drain." <span class="timestamp" data-time="420">7m</span><br>
+- "As the captain of this crew. Today is an unfortunately your guys''s day to have administrative rights." <span class="timestamp" data-time="696">11m36s</span><br>
+- "So what does that mean? What does it mean for you guys to have administrative rights of the ship?" <span class="timestamp" data-time="722">12m2s</span><br>
+- "If you guys are going to be able to control the stream, I'm just going to leave. Yep, I'm gonna go outside and touch some grass. That way you guys can't hurt me." <span class="timestamp" data-time="778">12m58s</span><br>
+</p>
+<!-- 🎮 PEAK   -->
+<h3>🎮 PEAK  </h3>
+<p>- "Hello. Oh." <span class="timestamp" data-time="1365">22m45s</span> <br>
+- "OK, we're making progress." <span class="timestamp" data-time="3405">56m45s</span> <br>
+- "OK, I can climb this easily. Check this." <span class="timestamp" data-time="4674">1h17m54s</span> <br>
+- "Did he just tea bag me and then walk away?" <span class="timestamp" data-time="4799">1h19m59s</span> <br>
+- "You can't stop me." <span class="timestamp" data-time="6605">1h50m5s</span> <br>
+- Time to make HeavenlyFather suffer xdx "Well, you heard it here first chat. Tomorrow also I don't stream so I have all the time in the world to fuck your shit up." <span class="timestamp" data-time="7599">2h6m39s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "We're going to be having a movie night here in about two hours in the Discord. We're going to be watching Jurassic Park 3." <span class="timestamp" data-time="8617">2h23m37s</span><br>
+- "This week we're going to be doing the Fashion Frame contest in Warframe and the winner will win a Valkyr heirloom collection." <span class="timestamp" data-time="8647">2h24m7s</span><br>
+- "Did you want to admit your undying love for chat?" <span class="timestamp" data-time="9026">2h30m26s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
