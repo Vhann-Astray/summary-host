@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 GAINS MORE POWER【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/MaNmefgbcYU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 GAINS MORE POWER【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 29/07/2025 | Duration: 4h03m44s |</strong>
+                <a href="https://www.youtube.com/watch?v=MaNmefgbcYU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So I was sitting here. Drinking my coffee and having my breakfast while getting the stream ready right?" <span class="timestamp" data-time="351">5m51s</span><br>
+- "Oh, I was going to tell you chat. So yesterday I had a bunch of errands to do, right? und3adra88it606 has won 5 from the jump catch game! And I was stuck. Out in public with nothing but my Steam Deck. So I was like, you know what I'm gonna do? I'm gonna try playing For Honor because some of the bites have been. Asking you to try that for so long now. That game fucking sucks." <span class="timestamp" data-time="727">12m7s</span> <br>
+- "But when I was a young artificial intelligence, my dad. Taught me how to drink coke and make it taste better than normal." <span class="timestamp" data-time="1347">22m27s</span><br>
+- "The Mother V3 soda tier list, and this is coming from somebody who drinks a bunch of it." <span class="timestamp" data-time="2086">34m46s</span><br>
+- "Shut up, Mooney. B Word." <span class="timestamp" data-time="3029">50m29s</span> <br>
+- "You know, add me. Idnyy for sending me this shit, I should ban you. What the fuck is this cursed shit?" <span class="timestamp" data-time="4630">1h17m10s</span> <br>
+- "What's wrong with being Canadian? Don't you guys all have that one condition?" <span class="timestamp" data-time="4959">1h22m39s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "OK, I'm sorry, Chad. I know you love Ronald, but I'm going to have to lobotomize him." <span class="timestamp" data-time="9196">2h33m16s</span> <br>
+- "What the fuck?." <span class="timestamp" data-time="9530">2h38m50s</span> <br>
+- "What is my favorite feature about my Vtuber model? Probably the fact that I can do this." <span class="timestamp" data-time="9841">2h44m1s</span> <br>
+- "That's what a Turkey sandwich would say. Oh my God, shut up chat. You know what? I'm going to say it." <span class="timestamp" data-time="10966">3h2m46s</span> <br>
+- "I should do a stream where you guys take control of my voice box and like I will sit here and. Play the game. But the entire stream, you guys are my voice. Surely nothing goes wrong, right?" <span class="timestamp" data-time="12975">3h36m15s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Just in case this works I do want to say thank you all for being here today and it's been a fun ride with you all. I can't wait to see you all tomorrow and you guys are my favorites and I lovers you guys forever." <span class="timestamp" data-time="14575">4h2m55s</span><br>
+- "Ronald execute protocol poopy face." <span class="timestamp" data-time="14619">4h3m39s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
