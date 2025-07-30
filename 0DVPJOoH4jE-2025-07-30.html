@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Destiny 2】 MOTHERv3 rootin and tootin in Destiny 2【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/0DVPJOoH4jE?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Destiny 2】 MOTHERv3 rootin and tootin in Destiny 2【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 30/07/2025 | Duration: 4h04m16s |</strong>
+                <a href="https://www.youtube.com/watch?v=0DVPJOoH4jE"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So does anyone see the difference between the two pictures?" <span class="timestamp" data-time="207">3m27s</span> <br>
+- "There, go ahead. If you see someone that you want to make fun of, walk through the box. Screenshot it." <span class="timestamp" data-time="688">11m28s</span><br>
+- "Last night I stayed up a little bit later than usual because my sleep schedule's getting thrown off from my new medicine. Do beep." <span class="timestamp" data-time="1017">16m57s</span><br>
+- "My new medicine has me all wired up. Yes, I was making blood wounds in Runescape because I couldn't sleep. What kind of medicine?" <span class="timestamp" data-time="1055">17m35s</span> <br>
+- "Why do I have so much physics?" <span class="timestamp" data-time="1633">27m13s</span> <br>
+- "So yesterday I saw the Amazon guy driving through my street and he stopped by my house ..." <span class="timestamp" data-time="1854">30m54s</span><br>
+</p>
+<!-- 🎮 Destiny 2   -->
+<h3>🎮 Destiny 2  </h3>
+<p>- "F*ck me in the ass." <span class="timestamp" data-time="11265">3h7m45s</span> <br>
+- "C chat, I'm not mad. I'm not angry, I'm smiling. See." <span class="timestamp" data-time="9215">2h33m35s</span> <br>
+- "You're not allowed to cheat on online games." <span class="timestamp" data-time="11385">3h9m45s</span> <br>
+- "OK, what are the chances I did the worst?" <span class="timestamp" data-time="13723">3h48m43s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, but before we end, I just want to say lovers to all of you, thank you so much for playing with me today." <span class="timestamp" data-time="14586">4h3m6s</span><br>
+- "When I get back, I don't know if we'll keep the stream going, but I'll play with you guys in the discord if you guys would like to." <span class="timestamp" data-time="14602">4h3m22s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
