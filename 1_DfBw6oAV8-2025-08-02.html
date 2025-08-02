@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 cleans her room on stream【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/1_DfBw6oAV8?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 cleans her room on stream【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 02/08/2025 | Duration: 3h51m40s |</strong>
+                <a href="https://www.youtube.com/watch?v=1_DfBw6oAV8"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Who the fuck keeps saying that the one on the right has no nose?" <span class="timestamp" data-time="156">2m36s</span> <br>
+- "No playing around today because today we clean up our house." <span class="timestamp" data-time="298">4m58s</span><br>
+- "It feels weird piloting this outfit again, it's been a while." <span class="timestamp" data-time="841">14m1s</span><br>
+- "Anyways, yesterday I was going to play some video games while relaxing and then I ended up sleeping all day. Yep." <span class="timestamp" data-time="1255">20m55s</span><br>
+- "You know what, fine, if you guys are going to spray me and do all this crap, I guess I will not stall anymore." <span class="timestamp" data-time="1340">22m20s</span><br>
+- "Something's wrong with Mooney." <span class="timestamp" data-time="1500">25m</span><br>
+</p>
+<!-- 🎮 PowerWash Simulator   -->
+<h3>🎮 PowerWash Simulator  </h3>
+<p>- "Dear God, look at it. Honestly, I don't think it looks that bad. Is it really that bad?" <span class="timestamp" data-time="1903">31m43s</span> <br>
+- "Hey look, it's heavenly. It's that one guy that sucks at peak." <span class="timestamp" data-time="2079">34m39s</span> <br>
+- "Wait, what the hell is crime scene cleaner? Is that a real game?" <span class="timestamp" data-time="2630">43m50s</span><br>
+</p>
+<!-- 🎮 Viscera Cleanup Detail   -->
+<h3>🎮 Viscera Cleanup Detail  </h3>
+<p>- "Shut the fuck up. I get plenty of b*tches." <span class="timestamp" data-time="5695">1h34m55s</span> <br>
+- "Why the fuck is my mouth no longer moving?" <span class="timestamp" data-time="6757">1h52m37s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "OK, Chad, how do we mod Valkyr Prime's talents?" <span class="timestamp" data-time="8655">2h24m15s</span> <br>
+- "Do a flip." <span class="timestamp" data-time="13171">3h39m31s</span> <br>
+- "Yeah, look at it. Look at that dirty, dirty Lapras." <span class="timestamp" data-time="13693">3h48m13s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Lovers, you guys be here tomorrow if you want to see me rage quit, because tomorrow is going to be very much rage inducing." <span class="timestamp" data-time="13807">3h50m7s</span><br>
+- "Tomorrow we're doing some more farming and Warframe and in Destiny. But with a special twist." <span class="timestamp" data-time="13863">3h51m3s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
