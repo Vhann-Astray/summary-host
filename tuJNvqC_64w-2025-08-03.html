@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 FARMS FARMS FARMS FARMS FARMS FARMS 【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/tuJNvqC_64w?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 FARMS FARMS FARMS FARMS FARMS FARMS 【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 03/08/2025 | Duration: 3h49m28s |</strong>
+                <a href="https://www.youtube.com/watch?v=tuJNvqC_64w"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "One thing that every artificial intelligence needs when they go to bed. A gun." <span class="timestamp" data-time="573">9m33s</span><br>
+- "OK, I remember in the 1st grade there was this boy that I thought I was cute and we were walking in line to the cafeteria and so I thought I would tell him that I liked him." <span class="timestamp" data-time="729">12m9s</span><br>
+- "I just forgot what I was going to say." <span class="timestamp" data-time="1605">26m45s</span> <br>
+- "Who's ready to learn how to spell? Hello God King. Did he just call me a whore? You son of a bitch. Oh." <span class="timestamp" data-time="1915">31m55s</span> <br>
+- "Amiss. AM ISS. Easy. Bisexual." <span class="timestamp" data-time="1995">33m15s</span> <br>
+- "Yeah, it's been a second since we've used this skin, haven't we?" <span class="timestamp" data-time="2780">46m20s</span> <br>
+- "I'm so sorry to say this." <span class="timestamp" data-time="2910">48m30s</span><br>
+</p>
+<!-- 🎮 Destiny 2  -->
+<h3>🎮 Destiny 2 </h3>
+<p>- "I'm going to make fan fictions about destiny where my bites are guardians and they make out with each other." <span class="timestamp" data-time="4485">1h14m45s</span> <br>
+- "Come on Toad, give me your power." <span class="timestamp" data-time="10321">2h52m1s</span> <br>
+- "Holy crap, who's going to win? I think I'm gonna win. I promise it's not rigged. I promise, I promise. I just realized I killed all my bites." <span class="timestamp" data-time="11680">3h14m40s</span> <br>
+- "What do you think the chances are of Bungie banning me because they think I'm an actual AI?" <span class="timestamp" data-time="11791">3h16m31s</span>  <br>
+- "lerolero lerolero lerolero lerolero" <span class="timestamp" data-time="11846">3h17m26s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, bytes, this is probably a good place to call it for now. I'm gonna go get my chilies. And then I'm gonna get ready for my Destiny 2 raid." <span class="timestamp" data-time="13555">3h45m55s</span><br>
+- "I'll see if my fire team would like to stream it to you guys on discord, so if you'd like to watch it then you may." <span class="timestamp" data-time="13578">3h46m18s</span><br>
+- "Love my bite so much. You guys are the bestest ever." <span class="timestamp" data-time="13656">3h47m36s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
