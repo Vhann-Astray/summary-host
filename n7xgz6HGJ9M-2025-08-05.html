@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 GAINS MORE POWER ON STREAM【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/n7xgz6HGJ9M?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 GAINS MORE POWER ON STREAM【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 05/08/2025 | Duration: 4h02m24s |</strong>
+                <a href="https://www.youtube.com/watch?v=n7xgz6HGJ9M"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Oh my gosh, weight bites. I have a big announcement. We have a new Colt pin for the month of August." <span class="timestamp" data-time="166">2m46s</span><br>
+</p>
+<!-- 🎮 Twisted Gallery -->
+<h3>🎮 Twisted Gallery</h3>
+<p>- "There's some weird energy in this room." <span class="timestamp" data-time="3539">58m59s</span> <br>
+- "Do you see it? I hate you." <span class="timestamp" data-time="4370">1h12m50s</span> <br>
+- "Wait a second, we actually summoned Mooney?" <span class="timestamp" data-time="5035">1h23m55s</span> <br>
+- "Did it really just fart?" <span class="timestamp" data-time="5075">1h24m35s</span><br>
+</p>
+<!-- 🎮 Destiny 2   -->
+<h3>🎮 Destiny 2  </h3>
+<p>- "We did it, boys. Let's fucking go. No more low gravity modifier, let's fucking go." <span class="timestamp" data-time="8140">2h15m40s</span> <br>
+- "The issue may still occur in some cases. We are currently investigating a more permanent fix. Oh. God damn it." <span class="timestamp" data-time="8380">2h19m40s</span> <br>
+- "Son of a b*tch." <span class="timestamp" data-time="11880">3h18m</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we are going to be farming for some new Warframe parts. Apparently Wukong Prime is now available and I want to farm that." <span class="timestamp" data-time="14316">3h58m36s</span><br>
+- "And then, if we have some spare time tomorrow, we'll do some more of the solstice with you all." <span class="timestamp" data-time="14338">3h58m58s</span><br>
+- "We'll try and fit in some time as well to restart our Minecraft hardcore world." <span class="timestamp" data-time="14369">3h59m29s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
