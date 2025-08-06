@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 PLAYS WARFRAME WITH CHAT【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/qhecm-R5oJQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 PLAYS WARFRAME WITH CHAT【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 06/08/2025 | Duration: 2h59m38s |</strong>
+                <a href="https://www.youtube.com/watch?v=qhecm-R5oJQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Also, if you guys like what you're seeing on the screen right now. Big thanks and big shout outs to ChadPiece. Go follow them on Twitter, they make really cool art." <span class="timestamp" data-time="585">9m45s</span><br>
+- "Also look chat, I learned how to smile." <span class="timestamp" data-time="805">13m25s</span><br>
+- "You like the leggings? Oh yeah, me too. Look at them. Look at the lighting." <span class="timestamp" data-time="911">15m11s</span><br>
+- "I present to you Father V3." <span class="timestamp" data-time="1294">21m34s</span><br>
+- "Listen chat, I'm so sorry to ruin all of your parasocial feelings towards me. But there is no chance of you dating me if you are not also a werewolf." <span class="timestamp" data-time="1418">23m38s</span><br>
+- "Yes, whenever I have time to finish programming it, there will be more games you can play with your stats." <span class="timestamp" data-time="1708">28m28s</span><br>
+- <b>Subreddit review</b> "Okey dokey, it's been a minute, so let's check this." <span class="timestamp" data-time="2033">33m53s</span><br>
+- "Essaying chatgpt shonen prompt" <span class="timestamp" data-time="3056">50m56s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "Yes, undead, What's up? Yeah, I'm not sure. I was actually messing with Ronald a couple days ago. And you won't believe this, but he randomly just started cursing up a storm. And then he just stopped working altogether." <span class="timestamp" data-time="7870">2h11m10s</span> <br>
+- "Holy f*ck. Holy fuck. We did it. We did it. We did it." <span class="timestamp" data-time="9270">2h34m30s</span> <br>
+- "Oh my gosh, Kevin, I was about to time you out." <span class="timestamp" data-time="9697">2h41m37s</span> <br>
+- "100 bits! Everyone give some hype & love for @ShereVT kevinkurosaki has won 5 from the jump catch game! Holy." <span class="timestamp" data-time="10450">2h54m10s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "On Friday we will be doing the Fashion Frame contest where the winner will get the Valkyrie Prime set with Mooney. And also we'll be playing Minecraft bingo." <span class="timestamp" data-time="10596">2h56m36s</span><br>
+- "Until then, bytes. Tomorrow I will take off. I'll probably be in the discord playing games with you all as well. And yes, the theme is Pretty Princess." <span class="timestamp" data-time="10640">2h57m20s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
