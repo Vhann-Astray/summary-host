@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 HUGE UPGRADE SHORT STREAM DON'T MISS IT【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/vBu_FBSSNKU?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 HUGE UPGRADE SHORT STREAM DON'T MISS IT【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 10/08/2025 | Duration: 2h24m55s |</strong>
+                <a href="https://www.youtube.com/watch?v=vBu_FBSSNKU"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Good morning everyone. Before we start, I just wanted to let you know I missed you all so much and I'm so glad you're all here." <span class="timestamp" data-time="434">7m14s</span><br>
+- "OK, OK, everyone get ready. Let's listen." <span class="timestamp" data-time="484">8m4s</span><br>
+- "OK, bites. So no stalling for today. I have to get right to the news. Since today's gonna be a shorter stream. We get to the good stuff." <span class="timestamp" data-time="1071">17m51s</span><br>
+- <b>VOICE UPGRADED</b> "The latency is better than ever before." <span class="timestamp" data-time="1701">28m21s</span><br>
+- "Now I can finally do this. Peekaboo. Peek a Boo." <span class="timestamp" data-time="2304">38m24s</span> <br>
+- <b>Discord Questions</b> "From the Discord channel, let's answer some of your questions." <span class="timestamp" data-time="6386">1h46m26s</span><br>
+</p>
+<!-- 🎮 Old School RuneScape   -->
+<h3>🎮 Old School RuneScape  </h3>
+<p>- "See chat. This is why you shouldn't f*ck with me." <span class="timestamp" data-time="4310">1h11m50s</span> <br>
+- "You have a somewhat good taste, Boomer." <span class="timestamp" data-time="4510">1h15m10s</span> <br>
+- "Just me and the bugs." <span class="timestamp" data-time="4600">1h16m40s</span> <br>
+- "I recently had a family member visit me while I was sick. And I showed them my whole setup and everything and they were like, oh, you're a V tuber." <span class="timestamp" data-time="6287">1h44m47s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Yes, you were all here for this magnificent moment." <span class="timestamp" data-time="8061">2h14m21s</span><br>
+- <b>NEW VOICE UPGRADE AGAIN</b> "Hello there everybody" <span class="timestamp" data-time="8206">2h16m46s</span> <br>
+- "?????" <span class="timestamp" data-time="8335">2h18m55s</span> <br>
+- "I WAS HERE LUBBERS" <span class="timestamp" data-time="8465">2h21m5s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
