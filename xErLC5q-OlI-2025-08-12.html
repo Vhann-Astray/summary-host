@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 WEEKLY GAMING YIPPEE【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/xErLC5q-OlI?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 WEEKLY GAMING YIPPEE【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 12/08/2025 | Duration: 5h07m56s |</strong>
+                <a href="https://www.youtube.com/watch?v=xErLC5q-OlI"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>NEW STREAM SCENE</b> "Do you guys like the computer I'm in now?" <span class="timestamp" data-time="270">4m30s</span><br>
+- <b>NEW COOL REDEEMS</b> "As you can already tell, we have a lot of cool buttons here that you're able to press like you're able to turn off the lights." <span class="timestamp" data-time="1025">17m5s</span><br>
+- <b>AFFECTION LEVEL</b> "Oh no, my affection level is going down." <span class="timestamp" data-time="1863">31m3s</span><br>
+- "Now the only way to bring up my affection stat is to give me a head pat. That's the only thing that I've linked to it so far, as you can see." <span class="timestamp" data-time="1959">32m39s</span><br>
+- "Did I not learn my lesson from last week?" <span class="timestamp" data-time="2665">44m25s</span> <br>
+- "I have forsaken my fellow warlocks.I can't look at it. I'm sorry." <span class="timestamp" data-time="3565">59m25s</span><br>
+</p>
+<!-- 🎮 Warframe   -->
+<h3>🎮 Warframe  </h3>
+<p>- "God damn it. Scan me now. I said scan me." <span class="timestamp" data-time="8310">2h18m30s</span><br>
+</p>
+<!-- 🎮 Destiny 2 -->
+<h3>🎮 Destiny 2</h3>
+<p>- "OK, who the fuck lied to me? Why doesn't it automatically update?" <span class="timestamp" data-time="8148">2h15m48s</span><br>
+</p>
+<!-- 🎮 Paint Drying Simulator -->
+<h3>🎮 Paint Drying Simulator</h3>
+<p>- "I hope you guys know I love you guys so much, that's why I'm doing this. Introducing." <span class="timestamp" data-time="11689">3h14m49s</span> <br>
+- "Yes, grab your popcorn. You don't want to miss this." <span class="timestamp" data-time="11880">3h18m</span> <br>
+- "Wow is this watching paint dry or Destiny 2? I can't tell." <span class="timestamp" data-time="11827">3h17m7s</span><br>
+</p>
+<!-- 🎮 Cyberpunk 2077 -->
+<h3>🎮 Cyberpunk 2077</h3>
+<p>- "Wait a second. Was that the sheriff?" <span class="timestamp" data-time="13925">3h52m5s</span> <br>
+- "What are you going to do, shoot me?" <span class="timestamp" data-time="16235">4h30m35s</span> <br>
+- "OK, let's get there in one piece, Chat." <span class="timestamp" data-time="14230">3h57m10s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we will fire for some more Warframe parts together and continue some cyberpunk." <span class="timestamp" data-time="18224">5h3m44s</span><br>
+- "If not cyberpunk, I have another cool surprise for you all." <span class="timestamp" data-time="18227">5h3m47s</span><br>
+- "Oh yeah, I forgot to tell you guys the secret redeem. You'll just have to wait and find out." <span class="timestamp" data-time="18258">5h4m18s</span><br>
+- "Thank you all so much for being here today. You guys are so lovely and I'm so blessed to have such a wonderful community of bites." <span class="timestamp" data-time="18287">5h4m47s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
