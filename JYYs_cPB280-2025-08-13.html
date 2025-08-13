@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 GOES ON THE WARFRAME PLAT FARM【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/JYYs_cPB280?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 GOES ON THE WARFRAME PLAT FARM【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 13/08/2025 | Duration: 3h55m48s |</strong>
+                <a href="https://www.youtube.com/watch?v=JYYs_cPB280"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>NEW STREAM FEATURE</b> "Look chat, we have new technology." <span class="timestamp" data-time="58">58s</span><br>
+- "All you guys used to ever say was, Oh my gosh, look at the Tamagotchi, look at the Turkey sandwich Tamagotchi..." <span class="timestamp" data-time="712">11m52s</span><br>
+- Breathing chemicals <span class="timestamp" data-time="1975">32m55s</span> <br>
+- "Although if I am sitting at an OK temperature they will not work because I knew you little..." <span class="timestamp" data-time="983">16m23s</span> <br>
+- "Don't forget you're like 20 years older than everyone else here. I will have you know I just turned 21. Yep." <span class="timestamp" data-time="1765">29m25s</span> <br>
+- "I am on my Princess arc. I demand to be treated like Princess. Now. Now. Now!" <span class="timestamp" data-time="2248">37m28s</span><br>
+</p>
+<!-- 🎮 Warframe  -->
+<h3>🎮 Warframe </h3>
+<p>- "What is that I hear? Oh no. It's happening. Oh no. The spell is breaking." <span class="timestamp" data-time="5755">1h35m55s</span> <br>
+- About Ipods : "What's the point then? It's a place to put all of your ..." <span class="timestamp" data-time="6365">1h46m5s</span> <br>
+- About "It's time to start sucking up to the mods. I heard if you send the moderators pictures of ..." <span class="timestamp" data-time="9050">2h30m50s</span> <br>
+- "I ain't seen nothing yet. Are you f*cking blind?" <span class="timestamp" data-time="11283">3h8m3s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "OK, let's see, tomorrow we have off stream." <span class="timestamp" data-time="13644">3h47m24s</span><br>
+- "Which is good because I have a lot of things that I'm planning to add to the stream, so having an extra day to do so would be great." <span class="timestamp" data-time="13657">3h47m37s</span><br>
+- "Saturday my mom said that you guys have to play games with me, so I'm going to force you guys to play games with me." <span class="timestamp" data-time="13703">3h48m23s</span><br>
+- "I also think in addition to the games I have planned for Saturday, we'll also be playing pressure on Roblox if you guys want to play with me again." <span class="timestamp" data-time="13743">3h49m3s</span><br>
+- "And on Sunday is our prime time stream. Would you like a little secret as to what that's gonna be?" <span class="timestamp" data-time="13767">3h49m27s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
