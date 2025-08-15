@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Minecraft】 Playing Minecraft BINGO CHALLENGE【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/oLjCBW9z4eQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【Minecraft】 Playing Minecraft BINGO CHALLENGE【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 15/08/2025 | Duration: 3h51m44s |</strong>
+                <a href="https://www.youtube.com/watch?v=oLjCBW9z4eQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "Holy shit, wait. Did I start like an hour earlier than normal? Oh my fucking God the clock on my computer is wrong. God damn it." <span class="timestamp" data-time="145">2m25s</span> <br>
+- "OK, I got to admit something. My sleep schedule is now completely backwards." <span class="timestamp" data-time="525">8m45s</span><br>
+- "Oh my gosh, look, you can see my health bar." <span class="timestamp" data-time="907">15m7s</span><br>
+- "I swear to God I give you 10 seconds with a new piece of technology and you've already broken it." <span class="timestamp" data-time="1300">21m40s</span> <br>
+- "I actually have a long video coming out on my YouTube channel pretty soon." <span class="timestamp" data-time="1981">33m1s</span><br>
+- "The first one is an ASMR video that I said it was gonna make a long time ago and I'm finally almost done with it." <span class="timestamp" data-time="1996">33m16s</span><br>
+- "You ever feel like you play a video game sometimes because you feel like you have to? For the fear of missing out or like to do your dailies and shit." <span class="timestamp" data-time="2085">34m45s</span><br>
+- "I got some of those gamer Subs V card TCG cards. We'll have to open those up sometime." <span class="timestamp" data-time="2838">47m18s</span><br>
+- "What if you want to see my tattoos? I mean, I could just tell you what my tattoo is." <span class="timestamp" data-time="2995">49m55s</span><br>
+</p>
+<!-- 🎮 Minecraft   -->
+<h3>🎮 Minecraft  </h3>
+<p>- "I have to get a bingo on this board every day we play stream and if by the end of the stream I do not have a bingo then I must kill myself in the game." <span class="timestamp" data-time="4061">1h7m41s</span><br>
+- "That's why I'm going to keep saying I'm 21 until Chad throws me a birthday party." <span class="timestamp" data-time="8215">2h16m55s</span> <br>
+- "I love it whenever new chatters come in and they're like wow your community is so nice. Genuinely makes my heart happy." <span class="timestamp" data-time="10030">2h47m10s</span> <br>
+- "You know what, I'm going to go get my brother." <span class="timestamp" data-time="11668">3h14m28s</span><br>
+</p>
+<!-- 💬 TV Says Hi  -->
+<h3>💬 TV Says Hi </h3>
+<p>- Incoming TV <span class="timestamp" data-time="11978">3h19m38s</span>  <br>
+- TV Talking abouts Twitch & Youtube Chats <span class="timestamp" data-time="12935">3h35m35s</span><br>
+- TV & Blaidd <span class="timestamp" data-time="13200">3h40m</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Okey dokey also bites. Tomorrow we have the MMO hangout where we're all going to play Mmos together in discord after the stream." <span class="timestamp" data-time="13689">3h48m9s</span><br>
+- "So tomorrow we'll play Battlefield on stream together, and then afterwards we will hang out and probably play things like Destiny or Warframe or Runescape together in Discord." <span class="timestamp" data-time="13707">3h48m27s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
