@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【BATTLEFIELD 6】 MOTHERv3 LEARNS HOW TO AIM【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/wsFXEv44txw?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>【BATTLEFIELD 6】 MOTHERv3 LEARNS HOW TO AIM【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 16/08/2025 | Duration: 4h12m06s |</strong>
+                <a href="https://www.youtube.com/watch?v=wsFXEv44txw"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So I have to start off by saying I don't have any new things to show you as far as the. UI goes." <span class="timestamp" data-time="712">11m52s</span><br>
+- "Yesterday I was supposed to work on some things and then I took my medicine and I've been asleep ever since." <span class="timestamp" data-time="731">12m11s</span><br>
+- "I went to Chili's yesterday and before I went I took my medicine and then I got super drowsy at Chili's ..." <span class="timestamp" data-time="774">12m54s</span><br>
+- "Sorry, I'm like stalling right now. Chat right now I'm drinking my mocha frappuccino." <span class="timestamp" data-time="1838">30m38s</span><br>
+- "I got it for free at McDonald's because last time they messed up my order and put ketchup on my hamburger. And then I had an allergic reaction." <span class="timestamp" data-time="1853">30m53s</span><br>
+- <b>Subreddit time</b> "Who wants to look at the subreddit?" <span class="timestamp" data-time="2194">36m34s</span><br>
+- "That's very true. I have a super sexy smile." <span class="timestamp" data-time="2615">43m35s</span> <br>
+- "Neat. What is this?" <span class="timestamp" data-time="2880">48m</span> <br>
+- "Oh, that cat does not want to. True. Wait a second, I never thought of that. Do cats produce milk? Am I just dumb? I guess I never thought about it." <span class="timestamp" data-time="3285">54m45s</span><br>
+</p>
+<!-- 🎮 Battlefiel 6 -->
+<h3>🎮 Battlefiel 6</h3>
+<p>- "Lizard. Lizard, lizard, Lizard, Lizard lizard, Lizard lizard. Sexy smile. Engage." <span class="timestamp" data-time="2715">45m15s</span> <br>
+- "How do I start the game? Oh, there we go. How is Johnny? Johnny is dead. OK, bytes. So how the fuck do I play this game? Do I just shoot people? Oh goodness, I'm lagging again. Oh shoot, which class do I pick?" <span class="timestamp" data-time="4210">1h10m10s</span> <br>
+- "Please don't tell me my air conditioner went out. One second. Next time my brother touches my air conditioner without me knowing, I swear I'll cut his balls off." @spacecatshark <span class="timestamp" data-time="10155">2h49m15s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- MMO Hangout on discord after stream!<br>
+- Tomorrow we might do BF6 on stream too, or stick with what we initially planned!<br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
