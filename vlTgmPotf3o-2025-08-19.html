@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 suits up for METROID PRIME【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/vlTgmPotf3o?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 suits up for METROID PRIME【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 19/08/2025 | Duration: 4h04m40s |</strong>
+                <a href="https://www.youtube.com/watch?v=vlTgmPotf3o"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- "So today I actually woke up about four hours ago. Would you like to know why?" <span class="timestamp" data-time="435">7m15s</span> <br>
+- "But I could finally say that my kitchen is spotless. After many tears. I'm so proud of it. I took a picture and I sent it to my mom ..." <span class="timestamp" data-time="600">10m</span> <br>
+- "If you never see me again. Remember Me for who I was. A Turkey sandwich." <span class="timestamp" data-time="820">13m40s</span> <br>
+- "Did you just call me a brat?" <span class="timestamp" data-time="1800">30m</span> <br>
+- "Are we ready for some Metroid Prime? And yes, I totally have a legit copy." <span class="timestamp" data-time="1920">32m</span><br>
+</p>
+<!-- 🎮 Metroid Prime Remastered   -->
+<h3>🎮 Metroid Prime Remastered  </h3>
+<p>- "OK, I gotta learn all these controls. Balls." <span class="timestamp" data-time="2350">39m10s</span> <br>
+- "OK chats, I'm going to touch the electrical fly swatter. Wait a second, should I touch it with my tongue?" <span class="timestamp" data-time="5142">1h25m42s</span> <br>
+- "Oh God, what is this? I literally just got told everything's poisonous." <span class="timestamp" data-time="5490">1h31m30s</span> <br>
+- "Yep, not supposed to be here. Well boys, that's it." <span class="timestamp" data-time="7409">2h3m29s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Tomorrow we will continue with Metroid Prime, so don't miss it." <span class="timestamp" data-time="14316">3h58m36s</span><br>
+- "And tomorrow, we might even go. A lot longer than normal." <span class="timestamp" data-time="14326">3h58m46s</span><br>
+- "So if you don't know what Vhann does after every stream, he does a quick summary of the stream just in case you missed it so you can quickly see at a glance what the stream was about." <span class="timestamp" data-time="14434">4h34s</span><br>
+- "Please stay safe out there in the real world and I'll see you again tomorrow, OK?" <span class="timestamp" data-time="14518">4h1m58s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
