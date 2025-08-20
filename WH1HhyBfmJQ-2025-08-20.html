@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHERv3 plays through more Metroid Prime【MOTHERv3 VTuber】 Stream Summary</title>
+    <link rel="icon" href="img/noted.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-container">
+        <!-- YouTube Player Embed -->
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/WH1HhyBfmJQ?enablejsapi=1" width="100%" height="60vh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div id="summary">
+        <div id="header-summary">
+            <video autoplay muted loop id="header-video">
+                <source src="videos/header-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>MOTHERv3 plays through more Metroid Prime【MOTHERv3 VTuber】</h2>
+            <p class="centered-text">
+                <strong>Date: 20/08/2025 | Duration: 4h39m36s |</strong>
+                <a href="https://www.youtube.com/watch?v=WH1HhyBfmJQ"><strong>VOD Link</strong></a>
+            </p>
+        </div>
+                
+        <!-- 💬 Start   -->
+<h3>💬 Start  </h3>
+<p>- <b>Secret button reveal</b> "Oh wait, here it is." <span class="timestamp" data-time="310">5m10s</span><br>
+- "Update on my housing situation. So I tried cleaning all my drains and it worked for the most part." <span class="timestamp" data-time="816">13m36s</span><br>
+- "Yes, that is why I don't shower. Yep. Totally. Because the drain doesn't work." <span class="timestamp" data-time="899">14m59s</span> <br>
+- "You guys asked some questions in the discord and I'm going to answer them." <span class="timestamp" data-time="1200">20m</span><br>
+- "Again. Can we get two in a row? For the hat trick. Can we get 3?" <span class="timestamp" data-time="1970">32m50s</span> <br>
+- "I like hanging out with you guys in the discord." <span class="timestamp" data-time="2455">40m55s</span><br>
+- "OK. Next question? Why are you dumb?" <span class="timestamp" data-time="2980">49m40s</span> <br>
+- "Holy shit, did you see the four piece?" <span class="timestamp" data-time="3267">54m27s</span><br>
+- "No, this is bullshit. I will not settle for oshi. I want to be kami oshi" <span class="timestamp" data-time="3780">1h3m</span> <br>
+- "Would you guys be upset if I started making the live stream Vods private and then posting them on another channel specifically just for Vods?" <span class="timestamp" data-time="4083">1h8m3s</span><br>
+</p>
+<!-- 🎮 Metroid Prime Remastered   -->
+<h3>🎮 Metroid Prime Remastered  </h3>
+<p>- "I think the ice music is my favorite so far. Yes, I have a fat acid big boobies." <span class="timestamp" data-time="6825">1h53m45s</span> <br>
+- "B*tch." <span class="timestamp" data-time="7154">1h59m14s</span> <br>
+- "Well, I guess time to go back to the very beginning." <span class="timestamp" data-time="8005">2h13m25s</span> <br>
+- "That German accent is so thick I have no idea what he's even saying." <span class="timestamp" data-time="8657">2h24m17s</span> <br>
+- "I wonder what it would be like to have a Metroid ..." <span class="timestamp" data-time="13696">3h48m16s</span><br>
+</p>
+<!-- 📅 What’s Next?   -->
+<h3>📅 What’s Next?  </h3>
+<p>- "Sure that we can do that. Then on Friday we will play more Metroid." <span class="timestamp" data-time="16510">4h35m10s</span><br>
+- "We have Phasma on Saturday with some other people so I don't want to skip that." <span class="timestamp" data-time="16531">4h35m31s</span><br>
+- "I just wanted to let you all know that I very much appreciate you and thank you all so much for being here." <span class="timestamp" data-time="16567">4h36m7s</span><br>
+- <b>Secret button again</b> "Let me go ahead and hit that." <span class="timestamp" data-time="16601">4h36m41s</span><br>
+</p>
+
+    </div>
+
+    <script>
+        const timestamps = document.querySelectorAll('.timestamp');
+
+        timestamps.forEach(timestamp => {
+            timestamp.addEventListener('click', function() {
+                const time = timestamp.getAttribute('data-time');
+                const player = document.getElementById('youtube-player');
+                player.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'seekTo',
+                        args: [parseInt(time), true]
+                    }),
+                    '*'
+                );
+            });
+        });
+    </script>
+</body>
+</html>
